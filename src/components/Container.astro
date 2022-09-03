@@ -1,0 +1,16 @@
+---
+export interface Props {
+  outerClass?: string;
+  innerClass?: string;
+}
+
+const { outerClass, innerClass } = Astro.props;
+---
+
+<div class={`flex w-full py-12 ${outerClass}`}>
+  <div
+    class={`flex w-full lg:w-[1024px] justify-center items-center mx-auto my-8 px-8 lg:px-0 text-xl font-light font-sans text-zinc-500 dark:text-zinc-300 ${innerClass}`}
+  >
+    <slot />
+  </div>
+</div>
