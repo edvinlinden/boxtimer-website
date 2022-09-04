@@ -1,35 +1,49 @@
-name: Github Pages Astro CI
+# Workflow to build and deploy to your GitHub Pages repo.
+
+# Edit your project details here.
+# Remember to add API_TOKEN_GITHUB in repo Settings > Secrets as well!
+env:
+  githubEmail: edvin.linden@gmail.com
+  deployToRepo: boxtimer.app
+
+name: Build & deploy to GitHub Pages
 
 on:
-  # Trigger the workflow every time you push to the `main` branch
-  # Using a different branch name? Replace `main` with your branch’s name
+  # Triggers the workflow on push and pull request events but only for the main branch
   push:
     branches: [main]
-  # Allows you to run this workflow manually from the Actions tab on GitHub.
+  #pull_request:
+  #   branches: [main]
+
+  # Allows you to run this workflow manually from the Actions tab.
   workflow_dispatch:
 
-# Allow this job to clone the repo and create a page deployment
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout your repository using git
-        uses: actions/checkout@v2
-      - name: Install, build, and upload your site
-        uses: withastro/action@v0
-
   deploy:
-    needs: build
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Install dependencies with npm
+      - name: Install dependencies
+        run: npm ci
+
+      # Build the project and add .nojekyll file to supress default behaviour
+      - name: Build
+        run: |
+          npm run build
+          touch ./dist/.nojekyll
+      # Push to your pages repo
+      - name: Push to pages repo
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: "dist"
+          destination-github-username: ${{ github.actor }}
+          destination-repository-name: ${{ env.deployToRepo }}
+          user-email: ${{ env.githubEmail }}
+          commit-message: Deploy ORIGIN_COMMIT
+          target-branch: gh-pages
