@@ -6,6 +6,7 @@ export interface Props {
 }
 
 const { title } = Astro.props;
+const disableTracking = import.meta.env.DEV;
 ---
 
 <!DOCTYPE html>
@@ -48,5 +49,13 @@ const { title } = Astro.props;
       <Hero />
       <slot />
     </div>
+	{
+		disableTracking ? null : (
+				<script
+					src="https://cdn.usefathom.com/script.js"
+					data-site="RFZSCRLZ"
+					defer
+				/>)
+	}
   </body>
 </html>
