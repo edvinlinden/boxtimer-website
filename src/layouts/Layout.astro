@@ -7,6 +7,10 @@ export interface Props {
 
 const { title } = Astro.props;
 const disableTracking = import.meta.env.DEV;
+const openGraphImage = "https://boxtimer.app/images/og.png";
+const url = "https://boxtimer.app/";
+const description = "The Box Timer is a free and simple workout timer app for your iPhone. It's perfect for workouts at home, outside or at your box. It supports any WOD such as AMRAP, EMOM or Tabata.";
+
 ---
 
 <!DOCTYPE html>
@@ -18,10 +22,21 @@ const disableTracking = import.meta.env.DEV;
     <meta name="generator" content={Astro.generator} />
     <meta
       name="description"
-      content="The Box Timer is a free and simple workout timer app for your iPhone. It's perfect for workouts at home, outside or at your box. It supports any WOD such as AMRAP, EMOM or Tabata."
+      content={description}
     />
     <meta name="copyright" content="© Copyright 2020 to Present" />
     <meta name="author" content="Edvin Lindén" />
+	<meta property="og:url" content={url} />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content={title} />
+	<meta property="og:description" content={description} />
+	<meta property="og:image" content={openGraphImage} />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="twitter:domain" content="boxtimer.app" />
+	<meta property="twitter:url" content={url} />
+	<meta name="twitter:title" content={title} />
+	<meta name="twitter:description" content={description} />
+	<meta name="twitter:image" content={openGraphImage} />
 	<script type="application/ld+json">
         {
           "@context": "https://schema.org",
