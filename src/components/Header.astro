@@ -1,3 +1,7 @@
+---
+import GetAppButton from "@components/GetAppButton.astro";
+---
+
 <div
   class="w-full fixed top-0 left-0 bg-zinc-50/75 dark:bg-zinc-900/75 backdrop-blur-sm z-50"
 >
@@ -6,23 +10,10 @@
       <div class="text-2xl font-bold text-zinc-900 dark:text-zinc-50">
         Box Timer<span class="hidden sm:inline"> – Workout Timer</span>
       </div>
-      <a
-        href="https://apps.apple.com/us/app/the-box-timer/id1547518531"
-        onclick="window.fathom.trackGoal('GTWFCG7B', 0);"
-        target="_blank"
-        rel="noopener noreferrer"
-        title="The Box Timer on the App Store"
-        class="flex justify-between items-center min-w-[145px] no-underline bg-blue-600 hover:bg-blue-800 text-slate-100 rounded-full px-6 py-3"
-      >
-        <img
-          src="/images/apple-logo-white.svg"
-          alt="Box Timer on the App Store"
-          style="width: 15px; height: 18px;"
-          width="15"
-          height="18"
-        />
-        <span class="ml-4 font-sans">GET APP</span>
-      </a>
+      <GetAppButton
+        id="get-app-button-header"
+        outerClass={"opacity-0 transition-all"}
+      />
     </div>
   </div>
 </div>

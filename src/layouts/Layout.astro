@@ -72,5 +72,47 @@ const description = "The Box Timer is a free and simple workout timer app for yo
 					defer
 				/>)
 	}
+  <script defer>
+    let lastKnownScrollPosition = 0;
+    let ticking = false;
+
+    const inViewport = (element) => {
+      if (!element) return false;
+      if (1 !== element.nodeType) return false;
+
+      var html = document.documentElement;
+      var rect = element.getBoundingClientRect();
+
+      return !!rect &&
+        rect.bottom >= 0 &&
+        rect.right >= 0 && 
+        rect.left <= html.clientWidth &&
+        rect.top <= html.clientHeight;
+    }
+
+    const updateHeaderGetAppButtonVisibility = (scrollPos) => {
+      const getAppButtonHero = document.getElementById("get-app-button-hero");
+      const getAppButtonHeader = document.getElementById("get-app-button-header");
+
+      if(!inViewport(getAppButtonHero)) {
+        getAppButtonHeader.classList.add("opacity-100");
+      } else {
+        getAppButtonHeader.classList.remove("opacity-100");
+      }
+    }
+
+    document.addEventListener('scroll', (event) => {
+      lastKnownScrollPosition = window.scrollY;
+
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          updateHeaderGetAppButtonVisibility();
+          ticking = false;
+        });
+
+        ticking = true;
+      }
+    });
+  </script>
   </body>
 </html>

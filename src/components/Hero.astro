@@ -1,5 +1,6 @@
 ---
-import Container from "./Container.astro";
+import Container from "@components/Container.astro";
+import GetAppButton from "@components/GetAppButton.astro";
 ---
 
 <Container innerClass="px-0">
@@ -17,6 +18,10 @@ import Container from "./Container.astro";
       >
         Take your gym timer with you <br />wherever you go
       </h3>
+      <GetAppButton
+        id="get-app-button-hero"
+        outerClass={"animate-hero-fade-in mt-12 "}
+      />
     </div>
     <div
       class="flex relative w-[575px] h-[628px] mx-auto mt-16 lg:mt-0 ml-[-100px] sm:ml-0"
