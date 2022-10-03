@@ -1,0 +1,58 @@
+---
+import Header from "@components/Header.astro";
+export interface Props {
+  title: string;
+  description: string;
+  url: string;
+}
+
+const { title, description, url } = Astro.props;
+const disableTracking = import.meta.env.DEV;
+const openGraphImage = "https://boxtimer.app/images/og.png";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <meta name="copyright" content="© Copyright 2020 to Present" />
+    <meta name="author" content="Edvin Lindén" />
+    <meta property="og:url" content={url} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={openGraphImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="boxtimer.app" />
+    <meta property="twitter:url" content={url} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={openGraphImage} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-zinc-50 dark:bg-zinc-900">
+    <Header />
+    <div class="mt-[75px] w-full overflow-x-hidden overlay-y-overlay">
+      <slot />
+    </div>
+    {
+      disableTracking ? null : (
+        <script
+          src="https://cdn.usefathom.com/script.js"
+          data-site="RFZSCRLZ"
+          defer
+        />
+      )
+    }
+    <script defer>
+      const getAppButtonHeader = document.getElementById(
+        "get-app-button-header"
+      );
+      getAppButtonHeader.classList.add("opacity-100");
+    </script>
+  </body>
+</html>
