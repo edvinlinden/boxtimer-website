@@ -1,0 +1,113 @@
+---
+import Container from "@components/Container.astro";
+import Footer from "@components/Footer.astro";
+import GetAppButton from "@components/GetAppButton.astro";
+import Page from "@layouts/Page.astro";
+---
+
+<Page
+  title="Box Timer – CrossFit Workout Timer vs. SmartWOD"
+  description="A comparison of the features between Box Timer – CrossFit Workout Timer and SmartWOD."
+  url="https://boxtimer.app/box-timer-vs-smartwod/"
+>
+  <Container innerClass={"flex-col items-center"}>
+    <div class="w-9/12">
+      <h2 class="text-4xl font-sans font-bold text-zinc-900 dark:text-zinc-50">
+        Box Timer compared to SmartWOD
+      </h2>
+      <p class="py-8">
+        Both Box Timer and SmartWOD are great workout timers! You can compare
+        both apps down below, but these are some subjective differences to
+        consider before choosing.
+      </p>
+      <p class="mb-8">
+        Box Timer have a design that looks like the classic timer at a gym, it's
+        easy to see the time and the settings are the same ones that you are
+        used to.
+      </p>
+      <p class="mb-24">
+        SmartWOD have a more digital design that makes it more like any other
+        app on your phone, this could be good if you're not familiar with the
+        timers at gyms.
+      </p>
+      <h3
+        class="text-2xl mb-8 text-center font-sans font-bold text-zinc-900 dark:text-zinc-50"
+      >
+        Comparison
+      </h3>
+      <table class="w-full overflow-scroll">
+        <tr>
+          <th class="w-4/12"></th>
+          <th class="font-bold pb-8">Box Timer</th>
+          <th class="font-bold pb-8">SmartWOD</th>
+        </tr>
+        <tr>
+          <td class="py-6">
+            <b class="font-bold">Workouts</b><br />
+            AMRAP<br />
+            EMOM<br />
+            TABATA<br />
+            For Time<br />
+            Custom Intervals
+          </td>
+          <td class="text-center py-6 text-green-700 dark:text-green-300">
+            <br />
+            Yes<br />
+            Yes<br />
+            Yes<br />
+            Yes<br />
+            Yes
+          </td>
+          <td class="text-center py-6 text-green-700 dark:text-green-300">
+            <br />
+            Yes<br />
+            Yes<br />
+            Yes<br />
+            Yes<br />
+            <span class="text-red-700 dark:text-red-300">No</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="py-6">
+            <b class="font-bold">Price</b><br />
+          </td>
+          <td class="text-center py-6 text-green-700 dark:text-green-300">
+            Free</td
+          >
+          <td class="text-center py-6 text-yellow-600 dark:text-yellow-300">
+            Free & Paid</td
+          >
+        </tr>
+        <tr>
+          <td class="py-6">
+            <b class="font-bold">Ad free</b><br />
+          </td>
+          <td class="text-center py-6 text-green-700 dark:text-green-300">
+            Yes</td
+          >
+          <td class="text-center py-6 text-red-700 dark:text-red-300">No</td>
+        </tr>
+        <tr>
+          <td class="py-6">
+            <b class="font-bold">Sound</b><br />
+          </td>
+          <td class="text-center py-6 text-green-700 dark:text-green-300">
+            Yes</td
+          >
+          <td class="text-center py-6 text-green-700 dark:text-green-300">
+            Yes</td
+          >
+        </tr>
+        <tr>
+          <td class="py-6">
+            <b class="font-bold">Stores previous workout</b><br />
+          </td>
+          <td class="text-center text-green-700 dark:text-green-300"> Yes</td>
+          <td class="text-center text-green-700 dark:text-green-300"> Yes</td>
+        </tr>
+      </table>
+    </div>
+    <GetAppButton id="get-app-button-compare" outerClass={"mt-24"} />
+  </Container>
+  <Footer />
+</Page>
