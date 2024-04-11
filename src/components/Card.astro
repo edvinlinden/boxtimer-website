@@ -7,7 +7,7 @@ const { outerClass } = Astro.props;
 ---
 
 <div
-  class={`flex flex-col items-center justify-center md:justify-start md:items-start text-center md:text-left bg-zinc-50 dark:bg-zinc-900 rounded-xl p-12 grow mb-4 md:even:ml-4 text-xl font-light font-sans text-zinc-600 dark:text-zinc-300 ${outerClass}`}
+  class={`flex flex-col items-center justify-center md:justify-start md:items-start text-center md:text-left rounded-xl p-12 grow mb-4 md:even:ml-4 text-xl font-light font-sans ${outerClass}`}
 >
   <slot />
 </div>

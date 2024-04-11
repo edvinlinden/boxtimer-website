@@ -13,15 +13,16 @@ const { outerClass, id } = Astro.props;
   target="_blank"
   rel="noopener noreferrer"
   title="The Box Timer on the App Store"
-  class={`inline-flex justify-between items-center min-w-[145px] no-underline bg-blue-600 hover:bg-blue-800 text-slate-100 rounded-full px-6 py-3 animate-button-pulse ${outerClass}`}
+  class={`btn btn-primary rounded-full animate-button-pulse ${outerClass}`}
   id={id}
+
 >
   <img
     src="/images/apple-logo-white.svg"
     alt="Box Timer on the App Store"
-    style="width: 15px; height: 18px;"
+    style="width: 15px; height: 18px; margin-left: 8px; margin-top:-3px;"
     width="15"
     height="18"
   />
-  <span class="ml-4 font-sans">GET APP</span>
+  <span class="mx-2 font-sans">GET APP</span>
 </a>

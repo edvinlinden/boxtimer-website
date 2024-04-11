@@ -39,5 +39,20 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    darkTheme: false,
+    themes: [
+      {
+        boxtimer: {
+          primary: "#2563eb",
+          "primary-content": "#ffffff",
+          secondary: "#f6d860",
+          accent: "#37cdbe",
+          neutral: "#18181b",
+          "base-100": "#fafafa",
+        },
+      },
+    ],
+  },
 };
