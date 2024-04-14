@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js,astro}"],
   theme: {
     extend: {
+      boxShadow: {
+        "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.1)",
+      },
       keyframes: {
         "hero-1": {
           "0%": { transform: "translate(50px, 100px)" },
@@ -51,6 +54,7 @@ module.exports = {
           accent: "#37cdbe",
           neutral: "#18181b",
           "base-100": "#fafafa",
+          "base-content": "#71717a",
         },
       },
     ],

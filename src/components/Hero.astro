@@ -5,21 +5,88 @@ import GetAppButton from "@components/GetAppButton.astro";
 
 <Container innerClass="px-0">
   <div
-    class="flex flex-col lg:flex-row justify-between items-center overflow-hidden md:overflow-visible"
+    class="w-full flex flex-col lg:flex-row justify-between items-center overflow-hidden md:overflow-visible"
   >
-    <div class="text-center lg:text-left">
+    <div class="text-center lg:text-left md:mr-16">
+      <h1
+        class="text-4xl md:text-5xl !leading-tight
+         font-sans font-bold animate-hero-fade-in"
+      >
+        A workout timer <br /> wherever you go!
+      </h1>
       <h2
-        class="text-7xl sm:text-8xl font-sans font-bold animate-hero-fade-in"
+        class="text-xl sm:text-xl font-light font-sans mt-8 text-zinc-500 animate-hero-fade-in"
       >
-        Workout<br />Anywhere
+        Don't lose track of time, turn your phone <br /> into the workout timer!
       </h2>
-      <h3
-        class="text-2xl sm:text-3xl font-light font-sans mt-10 text-zinc-500 animate-hero-fade-in"
-      >
-        Take your gym timer with you <br />wherever you go
-      </h3>
-      <div class="animate-hero-fade-in mt-12">
+      <ul class="hidden lg:block text-xl font-light font-sans mt-8 text-zinc-500 animate-hero-fade-in">
+        <li class="flex items-center mb-2"><img
+          src="/images/check-solid.svg"
+          alt="Infinity icon"
+          style="width: 16px; height: 16px;"
+          class="mr-4"
+          width="56"
+          height="56"
+        />For Time, EMOM & AMRAP</li>
+        <li class="flex items-center mb-2"><img
+          src="/images/check-solid.svg"
+          alt="Infinity icon"
+          style="width: 16px; height: 16px;"
+          class="mr-4"
+          width="56"
+          height="56"
+        />Loud beeps every round</li>
+        <li class="flex items-center mb-2"><img
+          src="/images/check-solid.svg"
+          alt="Infinity icon"
+          style="width: 16px; height: 16px;"
+          class="mr-4"
+          width="56"
+          height="56"
+        />Just a timer, no ads</li>
+      </ul>
+      <div class="flex flex-col justify-items-center md:justify-items-start md:flex-row items-center animate-hero-fade-in mt-16">
         <GetAppButton id="get-app-button-hero" />
+        <div class="my-12 md:ml-12">
+          <div class="rating">
+            <img
+              src="/images/star-solid.svg"
+              alt="Rating Star"
+              width="20"
+              height="20"
+              class="mr-1 w-[20px]"
+            />
+            <img
+              src="/images/star-solid.svg"
+              alt="Rating Star"
+              width="20"
+              height="20"
+              class="mr-1 w-[20px]"
+            />
+            <img
+              src="/images/star-solid.svg"
+              alt="Rating Star"
+              width="20"
+              height="20"
+              class="mr-1 w-[20px]"
+            />
+            <img
+              src="/images/star-solid.svg"
+              alt="Rating Star"
+              width="20"
+              height="20"
+              class="mr-1 w-[20px]"
+            />
+            <img
+              src="/images/star-solid.svg"
+              alt="Rating Star"
+              width="20"
+              height="20"
+              class="mr-1 w-[20px]"
+            />
+          </div>
+          <div class="text-base mt-1">Rated by <span class="font-bold">1 828</span> athletes</div>
+        </div>
       </div>
     </div>
     <div

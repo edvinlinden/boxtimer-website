@@ -1,5 +1,6 @@
 ---
 import Header from "@components/Header.astro";
+import "../styles/tailwindBase.css";
 export interface Props {
   title: string;
   description: string;
@@ -11,7 +12,7 @@ const disableTracking = import.meta.env.DEV;
 const openGraphImage = "https://boxtimer.app/images/og.png";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="boxtimer">
   <head>
     <meta charset="UTF-8" />

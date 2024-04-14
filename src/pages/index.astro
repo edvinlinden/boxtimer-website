@@ -2,150 +2,97 @@
 import Card from "@components/Card.astro";
 import Container from "@components/Container.astro";
 import Footer from "@components/Footer.astro";
+import ReviewCard from "@components/ReviewCard.astro";
 import Layout from "@layouts/Layout.astro";
 ---
 
 <Layout title="Box Timer – Workout Timer For CrossFit">
-  <Container
-    outerClass=""
-    innerClass="flex-col justify-between items-center pt-32"
-  >
-    <div>
-      <h2
-        class="text-6xl text-center font-sans font-bold"
+  <Container outerClass="" innerClass="flex-col justify-between items-center">
+    <h2 id="features" class="text-6xl text-center font-sans font-bold pt-32">
+      Features
+    </h2>
+    <div
+      class="flex flex-col md:flex-row flex-wrap justify-between gap-8 mt-16"
+    >
+      <div
+        class="card w-full md:w-[48%] bg-base-100 border border-bg-base-100 shadow-3xl"
       >
-        Trusted by thousands of athletes
-      </h2>
-    </div>
-    <div class="flex flex-col md:flex-row justify-center items-center mt-24">
-      <div class="flex flex-col justify-center items-center mr-0 md:mr-16">
-        <span
-          class="text-6xl font-extrabold font-sans mb-2"
-          >4.8</span
-        >
-        <span class="text-xl font-extrabold font-sans text-zinc-500"
-          >OUT OF 5</span
-        >
+        <div class="card-body">
+          <img
+            src="/images/fingerprint-solid.svg"
+            alt="Fingerprint icon"
+            class="my-4"
+            style="width: 24px; height: 24px;"
+            width="24"
+            height="24"
+          />
+          <h3 class="card-title">No ads, no tracking</h3>
+          <p>
+            It's just a timer – this is not an app with annoying ads or privacy
+            invasive tracking.
+          </p>
+        </div>
       </div>
-      <div class="flex justify-between mt-8 md:mt-0">
-        <img
-          src="/images/star-solid.svg"
-          alt="Rating Star"
-          width="72"
-          height="72"
-          class="mr-4 w-[56px] md:w-[72px] opacity-0 translate-y-8 transition-all duration-500 ratingStar"
-        />
-        <img
-          src="/images/star-solid.svg"
-          alt="Rating Star"
-          width="72"
-          height="72"
-          class="mr-4 w-[56px] md:w-[72px] opacity-0 translate-y-8 transition-all duration-500 delay-200 ratingStar"
-        />
-        <img
-          src="/images/star-solid.svg"
-          alt="Rating Star"
-          width="72"
-          height="72"
-          class="mr-4 w-[56px] md:w-[72px] opacity-0 translate-y-8 transition-all duration-500 delay-300 ratingStar"
-        />
-        <img
-          src="/images/star-solid.svg"
-          alt="Rating Star"
-          width="72"
-          height="72"
-          class="mr-4 w-[56px] md:w-[72px] opacity-0 translate-y-8 transition-all duration-500 delay-500 ratingStar"
-        />
-        <img
-          src="/images/star-solid.svg"
-          alt="Rating Star"
-          width="72"
-          height="72"
-          class="mr-4 w-[56px] md:w-[72px] opacity-0 translate-y-8 transition-all duration-500 delay-700 ratingStar"
-        />
+      <div
+        class="card w-full md:w-[48%] bg-base-100 border border-bg-base-100 shadow-3xl"
+      >
+        <div class="card-body">
+          <img
+            src="/images/stopwatch-20-solid.svg"
+            alt="Fingerprint icon"
+            class="my-4"
+            style="width: 24px; height: 24px;"
+            width="24"
+            height="24"
+          />
+          <h3 class="card-title">Set your time cap, up or down</h3>
+          <p>
+            No matter if you like the timer counting up or counting down – the
+            timer will beep when the time is up.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="card w-full md:w-[48%] bg-base-100 border border-bg-base-100 shadow-3xl"
+      >
+        <div class="card-body">
+          <img
+            src="/images/hand-point-up-solid.svg"
+            alt="Fingerprint icon"
+            class="my-4"
+            style="width: 24px; height: 24px;"
+            width="24"
+            height="24"
+          />
+          <h3 class="card-title">Tap to pause</h3>
+          <p>
+            Not all workouts turn out as planned. Tap the timer to pause and
+            once more to start again.
+          </p>
+        </div>
+      </div>
+      <div
+        class="card w-full md:w-[48%] bg-base-100 border border-bg-base-100 shadow-3xl"
+      >
+        <div class="card-body">
+          <img
+            src="/images/infinity-solid.svg"
+            alt="Fingerprint icon"
+            class="my-4"
+            style="width: 24px; height: 24px;"
+            width="24"
+            height="24"
+          />
+          <h3 class="card-title">Endless variation with intervals</h3>
+          <p>
+            Crush any EMOM or Tabata workout with the custom interval timer!
+          </p>
+        </div>
       </div>
     </div>
   </Container>
-  <Container innerClass="flex-col justify-between items-center pb-32">
-    <div class="flex flex-col lg:flex-row w-full">
-      <Card outerClass="bg-zinc-100">
-        <p class="italic">
-          This is no ads or distractions, just a timer to get your workout in.
-          Like a mini box timer at the gym!
-        </p>
-        <span class="text-sm mt-4 uppercase">— Doc Schrock, United States</span>
-      </Card>
-      <Card outerClass="bg-zinc-100">
-        <p class="italic">
-          Used to use the stopwatch or timer functions on my phone but I've
-          switch to this app and it works great.
-        </p>
-        <span class="text-sm mt-4 uppercase">— RocStar811, United States</span>
-      </Card>
-    </div>
-    <div class="flex flex-col lg:flex-row w-full">
-      <Card outerClass="bg-zinc-100">
-        <p class="italic">
-          So far the best workout timer I've ever used, real simple set up with
-          its default workouts and easy to modify to your liking. I've
-          recommended it to all my co-workers and the love it.
-        </p>
-        <span class="text-sm mt-4 uppercase">— tooEasy!, United States</span>
-      </Card>
-      <Card outerClass="bg-zinc-100">
-        <p class="italic">
-          Easy to use. Figured it out in seconds! Thank you!
-        </p>
-        <span class="text-sm mt-4 uppercase">— sraebgf, United States</span>
-      </Card>
-    </div>
-    <div class="flex flex-col lg:flex-row w-full">
-      <Card outerClass="bg-zinc-100">
-        <p class="italic">
-          Just what you need. Brilliant simplicity from humble ingenuity. Hats
-          off to the developer.
-        </p>
-        <span class="text-sm mt-4 uppercase">— Ja pirate, United States</span>
-      </Card>
-      <Card outerClass="bg-zinc-100">
-        <p class="italic">
-          This app is a must have for CrossFit workouts. Ideal for emoms, amraps
-          and for time workouts. I even use it for strength work like squats by
-          programming beeps for 45 seconds work and 2 minutes rest. And it’s
-          free! I mean come on. 👍🏼
-        </p>
-        <span class="text-sm mt-4 uppercase">— DODGEMS, United Kingdom</span>
-      </Card>
-    </div>
-    <div class="flex justify-center items-center">
-      <a
-        href="https://apps.apple.com/us/app/the-box-timer/id1547518531?see-all=reviews"
-        target="_blank"
-        rel="noopener noreferrer"
-        title="The Box Timer reviews on the App Store"
-        class={`
-          inline-flex 
-          justify-between
-          items-center
-          text-center
-          min-w-[145px]
-          no-underline
-          border
-          border-slate-800
-          hover:bg-slate-800
-          text-slate-800
-          hover:text-slate-100
-          text-sm
-          rounded-full
-          px-6
-          py-3
-          mt-12
-        `}
-      >
-        READ ALL REVEIWS
-      </a>
-    </div>
-  </Container>
+
   <Container
     outerClass="bg-topo-pattern"
     innerClass="flex-col lg:flex-row justify-between items-center"
@@ -159,11 +106,7 @@ import Layout from "@layouts/Layout.astro";
       />
     </div>
     <div class="flex flex-col text-center lg:text-left">
-      <h3
-        class="text-4xl sm:text-8xl font-sans font-bold"
-      >
-        Flip It
-      </h3>
+      <h2 class="text-4xl sm:text-8xl font-sans font-bold">Flip It</h2>
       <div
         class="text-2xl sm:text-3xl font-light font-sans mt-10 text-zinc-500"
       >
@@ -172,100 +115,167 @@ import Layout from "@layouts/Layout.astro";
       </div>
     </div>
   </Container>
-  <Container outerClass="bg-zinc-100" innerClass="flex-col">
-    <div class="flex flex-col md:flex-row w-full">
-      <Card>
-        <div class="flex mb-8">
-          <img
-            src="/images/fingerprint-solid.svg"
-            alt="Fingerprint icon"
-            style="width: 56px; height: 56px;"
-            width="56"
-            height="56"
-          />
+
+  <Container outerClass="" innerClass="flex-col justify-between items-center">
+    <h2 id="features" class="text-6xl text-center font-sans font-bold pt-32">
+      Trusted by thousands of athletes
+    </h2>
+    <div
+      class="flex flex-col justify-between md:grid md:grid-cols-3 md:grid-flow-dense gap-4 mt-16"
+    >
+      <ReviewCard>
+        <p>
+          This is no ads or distractions, just a timer to get your workout in.
+          Like a mini box timer at the gym!
+        </p>
+        <div>
+          <div class="divider"></div>
+          <p class="text-sm font-bold">Doc Schrock</p>
         </div>
-        <h3
-          class="text-3xl font-sans font-bold"
-        >
-          No ads, no tracking
-        </h3>
-        <p class="mt-4">
-          It's just a timer – this is not an app with annoying ads or privacy
-          invasive tracking.
+      </ReviewCard>
+      <ReviewCard outerClass="col-span-2">
+        <p>
+          <mark>This app is a must have for CrossFit workouts.</mark> Ideal for emoms,
+          amraps and for time workouts. I even use it for strength work like squats
+          by programming beeps for 45 seconds work and 2 minutes rest. And it’s free!
+          I mean come on. 👍🏼
         </p>
-      </Card>
-      <Card>
-        <img
-          src="/images/stopwatch-20-solid.svg"
-          alt="Stopwatch icon"
-          style="width: 56px; height: 56px;"
-          width="56"
-          height="56"
-          class="mb-8"
-        />
-        <h3
-          class="text-3xl font-sans font-bold"
-        >
-          Set your time cap
-        </h3>
-        <p class="mt-4">
-          No matter if you like the timer counting up or counting down, the
-          timer will beep when the time is up.
+        <div>
+          <div class="divider"></div>
+          <p class="text-sm font-bold">Dodgems</p>
+        </div>
+      </ReviewCard>
+      <ReviewCard outerClass="col-span-2">
+        <p>
+          So far the best workout timer I've ever used, real simple set up with
+          its default workouts and easy to modify to your liking. <mark
+            >I've recommended it to all my co-workers and the love it.</mark
+          >
         </p>
-      </Card>
+        <div>
+          <div class="divider"></div>
+          <p class="text-sm font-bold">tooEasy!</p>
+        </div>
+      </ReviewCard>
+      <ReviewCard>
+        <p>
+          Used to use the stopwatch or timer functions on my phone but I've
+          switch to this app and it works great.
+        </p>
+        <div>
+          <div class="divider"></div>
+          <p class="text-sm font-bold">RocStar811</p>
+        </div>
+      </ReviewCard>
+      <ReviewCard>
+        <p>
+          Just what you need. Brilliant simplicity from humble ingenuity. Hats
+          off to the developer.
+        </p>
+        <div>
+          <div class="divider"></div>
+          <p class="text-sm font-bold">Ja pirate</p>
+        </div>
+      </ReviewCard>
+      <ReviewCard outerClass="col-span-2">
+        <p>
+          I was looking for a good timer to do my workouts with that would allow
+          for the same types of intervals that I did with Crossfit, but the
+          timer on my phone just wasn’t sufficient. <mark
+            >Came across this app, and it’s exactly like what I used to use.</mark
+          > Thanks developers for creating this app for guys like me! Also, love
+          the NO ADS!!
+        </p>
+        <div>
+          <div class="divider"></div>
+          <p class="text-sm font-bold">Mortonstoe</p>
+        </div>
+      </ReviewCard>
+      <ReviewCard>
+        <p>
+          If you need an easy to use emom timer, this is it. <mark
+            >No gimmicks. Easy to use.</mark
+          >
+        </p>
+        <div>
+          <div class="divider"></div>
+          <p class="text-sm font-bold">Co jes</p>
+        </div>
+      </ReviewCard>
+      <ReviewCard>
+        <p>Could not be more simple! Thx for making it</p>
+        <div>
+          <div class="divider"></div>
+          <p class="text-sm font-bold">EGunn32</p>
+        </div>
+      </ReviewCard>
+      <ReviewCard outerClass="col-span-2">
+        <p>
+          <mark>Get this app, it’s the best timer.</mark> So simple and no adverts.
+          It feels like daylight robbery the fact it’s free!! Download it, leave
+          a review, credit this guy who just wanted to make something better and
+          he did! ✌️
+        </p>
+        <div>
+          <div class="divider"></div>
+          <p class="text-sm font-bold">DidizillaL</p>
+        </div>
+      </ReviewCard>
+      <ReviewCard outerClass="col-span-2">
+        <p>
+          Love the developer who responded to my comment about the problem, and
+          was all over it and had it fixed in no time!! Thank you so much for
+          the update!! You are a LEGEND!! ❤️
+        </p>
+        <div>
+          <div class="divider"></div>
+          <p class="text-sm font-bold">Door In The Woods</p>
+        </div>
+      </ReviewCard>
+      <ReviewCard>
+        <p>Perfect timer. Free use. Can’t thank the dev enough.</p>
+        <div>
+          <div class="divider"></div>
+          <p class="text-sm font-bold">Brandonmaster</p>
+        </div>
+      </ReviewCard>
+      <ReviewCard>
+        <p>
+          Everything you need in a timer and nothing you don’t. Well done sir
+        </p>
+        <div>
+          <div class="divider"></div>
+          <p class="text-sm font-bold">Deadbugtilfailure</p>
+        </div>
+      </ReviewCard>
+      <ReviewCard>
+        <p>Easy to use. <mark>Figured it out in seconds!</mark> Thank you!</p>
+        <div>
+          <div class="divider"></div>
+          <p class="text-sm font-bold">sraebgf</p>
+        </div>
+      </ReviewCard>
     </div>
-    <div class="flex flex-col md:flex-row w-full">
-      <Card>
-        <img
-          src="/images/hand-point-up-solid.svg"
-          alt="Hand icon"
-          style="width: 56px; height: 56px;"
-          width="56"
-          height="56"
-          class="mb-8"
-        />
-        <h3
-          class="text-3xl font-sans font-bold"
-        >
-          Tap to pause
-        </h3>
-        <p class="mt-4">
-          Not all workouts turn out as planned. Tap the timer to pause and once
-          more to start again.
-        </p>
-      </Card>
-      <Card>
-        <div class="flex mb-8">
-          <img
-            src="/images/infinity-solid.svg"
-            alt="Infinity icon"
-            style="width: 56px; height: 56px;"
-            width="56"
-            height="56"
-          />
-        </div>
-        <h3
-          class="text-3xl font-sans font-bold"
-        >
-          Endless variation
-        </h3>
-        <p class="mt-4">
-          Crush any EMOM or Tabata workout with the custom interval timer!
-        </p>
-      </Card>
+    <div class="flex justify-center items-center mt-16">
+      <a
+        href="https://apps.apple.com/us/app/the-box-timer/id1547518531?see-all=reviews"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="The Box Timer reviews on the App Store"
+        class="btn btn-outline rounded-full px-6"
+      >
+        READ ALL REVEIWS
+      </a>
     </div>
   </Container>
+
   <Container innerClass="flex-col items-start">
-    <h3
-      class="text-4xl sm:text-6xl text-center font-sans font-bold mb-24"
-    >
+    <h2 class="text-4xl sm:text-6xl text-center font-sans font-bold mb-24">
       Frequently asked questions
-    </h3>
+    </h2>
     <div class="flex flex-col lg:flex-row mb-12">
       <div class="w-full lg:w-half lg:pr-4 mb-12 lg:mb-0">
-        <h4
-          class="text-2xl font-sans font-bold mb-4"
-        >
+        <h4 class="text-2xl font-sans font-bold mb-4">
           Where can I get the app?
         </h4>
         <p class="mb-2">
@@ -273,9 +283,7 @@ import Layout from "@layouts/Layout.astro";
         </p><p class="mb-12">
           I plan to release the app on the Google Play Store in the future.
         </p>
-        <h4
-          class="text-2xl font-sans font-bold mb-4"
-        >
+        <h4 class="text-2xl font-sans font-bold mb-4">
           Where can I use the app?
         </h4>
         <p class="mb-12">
@@ -283,11 +291,7 @@ import Layout from "@layouts/Layout.astro";
           However the app is also great for workouts outside or at a regular
           gym.
         </p>
-        <h4
-          class="text-2xl font-sans font-bold mb-4"
-        >
-          What is a WOD?
-        </h4>
+        <h4 class="text-2xl font-sans font-bold mb-4">What is a WOD?</h4>
         <p class="mb-2">
           WOD stands for "Workout of the day" and is a word often used in
           CrossFit gyms(or boxes as they also are called).
@@ -302,9 +306,7 @@ import Layout from "@layouts/Layout.astro";
       </div>
       <div class="w-full lg:w-half lg:pl-4">
         <div class="w-full lg:w-half lg:pl-4">
-          <h4
-            class="text-2xl font-sans font-bold mb-4"
-          >
+          <h4 class="text-2xl font-sans font-bold mb-4">
             What is AMRAP, EMOM and Tabata?
           </h4>
           <p class="mb-2">

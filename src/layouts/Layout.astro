@@ -1,6 +1,7 @@
 ---
 import Header from "@components/Header.astro";
 import Hero from "@components/Hero.astro";
+import "../styles/tailwindBase.css";
 export interface Props {
   title: string;
 }
@@ -9,21 +10,18 @@ const { title } = Astro.props;
 const disableTracking = import.meta.env.DEV;
 const openGraphImage = "https://boxtimer.app/images/og.png";
 const url = "https://boxtimer.app/";
-const description = "The Box Timer is a free and simple workout timer app for your iPhone. It's perfect for workouts at home, outside or at your box. It supports any WOD such as AMRAP, EMOM or Tabata.";
-
+const description =
+  "The Box Timer is a free and simple workout timer app for your iPhone. It's perfect for workouts at home, outside or at your box. It supports any WOD such as AMRAP, EMOM or Tabata.";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="boxtimer">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <meta
-      name="description"
-      content={description}
-    />
+    <meta name="description" content={description} />
     <meta name="copyright" content="© Copyright 2020 to Present" />
     <meta name="author" content="Edvin Lindén" />
     <meta property="og:url" content={url} />
@@ -38,24 +36,24 @@ const description = "The Box Timer is a free and simple workout timer app for yo
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={openGraphImage} />
     <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "SoftwareApplication",
-          "name": "Box Timer - Workout Timer",
-          "operatingSystem": "IOS",
-          "applicationCategory": "HealthApplication",
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "ratingCount": "1411"
-          },
-          "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
-          }
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Box Timer - Workout Timer",
+        "operatingSystem": "IOS",
+        "applicationCategory": "HealthApplication",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "ratingCount": "1828"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
         }
-      </script>
+      }
+    </script>
     <title>{title}</title>
   </head>
   <body>
@@ -64,43 +62,53 @@ const description = "The Box Timer is a free and simple workout timer app for yo
       <Hero />
       <slot />
     </div>
-	{
-		disableTracking ? null : (
-				<script
-					src="https://cdn.usefathom.com/script.js"
-					data-site="RFZSCRLZ"
-					defer
-				/>)
-	}
-  <script defer>
-    const getAppButtonHero = document.getElementById("get-app-button-hero");
-    const getAppButtonHeader = document.getElementById("get-app-button-header");
-    const getAppButtonCallback = (entries) => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting) {
-          getAppButtonHeader.classList.remove("opacity-100");
-        } else {
-          getAppButtonHeader.classList.add("opacity-100");
-        }
-      });
+    {
+      disableTracking ? null : (
+        <script
+          src="https://cdn.usefathom.com/script.js"
+          data-site="RFZSCRLZ"
+          defer
+        />
+      )
     }
+    <script defer>
+      const getAppButtonHero = document.getElementById("get-app-button-hero");
+      const getAppButtonHeader = document.getElementById(
+        "get-app-button-header"
+      );
+      const headerNavigation = document.getElementById("header-navigation");
+      const getAppButtonCallback = (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            getAppButtonHeader.classList.remove("opacity-100");
+            headerNavigation.classList.remove("translate-x-[-200px]");
+          } else {
+            getAppButtonHeader.classList.add("opacity-100");
+            headerNavigation.classList.add("translate-x-[-200px]");
+          }
+        });
+      };
 
-    const getAppButtonObserver = new IntersectionObserver(getAppButtonCallback);
-    getAppButtonObserver.observe(getAppButtonHero);
+      const getAppButtonObserver = new IntersectionObserver(
+        getAppButtonCallback
+      );
+      getAppButtonObserver.observe(getAppButtonHero);
 
-    const ratingStars = document.querySelectorAll(".ratingStar");
+      const ratingStars = document.querySelectorAll(".ratingStar");
 
-    const ratingStarsCallback = (entries) => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting) {
-          entry.target.classList.add("opacity-100");
-          entry.target.classList.remove("translate-y-8");
-        } 
-      });
-    }
+      const ratingStarsCallback = (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("opacity-100");
+            entry.target.classList.remove("translate-y-8");
+          }
+        });
+      };
 
-    const ratingStarObserver = new IntersectionObserver(ratingStarsCallback);
-    ratingStars.forEach((ratingStar) => ratingStarObserver.observe(ratingStar));
-  </script>
+      const ratingStarObserver = new IntersectionObserver(ratingStarsCallback);
+      ratingStars.forEach((ratingStar) =>
+        ratingStarObserver.observe(ratingStar)
+      );
+    </script>
   </body>
 </html>
