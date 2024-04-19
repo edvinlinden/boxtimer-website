@@ -3,46 +3,44 @@ import Container from "@components/Container.astro";
 ---
 
 <Container
-  innerClass="flex-col-reverse lg:flex-row justify-between border-t-[1px] border-zinc-200 py-12"
+  innerClass="flex-col lg:flex-row justify-between border-t-[1px] border-zinc-200 py-12"
 >
-  <div class="w-full lg:w-[720px]">
-    <p class="text-xs mb-2">
-      <a
-        href="/2024-best-workout-timers-iphone/"
-        title="2024's Best Workout Timers for iPhone"
-        class="text-blue-600 hover:text-blue-800"
-        >2024's Best Workout Timers for iPhone</a
-      >
-    </p>
-    <p class="text-xs mb-2">
-      <a
-        href="/box-timer-vs-smartwod/"
-        title="Box Timer compared to SmartWOD"
-        class="text-blue-600 hover:text-blue-800"
-        >Box Timer compared to SmartWOD</a
-      >
-    </p>
+  <div
+    class="flex flex-col items-start w-full lg:w-[720px] text-center lg:text-left text-sm"
+  >
+    <a
+      href="/2024-best-workout-timers-iphone/"
+      title="2024's Best Workout Timers for iPhone"
+      class="text-blue-600 hover:text-blue-800 py-2 inline"
+      >2024's Best Workout Timers for iPhone</a
+    >
+    <a
+      href="/box-timer-vs-smartwod/"
+      title="Box Timer compared to SmartWOD"
+      class="text-blue-600 hover:text-blue-800 py-2 inline"
+      >Box Timer compared to SmartWOD</a
+    >
   </div>
-  <div class="self-start mb-4 lg:mb-0 text-right">
-    <p class="text-xs mb-2">
-      &copy; <a
+  <div
+    class="flex flex-col w-full lg:w-auto mt-12 lg:mt-0 self-start mb-4 lg:mb-0 text-sm text-center lg:text-right"
+  >
+    <div>
+      <a
         href="https://edvinlinden.se?ref=boxtimer.app"
         target="_blank"
         rel="noopener noreferrer"
         title="Go to edvinlinden.se"
-        class="text-blue-600 hover:text-blue-800">Edvin Lindén</a
-      >
-      2024
-    </p>
-    <p class="text-xs mb-2">
-      <a
-        href="/privacy"
-        title="2024's Best Workout Timers for iPhone"
-        class="text-blue-600 hover:text-blue-800">Privacy</a
-      >
-    </p>
+        class="text-blue-600 hover:text-blue-800 py-2">Edvin Lindén</a
+      > &copy; 2024
+    </div>
+    <a
+      href="/privacy"
+      title="2024's Best Workout Timers for iPhone"
+      class="text-blue-600 hover:text-blue-800 py-2">Privacy</a
+    >
   </div>
 </Container>
+
 <Container innerClass={"justify-center"}
   ><a
     href="https://edvinlinden.se?ref=boxtimer.app"

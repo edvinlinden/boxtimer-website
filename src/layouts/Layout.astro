@@ -11,7 +11,7 @@ const disableTracking = import.meta.env.DEV;
 const openGraphImage = "https://boxtimer.app/images/og.png";
 const url = "https://boxtimer.app/";
 const description =
-  "The Box Timer is a free and simple workout timer app for your iPhone. It's perfect for workouts at home, outside or at your box. It supports any WOD such as AMRAP, EMOM or Tabata.";
+  "Box Timer is a free and simple workout timer app for your iPhone. Perfect for workouts at home, outside or at your box.";
 ---
 
 <!doctype html>
@@ -35,6 +35,8 @@ const description =
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={openGraphImage} />
+    <link rel="canonical" href="https://boxtimer.app/" />
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
