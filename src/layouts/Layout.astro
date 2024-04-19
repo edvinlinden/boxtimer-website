@@ -1,5 +1,5 @@
 ---
-import Header from "@components/Header.astro";
+import HeaderWithNavigation from "@components/HeaderWithNavigation.astro";
 import Hero from "@components/Hero.astro";
 import "../styles/tailwindBase.css";
 export interface Props {
@@ -44,8 +44,8 @@ const description =
         "applicationCategory": "HealthApplication",
         "aggregateRating": {
           "@type": "AggregateRating",
-          "ratingValue": "4.8",
-          "ratingCount": "1828"
+          "ratingValue": "4.9",
+          "ratingCount": "1851"
         },
         "offers": {
           "@type": "Offer",
@@ -57,7 +57,7 @@ const description =
     <title>{title}</title>
   </head>
   <body>
-    <Header />
+    <HeaderWithNavigation />
     <div class="mt-[75px] w-full overflow-x-hidden overlay-y-overlay">
       <Hero />
       <slot />
@@ -93,22 +93,6 @@ const description =
         getAppButtonCallback
       );
       getAppButtonObserver.observe(getAppButtonHero);
-
-      const ratingStars = document.querySelectorAll(".ratingStar");
-
-      const ratingStarsCallback = (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("opacity-100");
-            entry.target.classList.remove("translate-y-8");
-          }
-        });
-      };
-
-      const ratingStarObserver = new IntersectionObserver(ratingStarsCallback);
-      ratingStars.forEach((ratingStar) =>
-        ratingStarObserver.observe(ratingStar)
-      );
     </script>
   </body>
 </html>

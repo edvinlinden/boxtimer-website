@@ -1,14 +1,23 @@
 ---
+import Layout from "@layouts/Layout.astro";
 import Card from "@components/Card.astro";
 import Container from "@components/Container.astro";
 import Footer from "@components/Footer.astro";
-import ReviewCard from "@components/ReviewCard.astro";
-import Layout from "@layouts/Layout.astro";
+import ProductHuntFeaturedLink from "@components/ProductHuntFeaturedLink.astro";
+import BoxletesFeaturedLink from "@components/BoxletesFeaturedLink.astro";
+import ReviewGrid from "@components/ReviewGrid.astro";
+import GetAppButton from "@components/GetAppButton.astro";
 ---
 
 <Layout title="Box Timer – Workout Timer For CrossFit">
-  <Container outerClass="" innerClass="flex-col justify-between items-center">
-    <h2 id="features" class="text-6xl text-center font-sans font-bold pt-32">
+  <Container
+    outerClass="pt-0"
+    innerClass="flex-col justify-between items-center"
+  >
+    <h2
+      id="features"
+      class="text-4xl text-center font-sans font-bold pt-32 pb-8"
+    >
       Features
     </h2>
     <div
@@ -86,7 +95,7 @@ import Layout from "@layouts/Layout.astro";
           />
           <h3 class="card-title">Endless variation with intervals</h3>
           <p>
-            Crush any EMOM or Tabata workout with the custom interval timer!
+            Crush any EMOM or Tabata workout with the custom interval timer.
           </p>
         </div>
       </div>
@@ -94,7 +103,7 @@ import Layout from "@layouts/Layout.astro";
   </Container>
 
   <Container
-    outerClass="bg-topo-pattern"
+    outerClass="bg-topo-pattern pb-0"
     innerClass="flex-col lg:flex-row justify-between items-center"
   >
     <div class="flex relative py-8 w-[550px] h-[365px] box-content">
@@ -106,156 +115,28 @@ import Layout from "@layouts/Layout.astro";
       />
     </div>
     <div class="flex flex-col text-center lg:text-left">
-      <h2 class="text-4xl sm:text-8xl font-sans font-bold">Flip It</h2>
-      <div
-        class="text-2xl sm:text-3xl font-light font-sans mt-10 text-zinc-500"
-      >
-        Put your phone in landscape<br />
-        mode to make the timer larger
+      <h2 class="text-4xl lg:text-5xl !leading-tight
+      font-sans font-bold">
+        Stop arguing over <br />the timer on wall
+      </h2>
+      <div class="text-2xl font-light font-sans text-zinc-500 mt-8">
+        Get straight into your workout by using <br />
+        your phone as a timer instead.
       </div>
     </div>
   </Container>
 
-  <Container outerClass="" innerClass="flex-col justify-between items-center">
-    <h2 id="features" class="text-6xl text-center font-sans font-bold pt-32">
+  <Container
+    outerClass="pt-0"
+    innerClass="flex-col justify-between items-center"
+  >
+    <h2
+      id="reviews"
+      class="text-4xl lg:text-5xl text-center font-sans font-bold pt-32 pb-8"
+    >
       Trusted by thousands of athletes
     </h2>
-    <div
-      class="flex flex-col justify-between md:grid md:grid-cols-3 md:grid-flow-dense gap-4 mt-16"
-    >
-      <ReviewCard>
-        <p>
-          This is no ads or distractions, just a timer to get your workout in.
-          Like a mini box timer at the gym!
-        </p>
-        <div>
-          <div class="divider"></div>
-          <p class="text-sm font-bold">Doc Schrock</p>
-        </div>
-      </ReviewCard>
-      <ReviewCard outerClass="col-span-2">
-        <p>
-          <mark>This app is a must have for CrossFit workouts.</mark> Ideal for emoms,
-          amraps and for time workouts. I even use it for strength work like squats
-          by programming beeps for 45 seconds work and 2 minutes rest. And it’s free!
-          I mean come on. 👍🏼
-        </p>
-        <div>
-          <div class="divider"></div>
-          <p class="text-sm font-bold">Dodgems</p>
-        </div>
-      </ReviewCard>
-      <ReviewCard outerClass="col-span-2">
-        <p>
-          So far the best workout timer I've ever used, real simple set up with
-          its default workouts and easy to modify to your liking. <mark
-            >I've recommended it to all my co-workers and the love it.</mark
-          >
-        </p>
-        <div>
-          <div class="divider"></div>
-          <p class="text-sm font-bold">tooEasy!</p>
-        </div>
-      </ReviewCard>
-      <ReviewCard>
-        <p>
-          Used to use the stopwatch or timer functions on my phone but I've
-          switch to this app and it works great.
-        </p>
-        <div>
-          <div class="divider"></div>
-          <p class="text-sm font-bold">RocStar811</p>
-        </div>
-      </ReviewCard>
-      <ReviewCard>
-        <p>
-          Just what you need. Brilliant simplicity from humble ingenuity. Hats
-          off to the developer.
-        </p>
-        <div>
-          <div class="divider"></div>
-          <p class="text-sm font-bold">Ja pirate</p>
-        </div>
-      </ReviewCard>
-      <ReviewCard outerClass="col-span-2">
-        <p>
-          I was looking for a good timer to do my workouts with that would allow
-          for the same types of intervals that I did with Crossfit, but the
-          timer on my phone just wasn’t sufficient. <mark
-            >Came across this app, and it’s exactly like what I used to use.</mark
-          > Thanks developers for creating this app for guys like me! Also, love
-          the NO ADS!!
-        </p>
-        <div>
-          <div class="divider"></div>
-          <p class="text-sm font-bold">Mortonstoe</p>
-        </div>
-      </ReviewCard>
-      <ReviewCard>
-        <p>
-          If you need an easy to use emom timer, this is it. <mark
-            >No gimmicks. Easy to use.</mark
-          >
-        </p>
-        <div>
-          <div class="divider"></div>
-          <p class="text-sm font-bold">Co jes</p>
-        </div>
-      </ReviewCard>
-      <ReviewCard>
-        <p>Could not be more simple! Thx for making it</p>
-        <div>
-          <div class="divider"></div>
-          <p class="text-sm font-bold">EGunn32</p>
-        </div>
-      </ReviewCard>
-      <ReviewCard outerClass="col-span-2">
-        <p>
-          <mark>Get this app, it’s the best timer.</mark> So simple and no adverts.
-          It feels like daylight robbery the fact it’s free!! Download it, leave
-          a review, credit this guy who just wanted to make something better and
-          he did! ✌️
-        </p>
-        <div>
-          <div class="divider"></div>
-          <p class="text-sm font-bold">DidizillaL</p>
-        </div>
-      </ReviewCard>
-      <ReviewCard outerClass="col-span-2">
-        <p>
-          Love the developer who responded to my comment about the problem, and
-          was all over it and had it fixed in no time!! Thank you so much for
-          the update!! You are a LEGEND!! ❤️
-        </p>
-        <div>
-          <div class="divider"></div>
-          <p class="text-sm font-bold">Door In The Woods</p>
-        </div>
-      </ReviewCard>
-      <ReviewCard>
-        <p>Perfect timer. Free use. Can’t thank the dev enough.</p>
-        <div>
-          <div class="divider"></div>
-          <p class="text-sm font-bold">Brandonmaster</p>
-        </div>
-      </ReviewCard>
-      <ReviewCard>
-        <p>
-          Everything you need in a timer and nothing you don’t. Well done sir
-        </p>
-        <div>
-          <div class="divider"></div>
-          <p class="text-sm font-bold">Deadbugtilfailure</p>
-        </div>
-      </ReviewCard>
-      <ReviewCard>
-        <p>Easy to use. <mark>Figured it out in seconds!</mark> Thank you!</p>
-        <div>
-          <div class="divider"></div>
-          <p class="text-sm font-bold">sraebgf</p>
-        </div>
-      </ReviewCard>
-    </div>
+    <ReviewGrid />
     <div class="flex justify-center items-center mt-16">
       <a
         href="https://apps.apple.com/us/app/the-box-timer/id1547518531?see-all=reviews"
@@ -269,74 +150,156 @@ import Layout from "@layouts/Layout.astro";
     </div>
   </Container>
 
+  <Container outerClass="" innerClass="flex-col justify-center items-center">
+    <div class="flex flex-col md:flex-row gap-12 items-center my-8">
+      <div>Featured on</div>
+      <ProductHuntFeaturedLink />
+      <BoxletesFeaturedLink />
+    </div>
+  </Container>
+
   <Container innerClass="flex-col items-start">
-    <h2 class="text-4xl sm:text-6xl text-center font-sans font-bold mb-24">
+    <h2
+      class="w-full text-4xl lg:text-5xl text-center font-sans font-bold mb-24"
+    >
       Frequently asked questions
     </h2>
-    <div class="flex flex-col lg:flex-row mb-12">
-      <div class="w-full lg:w-half lg:pr-4 mb-12 lg:mb-0">
-        <h4 class="text-2xl font-sans font-bold mb-4">
-          Where can I get the app?
-        </h4>
-        <p class="mb-2">
-          You can get The Box Timer free on the Apple App Store for iPhone.
-        </p><p class="mb-12">
-          I plan to release the app on the Google Play Store in the future.
-        </p>
-        <h4 class="text-2xl font-sans font-bold mb-4">
-          Where can I use the app?
-        </h4>
-        <p class="mb-12">
-          The Box Timer is perfect for workouts at your home gym or garage gym.
-          However the app is also great for workouts outside or at a regular
-          gym.
-        </p>
-        <h4 class="text-2xl font-sans font-bold mb-4">What is a WOD?</h4>
-        <p class="mb-2">
-          WOD stands for "Workout of the day" and is a word often used in
-          CrossFit gyms(or boxes as they also are called).
-        </p><p class="mb-2">
-          Most gyms have a programming where they have different workouts each
-          day, that where <i>workout of the day</i> comes from.
-        </p><p>
-          For most athletes a WOD is a single workout regardless if it's the
-          actual workout of the day for the gym. For example Fran, Cindy and
-          Murph are popular WODs.
-        </p>
+    <div class="w-full flex flex-col md:flex-row items-start gap-x-12">
+      <div class="w-full md:w-1/2 flex flex-col justify-between mb-12">
+        <details
+          class="collapse collapse-plus w-full rounded-none m-0 pt-2 pb-4 border-b-[1px] border-zinc-300"
+        >
+          <summary class="collapse-title">
+            <h3 class="text-2xl font-sans font-bold">
+              Where can I get the app?
+            </h3>
+          </summary>
+          <div class="collapse-content mb-4">
+            <p class="mb-2">
+              You can <a
+                href="https://apps.apple.com/us/app/the-box-timer/id1547518531"
+                onclick="window.fathom.trackGoal('GTWFCG7B', 0);"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="The Box Timer on the App Store"
+                >get The Box Timer free on the Apple App Store</a
+              > for iPhone.
+            </p><p>
+              I plan to release the app on the Google Play Store in the future.
+            </p>
+          </div>
+        </details>
+
+        <details
+          class="collapse collapse-plus w-full rounded-none m-0 pt-2 pb-4 border-b-[1px] border-zinc-300"
+        >
+          <summary class="collapse-title">
+            <h3 class="text-2xl font-sans font-bold">
+              Where can I use the app?
+            </h3>
+          </summary>
+          <div class="collapse-content">
+            <p>
+              The Box Timer is perfect for workouts at your home gym or garage
+              gym. However the app is also great for workouts outside or at a
+              regular gym.
+            </p>
+          </div>
+        </details>
+
+        <details
+          class="collapse collapse-plus w-full rounded-none m-0 pt-2 pb-4 border-b-[1px] border-zinc-300"
+        >
+          <summary class="collapse-title">
+            <h3 class="text-2xl font-sans font-bold">What is a WOD?</h3>
+          </summary>
+          <div class="collapse-content">
+            <p class="pb-8">
+              WOD stands for "Workout of the day" and is a word often used in
+              CrossFit gyms(or boxes as they also are called).
+            </p><p class="pb-8">
+              Most gyms have a programming where they have different workouts
+              each day, that where <i>workout of the day</i> comes from.
+            </p><p class="pb-8">
+              For most athletes a WOD is a single workout regardless if it's the
+              actual workout of the day for the gym. For example Fran, Cindy and
+              Murph are popular WODs.
+            </p>
+            <p>
+              There's a few different formats and ways to measure score of a
+              WOD. These are almost always a combination of time, rounds or
+              repitions. That's why a good timer is so useful when doing these
+              types of workouts.
+            </p>
+          </div>
+        </details>
       </div>
-      <div class="w-full lg:w-half lg:pl-4">
-        <div class="w-full lg:w-half lg:pl-4">
-          <h4 class="text-2xl font-sans font-bold mb-4">
-            What is AMRAP, EMOM and Tabata?
-          </h4>
-          <p class="mb-2">
-            There's a few different formats and ways to measure score of a WOD.
-            These are almost always a combination of time, rounds or repitions.
-            Because of that you can understand why a good timer is so useful
-            when doing these types of workouts.
-          </p>
-          <p class="mb-2">
-            AMRAP is an abbreviation for as many rounds(or repitions) as
-            possible. THe workout always have a time cap and the score is the
-            rounds(or repititons) you completed during that time.
-          </p>
-          <p class="mb-2">
-            EMOM stands for every minute on the minute. It means that each
-            minute you must start the movement and complete the prescribed
-            repitions.
-          </p>
-          <p class="mb-2">
-            Tabata is a style of workout where you have a fixed time for work
-            and rest. Usually that is 20 seconds of work followed by 10 seconds
-            of rest, repeated for 4 minutes.
-          </p>
-          <p class="mb-2">
-            For time is the most basic workout format. You just have to complete
-            the workout and however long it takes is the score.
-          </p>
-        </div>
+      <div class="w-full md:w-1/2 flex flex-col justify-between mb-12">
+        <details
+          class="collapse collapse-plus w-full rounded-none m-0 pt-2 pb-4 border-b-[1px] border-zinc-300"
+        >
+          <summary class="collapse-title">
+            <h3 class="text-2xl font-sans font-bold">What is AMRAP?</h3>
+          </summary>
+          <div class="collapse-content">
+            <p>
+              <b>AMRAP</b> is an abbreviation for as many rounds(or repitions) as
+              possible. The workout always have a time cap and the score is the rounds(or
+              repititons) you completed during that time.
+            </p>
+          </div>
+        </details>
+        <details
+          class="collapse collapse-plus w-full rounded-none m-0 pt-2 pb-4 border-b-[1px] border-zinc-300"
+        >
+          <summary class="collapse-title">
+            <h3 class="text-2xl font-sans font-bold">What is EMOM?</h3>
+          </summary>
+          <div class="collapse-content">
+            <p>
+              <b>EMOM</b> stands for every minute on the minute. It means that each
+              minute you must start the movement and complete the prescribed repitions.
+            </p>
+          </div>
+        </details>
+        <details
+          class="collapse collapse-plus w-full rounded-none m-0 pt-2 pb-4 border-b-[1px] border-zinc-300"
+        >
+          <summary class="collapse-title">
+            <h3 class="text-2xl font-sans font-bold">What is Tabata?</h3>
+          </summary>
+          <div class="collapse-content">
+            <p>
+              <b>Tabata</b> is a style of workout where you have a fixed time for
+              work and rest. Usually that is 20 seconds of work followed by 10 seconds
+              of rest, repeated for 4 minutes.
+            </p>
+          </div>
+        </details>
+
+        <details
+          class="collapse collapse-plus w-full rounded-none m-0 pt-2 pb-4 border-b-[1px] border-zinc-300"
+        >
+          <summary class="collapse-title">
+            <h3 class="text-2xl font-sans font-bold">What is For Time?</h3>
+          </summary>
+          <div class="collapse-content">
+            <p>
+              <b>For time</b> is the most basic workout format. You just have to
+              complete the workout and however long it takes is the score.
+            </p>
+          </div>
+        </details>
       </div>
     </div>
   </Container>
-  <Footer />
+  <Container innerClass="flex-col justify-center items-center">
+    <h2
+      class="w-full text-4xl lg:text-5xl text-center font-sans font-bold mb-24"
+    >
+      The workout start in 3... 2... 1...
+    </h2>
+    <GetAppButton />
+  </Container>
 </Layout>
+<Footer />

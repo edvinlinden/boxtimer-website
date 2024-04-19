@@ -3,51 +3,61 @@ import Container from "@components/Container.astro";
 import GetAppButton from "@components/GetAppButton.astro";
 ---
 
-<Container innerClass="px-0">
+<Container innerClass="px-0" outerClass="pb-0">
   <div
     class="w-full flex flex-col lg:flex-row justify-between items-center overflow-hidden md:overflow-visible"
   >
     <div class="text-center lg:text-left md:mr-16">
       <h1
-        class="text-4xl md:text-5xl !leading-tight
+        class="text-4xl lg:text-5xl !leading-tight
          font-sans font-bold animate-hero-fade-in"
       >
         A workout timer <br /> wherever you go!
       </h1>
       <h2
-        class="text-xl sm:text-xl font-light font-sans mt-8 text-zinc-500 animate-hero-fade-in"
+        class="text-xl font-light font-sans mt-8 text-zinc-500 animate-hero-fade-in"
       >
         Don't lose track of time, turn your phone <br /> into the workout timer!
       </h2>
-      <ul class="hidden lg:block text-xl font-light font-sans mt-8 text-zinc-500 animate-hero-fade-in">
-        <li class="flex items-center mb-2"><img
-          src="/images/check-solid.svg"
-          alt="Infinity icon"
-          style="width: 16px; height: 16px;"
-          class="mr-4"
-          width="56"
-          height="56"
-        />For Time, EMOM & AMRAP</li>
-        <li class="flex items-center mb-2"><img
-          src="/images/check-solid.svg"
-          alt="Infinity icon"
-          style="width: 16px; height: 16px;"
-          class="mr-4"
-          width="56"
-          height="56"
-        />Loud beeps every round</li>
-        <li class="flex items-center mb-2"><img
-          src="/images/check-solid.svg"
-          alt="Infinity icon"
-          style="width: 16px; height: 16px;"
-          class="mr-4"
-          width="56"
-          height="56"
-        />Just a timer, no ads</li>
+      <ul
+        class="hidden lg:block text-xl font-light font-sans mt-8 text-zinc-500 animate-hero-fade-in"
+      >
+        <li class="flex items-center mb-2">
+          <img
+            src="/images/check-solid.svg"
+            alt="Infinity icon"
+            style="width: 16px; height: 16px;"
+            class="mr-4"
+            width="56"
+            height="56"
+          />For Time, EMOM & AMRAP
+        </li>
+        <li class="flex items-center mb-2">
+          <img
+            src="/images/check-solid.svg"
+            alt="Infinity icon"
+            style="width: 16px; height: 16px;"
+            class="mr-4"
+            width="56"
+            height="56"
+          />Loud beeps every round
+        </li>
+        <li class="flex items-center mb-2">
+          <img
+            src="/images/check-solid.svg"
+            alt="Infinity icon"
+            style="width: 16px; height: 16px;"
+            class="mr-4"
+            width="56"
+            height="56"
+          />Just a timer, no ads
+        </li>
       </ul>
-      <div class="flex flex-col justify-items-center md:justify-items-start md:flex-row items-center animate-hero-fade-in mt-16">
+      <div
+        class="flex flex-col lg:flex-row justify-items-center md:justify-items-start items-center animate-hero-fade-in mt-16"
+      >
         <GetAppButton id="get-app-button-hero" />
-        <div class="my-12 md:ml-12">
+        <div class="my-12 lg:ml-12">
           <div class="rating">
             <img
               src="/images/star-solid.svg"
@@ -85,7 +95,9 @@ import GetAppButton from "@components/GetAppButton.astro";
               class="mr-1 w-[20px]"
             />
           </div>
-          <div class="text-base mt-1">Rated by <span class="font-bold">1 828</span> athletes</div>
+          <div class="text-base text-zinc-800 mt-1">
+            Rated by <span class="font-bold">1 851</span> athletes
+          </div>
         </div>
       </div>
     </div>
@@ -112,15 +124,15 @@ import GetAppButton from "@components/GetAppButton.astro";
 
 <script>
   let innerWidth = window.innerWidth;
-  
-  if(innerWidth > 600) {
-    window.addEventListener('scroll', (e) =>{
-      let scroll = window.scrollY;
-      document.querySelector("#iphone-1").style.top = `${(scroll * -1)/4}px`;
-      document.querySelector("#iphone-1").style.left = `${(scroll * -1)/8}px`;
 
-      document.querySelector("#iphone-2").style.top = `${100-(scroll/4)}px`;
-      document.querySelector("#iphone-2").style.left = `${225+(scroll/4)}px`;
+  if (innerWidth > 600) {
+    window.addEventListener("scroll", (e) => {
+      let scroll = window.scrollY;
+      document.querySelector("#iphone-1").style.top = `${(scroll * -1) / 4}px`;
+      document.querySelector("#iphone-1").style.left = `${(scroll * -1) / 8}px`;
+
+      document.querySelector("#iphone-2").style.top = `${100 - scroll / 4}px`;
+      document.querySelector("#iphone-2").style.left = `${225 + scroll / 4}px`;
     });
   }
 </script>

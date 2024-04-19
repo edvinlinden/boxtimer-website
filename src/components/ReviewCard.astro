@@ -9,44 +9,7 @@ const { outerClass } = Astro.props;
 <div
   class={`card w-full bg-base-100 border border-bg-base-100 shadow-3xl ${outerClass}`}
 >
-  <div class="card-body">
-    <div class="rating my-4">
-      <img
-        src="/images/star-solid.svg"
-        alt="Rating Star"
-        width="20"
-        height="20"
-        class="mr-1 w-[20px]"
-      />
-      <img
-        src="/images/star-solid.svg"
-        alt="Rating Star"
-        width="20"
-        height="20"
-        class="mr-1 w-[20px]"
-      />
-      <img
-        src="/images/star-solid.svg"
-        alt="Rating Star"
-        width="20"
-        height="20"
-        class="mr-1 w-[20px]"
-      />
-      <img
-        src="/images/star-solid.svg"
-        alt="Rating Star"
-        width="20"
-        height="20"
-        class="mr-1 w-[20px]"
-      />
-      <img
-        src="/images/star-solid.svg"
-        alt="Rating Star"
-        width="20"
-        height="20"
-        class="mr-1 w-[20px]"
-      />
-    </div>
+  <div class="card-body justify-between">
     <slot />
   </div>
 </div>

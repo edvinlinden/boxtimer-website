@@ -7,11 +7,25 @@
   h2,
   h3,
   h4,
-  a {
+  nav > a,
+  #header-home-link {
     @apply text-zinc-800;
+  }
+
+  a {
+    @apply text-blue-600 hover:text-blue-800;
   }
 
   mark {
     @apply bg-yellow-200 text-zinc-800 px-1;
+  }
+
+  .btn {
+    @apply rounded-full;
+  }
+
+  .divider::before,
+  .divider::after {
+    @apply !h-[1px];
   }
 }
