@@ -1,0 +1,81 @@
+---
+import Container from "@components/Container.astro";
+import Footer from "@components/Footer.astro";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+import Page from "@layouts/Page.astro";
+---
+
+<Page
+  title="Box Timer – How to share the app with a friend"
+  description="A guide that show you how to share the app Box Timer - Workout Timer with a friend."
+  url="https://boxtimer.app/support/how-to-share-the-app-with-a-friend/"
+>
+  <Container innerClass={"flex-col items-center"}>
+    <div class="w-full sm:w-9/12">
+      <Breadcrumbs>How to share the app with a friend</Breadcrumbs>
+      <h1 class="w-full text-4xl lg:text-5xl font-sans font-bold mb-8">
+        How to share the app with a friend
+      </h1>
+      <p class="pb-8">
+        This guide will show you how to share the app with a friend.
+      </p>
+      <p
+        class="w-full text-2xl lg:text-2xl font-sans font-bold mb-4 text-zinc-800"
+      >
+        Steps
+      </p>
+      <ol class="list-decimal list-outside ml-6">
+        <li><h2>Open the app</h2></li>
+        <li>
+          <h2>Tap on About in the bottom of the screen</h2>
+          <img
+            src="/images/support/share/share-step-2.webp"
+            alt="The Box Timer app - How to share the app with a friend step 4"
+            class="rounded-xl mt-8 mb-16"
+          />
+        </li>
+        <li>
+          <ol class="list-[upper-alpha] list-outside ml-6" type="A">
+            <li>
+              <h2>
+                Tap Share using QR code in order to share with a friend with a
+                phone close by
+              </h2>
+              <div class="flex flex-col lg:flex-row gap-4">
+                <img
+                  src="/images/support/share/share-step-3.webp"
+                  alt="The Box Timer app - How to share the app with a friend step 3"
+                  class="rounded-xl mt-8 mb-16"
+                />
+                <img
+                  src="/images/support/share/share-step-4-qr.webp"
+                  alt="The Box Timer app - How to share the app with a friend step 4A"
+                  class="rounded-xl mt-8 mb-16"
+                />
+              </div>
+            </li>
+            <li>
+              <h2>
+                Tap Share using link in order to share with a friend using your
+                favorite messaging app
+              </h2>
+              <div class="flex flex-col lg:flex-row gap-4">
+                <img
+                  src="/images/support/share/share-step-3.webp"
+                  alt="The Box Timer app - How to share the app with a friend step 3"
+                  class="rounded-xl mt-8 mb-16"
+                />
+                <img
+                  src="/images/support/share/share-step-4-link.webp"
+                  alt="The Box Timer app - How to share the app with a friend step 4B"
+                  class="rounded-xl mt-8 mb-16"
+                />
+              </div>
+            </li>
+          </ol>
+        </li>
+      </ol>
+    </div>
+  </Container>
+  <Footer />
+</Page>

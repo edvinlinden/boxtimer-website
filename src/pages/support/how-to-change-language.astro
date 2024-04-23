@@ -1,0 +1,51 @@
+---
+import Container from "@components/Container.astro";
+import Footer from "@components/Footer.astro";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+import Page from "@layouts/Page.astro";
+---
+
+<Page
+  title="Box Timer – How to change language"
+  description="A guide that show you how to change language of the app Box Timer - Workout Timer"
+  url="https://boxtimer.app/support/how-to-change-language/"
+>
+  <Container innerClass={"flex-col items-center"}>
+    <div class="w-full sm:w-9/12">
+      <Breadcrumbs>How to change language</Breadcrumbs>
+      <h1 class="w-full text-4xl lg:text-5xl font-sans font-bold mb-8">
+        How to change language
+      </h1>
+      <p class="pb-8">
+        This guide will show you how to change the language of the app.
+      </p>
+      <p
+        class="w-full text-2xl lg:text-2xl font-sans font-bold mb-4 text-zinc-800"
+      >
+        Steps
+      </p>
+      <ol class="list-decimal list-outside ml-6">
+        <li><h2>Open the app</h2></li>
+        <li>
+          <h2>Tap on the current language in the bottom of the screen</h2>
+          <i>By default it's set to English</i>
+          <img
+            src="/images/support/language/language-step-2.webp"
+            alt="The Box Timer app - How to change language step 2"
+            class="rounded-xl mt-8 mb-16"
+          />
+        </li>
+        <li>
+          <h2>Tap on your desired language</h2>
+          <i>The app will automatically change to the language you selected</i>
+          <img
+            src="/images/support/language/language-step-3.webp"
+            alt="The Box Timer app - How to change language step 3"
+            class="rounded-xl mt-8 mb-16"
+          />
+        </li>
+      </ol>
+    </div>
+  </Container>
+  <Footer />
+</Page>

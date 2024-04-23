@@ -28,4 +28,8 @@
   .divider::after {
     @apply !h-[1px];
   }
+
+  .list-decimal > li {
+    @apply mb-4;
+  }
 }

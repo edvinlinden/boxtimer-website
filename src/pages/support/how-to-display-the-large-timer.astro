@@ -1,0 +1,55 @@
+---
+import Container from "@components/Container.astro";
+import Footer from "@components/Footer.astro";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+import Page from "@layouts/Page.astro";
+---
+
+<Page
+  title="Box Timer – How to display the large timer"
+  description="A guide that show you how to display the large timer of the app Box Timer - Workout Timer"
+  url="https://boxtimer.app/support/how-to-display-the-large-timer/"
+>
+  <Container innerClass={"flex-col items-center"}>
+    <div class="w-full sm:w-9/12">
+      <Breadcrumbs>How to display the large timer</Breadcrumbs>
+      <h1 class="w-full text-4xl lg:text-5xl font-sans font-bold mb-8">
+        How to display the large timer
+      </h1>
+      <p class="pb-8">
+        This guide will show you how to display the large timer.
+      </p>
+      <p
+        class="w-full text-2xl lg:text-2xl font-sans font-bold mb-4 text-zinc-800"
+      >
+        Steps
+      </p>
+      <ol class="list-decimal list-outside ml-6">
+        <li><h2>Open the app</h2></li>
+        <li>
+          <h2>
+            Swipe down from the top-right corner of your screen to <a
+              href="https://support.apple.com/kb/HT202769"
+              target="_blank"
+              rel="noopener noreferrer">open Control Center</a
+            >
+          </h2>
+        </li>
+        <li>
+          <h2>
+            Tap the Portrait Orientation Lock button to make sure that it's off
+          </h2>
+        </li>
+        <li>
+          <h2>Turn your iPhone sideways</h2>
+          <img
+            src="/images/support/rotate/rotate-step-4.webp"
+            alt="The Box Timer app - How to display the large timer step 4"
+            class="rounded-xl mt-8 mb-16"
+          />
+        </li>
+      </ol>
+    </div>
+  </Container>
+  <Footer />
+</Page>

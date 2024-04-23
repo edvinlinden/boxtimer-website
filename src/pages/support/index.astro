@@ -1,0 +1,76 @@
+---
+import Container from "@components/Container.astro";
+import Footer from "@components/Footer.astro";
+import GetAppButton from "@components/GetAppButton.astro";
+import Page from "@layouts/Page.astro";
+---
+
+<Page
+  title="Box Timer – Help Center"
+  description="Instructions and guides on how to use Box Timer - Workout Timer"
+  url="https://boxtimer.app/support/"
+>
+  <Container innerClass={"flex-col items-center"}>
+    <div class="w-full sm:w-9/12">
+      <h1 class="w-full text-4xl lg:text-5xl font-sans font-bold mb-8">
+        Help Center
+      </h1>
+      <p class="pb-8">
+        Instructions and guides on how to use Box Timer - Workout Timer
+      </p>
+
+      <h2 class="w-full text-2xl lg:text-2xl font-sans font-bold mb-2">
+        Getting started
+      </h2>
+      <ul>
+        <li>
+          <a href="/support/how-to-set-a-timer-that-counts-down/"
+            >How to set a timer that counts down</a
+          >
+        </li>
+        <li>
+          <a href="/support/how-to-set-a-timer-that-counts-down/"
+            >How to set a timer that counts up</a
+          >
+        </li>
+        <li>
+          <a
+            href="/support/how-to-set-a-interval-timer-with-both-work-and-rest-time/"
+            >How to set a interval timer with both work and rest time</a
+          >
+        </li>
+        <li>
+          <a href="/support/how-to-set-a-interval-timer-with-work-time-only/"
+            >How to set a interval timer with work time only</a
+          >
+        </li>
+      </ul>
+      <h2 class="w-full text-2xl lg:text-2xl font-sans font-bold mb-2 mt-16">
+        General
+      </h2>
+      <ul>
+        <li>
+          <a href="/support/how-to-display-the-large-timer/"
+            >How to display the large timer</a
+          >
+        </li>
+        <li>
+          <a href="/support/how-to-change-language/">How to change language</a>
+        </li>
+
+        <li>
+          <a href="/support/how-to-share-the-app-with-a-friend/"
+            >How to share the app with a friend</a
+          >
+        </li>
+      </ul>
+      <p class="mt-16">
+        Can't find a solution to your problem? <br />
+        Send an e-mail to <a href="mailto:help@boxtimer.app"
+          >help@boxtimer.app</a
+        >
+      </p>
+    </div>
+  </Container>
+  <Footer />
+</Page>
