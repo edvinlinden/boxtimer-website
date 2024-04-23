@@ -1,0 +1,80 @@
+---
+import Container from "@components/Container.astro";
+import Footer from "@components/Footer.astro";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+import Page from "@layouts/Page.astro";
+---
+
+<Page
+  title="Box Timer – How to set a interval timer with work time only"
+  description="A guide that show you how to set a interval timer with work time only using the app Box Timer - Workout Timer"
+  url="https://boxtimer.app/support/how-to-set-a-interval-timer-with-work-time-only/"
+>
+  <Container innerClass={"flex-col items-center"}>
+    <div class="w-full sm:w-9/12">
+      <Breadcrumbs>How to set a interval timer with work time only</Breadcrumbs>
+      <h1 class="w-full text-4xl lg:text-5xl font-sans font-bold mb-8">
+        How to set a interval timer with work time only
+      </h1>
+      <p class="pb-8">
+        This guide will show you how to set a interval timer with work time
+        only. This would be useful if you have a EMOM workout or any other
+        workout where you don't have a dedicated rest period each round.
+      </p>
+      <p
+        class="w-full text-2xl lg:text-2xl font-sans font-bold mb-4 text-zinc-800"
+      >
+        Steps
+      </p>
+      <ol class="list-decimal list-outside ml-6">
+        <li><h2>Open the app</h2></li>
+        <li>
+          <h2>Tap Edit timer in the top right of the screen</h2>
+          <img
+            src="/images/support/interval-work-only/interval-step-2.webp"
+            alt="The Box Timer app - How to set a interval timer with work time only step 2"
+            class="rounded-xl mt-8 mb-16"
+          />
+        </li>
+        <li>
+          <h2>Tap Interval in the segment control for Type of timer</h2>
+          <img
+            src="/images/support/interval-work-only/interval-step-3.webp"
+            alt="The Box Timer app - How to set a interval timer with work time only step 3"
+            class="rounded-xl mt-8 mb-16"
+          />
+        </li>
+        <li>
+          <h2>Tap Rounds to set the amount of rounds of the timer</h2>
+          <i>In the example it's 10 rounds</i>
+        </li>
+        <li>
+          <h2>Tap Minutes and Seconds to set the work duration of the timer</h2>
+          <i>In the example it's 1 minutes and 0 seconds</i>
+        </li>
+        <li>
+          <h2>Tap Minutes and Seconds to set the rest duration of the timer</h2>
+          <i>In the example it's 0 minutes and 0 seconds</i>
+        </li>
+        <li>
+          <h2>
+            Tap the Countdown toggle button to make sure that it's on, if you
+            wan't a countdown before the timer starts.
+          </h2>
+        </li>
+        <li>
+          <h2>Tap Save to save the current timer settings</h2>
+        </li>
+        <li>
+          <h2>Tap Start to start the timer</h2>
+          <img
+            src="/images/support/interval-work-only/interval-step-9.webp"
+            alt="The Box Timer app - How to set a interval timer with work time only step 9"
+            class="rounded-xl mt-8 mb-16"
+          />
+        </li>
+      </ol>
+    </div>
+  </Container>
+  <Footer />
+</Page>

@@ -1,0 +1,71 @@
+---
+import Container from "@components/Container.astro";
+import Footer from "@components/Footer.astro";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+import Page from "@layouts/Page.astro";
+---
+
+<Page
+  title="Box Timer – How to set a timer that counts down"
+  description="A guide that show you how to set a timer that counts down using the app Box Timer - Workout Timer"
+  url="https://boxtimer.app/support/how-to-set-a-timer-that-counts-down/"
+>
+  <Container innerClass={"flex-col items-center"}>
+    <div class="w-full sm:w-9/12">
+      <Breadcrumbs>How to set a timer that counts down</Breadcrumbs>
+      <h1 class="w-full text-4xl lg:text-5xl font-sans font-bold mb-8">
+        How to set a timer that counts down
+      </h1>
+      <p class="pb-8">
+        This guide will show you how to set a timer that counts down. This would
+        be useful if you have a For Time workout or any other workout where you
+        have a dedicated time cap.
+      </p>
+      <p
+        class="w-full text-2xl lg:text-2xl font-sans font-bold mb-4 text-zinc-800"
+      >
+        Steps
+      </p>
+      <ol class="list-decimal list-outside ml-6">
+        <li><h2>Open the app</h2></li>
+        <li>
+          <h2>Tap Edit timer in the top right of the screen</h2>
+          <img
+            src="/images/support/count-down/count-down-step-2.webp"
+            alt="The Box Timer app - How to set a timer that counts down step 2"
+            class="rounded-xl mt-8 mb-16"
+          />
+        </li>
+        <li>
+          <h2>Tap Down in the segment control for Type of timer</h2>
+          <img
+            src="/images/support/count-down/count-down-step-3.webp"
+            alt="The Box Timer app - How to set a timer that counts down step 3"
+            class="rounded-xl mt-8 mb-16"
+          />
+        </li>
+        <li>
+          <h2>Tap Minutes and Seconds to set the duration of the timer</h2>
+        </li>
+        <li>
+          <h2>
+            Tap the Countdown toggle button to make sure that it's on, if you
+            wan't a countdown before the timer starts.
+          </h2>
+        </li>
+        <li>
+          <h2>Tap Save to save the current timer settings</h2>
+        </li>
+        <li>
+          <h2>Tap Start to start the timer</h2>
+          <img
+            src="/images/support/count-down/count-down-step-7.webp"
+            alt="The Box Timer app - How to set a timer that counts down step 7"
+            class="rounded-xl mt-8 mb-16"
+          />
+        </li>
+      </ol>
+    </div>
+  </Container>
+  <Footer />
+</Page>
