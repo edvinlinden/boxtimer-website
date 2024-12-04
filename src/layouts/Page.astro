@@ -1,6 +1,7 @@
 ---
 import Header from "@components/Header.astro";
 import "../styles/tailwindBase.css";
+import TelemetryDeck from "@components/TelemetryDeck.astro";
 export interface Props {
   title: string;
   description: string;
@@ -42,15 +43,7 @@ const openGraphImage = "https://boxtimer.app/images/og.png";
     <div class="mt-[75px] w-full overflow-x-hidden overlay-y-overlay">
       <slot />
     </div>
-    {
-      disableTracking ? null : (
-        <script
-          src="https://cdn.usefathom.com/script.js"
-          data-site="RFZSCRLZ"
-          defer
-        />
-      )
-    }
+    <TelemetryDeck />
     <script defer>
       const getAppButtonHeader = document.getElementById(
         "get-app-button-header"
