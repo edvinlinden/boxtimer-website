@@ -30,8 +30,11 @@ class TelemetryDeck {
       referrer: document.referrer,
       telemetryClientVersion: `WebSDK ${this.version}`,
       locale: this.locale,
-      isTestMode: isTestMode,
     };
+
+    if (isTestMode) {
+      config.isTestMode = true;
+    }
 
     const body = { ...params, ...config };
 
