@@ -60,7 +60,7 @@ import Page from "@layouts/Page.astro";
           class="text-blue-600 hover:text-blue-800"
           href="https://apps.apple.com/us/app/box-timer-workout-timer/id1547518531"
           target="_blank"
-          onclick="window.fathom.trackGoal('GTWFCG7B', 0);"
+          onclick="window.TelemetryDeck.sendSignal({type:'ClickGetAppButton'});"
           >Get Box Timer - Workout timer at the App Store</a
         >
       </p>
@@ -94,9 +94,7 @@ import Page from "@layouts/Page.astro";
         <a
           class="text-blue-600 hover:text-blue-800"
           href="https://apps.apple.com/us/app/interval-timer-hiit-timer/id1124297113"
-          target="_blank"
-          onclick="window.fathom.trackEvent('Link to Interval Timer - HIIT Workouts');"
-          >Get Interval Timer - HIIT Workouts at the App Store</a
+          target="_blank">Get Interval Timer - HIIT Workouts at the App Store</a
         >
       </p>
 
@@ -130,9 +128,7 @@ import Page from "@layouts/Page.astro";
         <a
           class="text-blue-600 hover:text-blue-800"
           href="https://apps.apple.com/us/app/tabata-timer-interval-timer/id1255964203"
-          target="_blank"
-          onclick="window.fathom.trackEvent('Link to Tabata Timer: Interval Timer');"
-          >Get Tabata Timer: Interval Timer at the App Store</a
+          target="_blank">Get Tabata Timer: Interval Timer at the App Store</a
         >
       </p>
 
@@ -165,9 +161,7 @@ import Page from "@layouts/Page.astro";
         <a
           class="text-blue-600 hover:text-blue-800"
           href="https://apps.apple.com/us/app/seconds-pro-interval-timer/id363978811"
-          target="_blank"
-          onclick="window.fathom.trackEvent('Link to Seconds Pro Interval Timer');"
-          >Get Seconds Pro Interval Timer at the App Store</a
+          target="_blank">Get Seconds Pro Interval Timer at the App Store</a
         >
       </p>
 
@@ -198,9 +192,7 @@ import Page from "@layouts/Page.astro";
         <a
           class="text-blue-600 hover:text-blue-800"
           href="https://apps.apple.com/us/app/tabata-timer-and-hiit-timer/id664563975"
-          target="_blank"
-          onclick="window.fathom.trackEvent('Link to Tabata Stopwatch Pro');"
-          >Get Workout Timer: HIIT & Tabata at the App Store</a
+          target="_blank">Get Workout Timer: HIIT & Tabata at the App Store</a
         >
       </p>
     </div>

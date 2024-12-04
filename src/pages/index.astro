@@ -181,7 +181,7 @@ import GetAppButton from "@components/GetAppButton.astro";
             <p class="mb-2">
               You can <a
                 href="https://apps.apple.com/us/app/the-box-timer/id1547518531"
-                onclick="window.fathom.trackGoal('GTWFCG7B', 0);"
+                onclick="window.TelemetryDeck.sendSignal({type:'ClickGetAppButton'});"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="The Box Timer on the App Store"
