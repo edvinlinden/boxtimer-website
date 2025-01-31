@@ -1,7 +1,7 @@
 ---
 import HeaderWithNavigation from "@components/HeaderWithNavigation.astro";
 import Hero from "@components/Hero.astro";
-import "../styles/tailwindBase.css";
+import "../styles/global.css";
 import TelemetryDeck from "@components/TelemetryDeck.astro";
 export interface Props {
   title: string;
@@ -16,7 +16,7 @@ const description =
 ---
 
 <!doctype html>
-<html lang="en" data-theme="boxtimer">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -48,7 +48,7 @@ const description =
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.9",
-          "ratingCount": "1851"
+          "ratingCount": "2830"
         },
         "offers": {
           "@type": "Offer",
