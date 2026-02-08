@@ -6,6 +6,10 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   site: "https://boxtimer.app/",
   integrations: [sitemap()],
+  redirects: {
+    "/2024-best-workout-timers-iphone/":
+      "/2026-best-workout-timers-iphone/",
+  },
   vite: {
     plugins: [tailwindcss()],
   },
