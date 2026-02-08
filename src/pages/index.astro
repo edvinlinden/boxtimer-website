@@ -24,9 +24,9 @@ import GetAppButton from "@components/GetAppButton.astro";
       class="flex flex-col md:flex-row flex-wrap justify-between gap-8 mt-16"
     >
       <div
-        class="card card-border bg-base-100 border-base-300 w-full md:w-[48%]"
+        class="flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white w-full md:w-[48%]"
       >
-        <div class="card-body">
+        <div class="flex flex-col gap-2 p-8">
           <img
             src="/images/fingerprint-solid.svg"
             alt="Fingerprint icon"
@@ -35,7 +35,7 @@ import GetAppButton from "@components/GetAppButton.astro";
             width="24"
             height="24"
           />
-          <h3 class="card-title">No ads, no tracking</h3>
+          <h3 class="font-semibold text-xl">No ads, no tracking</h3>
           <p>
             It's just a timer – this is not an app with annoying ads or privacy
             invasive tracking.
@@ -43,9 +43,9 @@ import GetAppButton from "@components/GetAppButton.astro";
         </div>
       </div>
       <div
-        class="card card-border bg-base-100 border-base-300 w-full md:w-[48%]"
+        class="flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white w-full md:w-[48%]"
       >
-        <div class="card-body">
+        <div class="flex flex-col gap-2 p-8">
           <img
             src="/images/stopwatch-20-solid.svg"
             alt="Fingerprint icon"
@@ -54,7 +54,7 @@ import GetAppButton from "@components/GetAppButton.astro";
             width="24"
             height="24"
           />
-          <h3 class="card-title">Set your time cap, up or down</h3>
+          <h3 class="font-semibold text-xl">Set your time cap, up or down</h3>
           <p>
             No matter if you like the timer counting up or counting down – the
             timer will beep when the time is up.
@@ -63,9 +63,9 @@ import GetAppButton from "@components/GetAppButton.astro";
       </div>
 
       <div
-        class="card card-border bg-base-100 border-base-300 w-full md:w-[48%]"
+        class="flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white w-full md:w-[48%]"
       >
-        <div class="card-body">
+        <div class="flex flex-col gap-2 p-8">
           <img
             src="/images/hand-point-up-solid.svg"
             alt="Fingerprint icon"
@@ -74,7 +74,7 @@ import GetAppButton from "@components/GetAppButton.astro";
             width="24"
             height="24"
           />
-          <h3 class="card-title">Tap to pause</h3>
+          <h3 class="font-semibold text-xl">Tap to pause</h3>
           <p>
             Not all workouts turn out as planned. Tap the timer to pause and
             once more to start again.
@@ -82,9 +82,9 @@ import GetAppButton from "@components/GetAppButton.astro";
         </div>
       </div>
       <div
-        class="card card-border bg-base-100 border-base-300 w-full md:w-[48%]"
+        class="flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white w-full md:w-[48%]"
       >
-        <div class="card-body">
+        <div class="flex flex-col gap-2 p-8">
           <img
             src="/images/infinity-solid.svg"
             alt="Fingerprint icon"
@@ -93,7 +93,7 @@ import GetAppButton from "@components/GetAppButton.astro";
             width="24"
             height="24"
           />
-          <h3 class="card-title">Endless variation with intervals</h3>
+          <h3 class="font-semibold text-xl">Endless variation with intervals</h3>
           <p>
             Crush any EMOM or Tabata workout with the custom interval timer.
           </p>
@@ -146,7 +146,7 @@ import GetAppButton from "@components/GetAppButton.astro";
         target="_blank"
         rel="noopener noreferrer"
         title="The Box Timer reviews on the App Store"
-        class="btn btn-outline rounded-full px-6"
+        class="inline-flex items-center justify-center gap-2 px-6 py-3 border border-zinc-800 text-zinc-800 font-semibold text-sm cursor-pointer rounded-full transition-colors hover:bg-zinc-800 hover:text-white"
       >
         READ ALL REVEIWS
       </a>
@@ -170,14 +170,14 @@ import GetAppButton from "@components/GetAppButton.astro";
     <div class="w-full flex flex-col md:flex-row items-start gap-x-12">
       <div class="w-full md:w-1/2 flex flex-col justify-between mb-12">
         <details
-          class="collapse collapse-plus w-full rounded-none m-0 pt-2 pb-4 border-b-[1px] border-zinc-300"
+          class="w-full rounded-none m-0 pt-2 pb-4 border-b border-zinc-300"
         >
-          <summary class="collapse-title">
+          <summary class="py-4">
             <h3 class="text-2xl font-sans font-bold">
               Where can I get the app?
             </h3>
           </summary>
-          <div class="collapse-content mb-4">
+          <div class="pb-4 mb-4">
             <p class="mb-2">
               You can <a
                 href="https://apps.apple.com/us/app/the-box-timer/id1547518531"
@@ -194,14 +194,14 @@ import GetAppButton from "@components/GetAppButton.astro";
         </details>
 
         <details
-          class="collapse collapse-plus w-full rounded-none m-0 pt-2 pb-4 border-b-[1px] border-zinc-300"
+          class="w-full rounded-none m-0 pt-2 pb-4 border-b border-zinc-300"
         >
-          <summary class="collapse-title">
+          <summary class="py-4">
             <h3 class="text-2xl font-sans font-bold">
               Where can I use the app?
             </h3>
           </summary>
-          <div class="collapse-content">
+          <div class="pb-4">
             <p>
               The Box Timer is perfect for workouts at your home gym or garage
               gym. However the app is also great for workouts outside or at a
@@ -211,12 +211,12 @@ import GetAppButton from "@components/GetAppButton.astro";
         </details>
 
         <details
-          class="collapse collapse-plus w-full rounded-none m-0 pt-2 pb-4 border-b-[1px] border-zinc-300"
+          class="w-full rounded-none m-0 pt-2 pb-4 border-b border-zinc-300"
         >
-          <summary class="collapse-title">
+          <summary class="py-4">
             <h3 class="text-2xl font-sans font-bold">What is a WOD?</h3>
           </summary>
-          <div class="collapse-content">
+          <div class="pb-4">
             <p class="pb-8">
               WOD stands for "Workout of the day" and is a word often used in
               CrossFit gyms(or boxes as they also are called).
@@ -239,12 +239,12 @@ import GetAppButton from "@components/GetAppButton.astro";
       </div>
       <div class="w-full md:w-1/2 flex flex-col justify-between mb-12">
         <details
-          class="collapse collapse-plus w-full rounded-none m-0 pt-2 pb-4 border-b-[1px] border-zinc-300"
+          class="w-full rounded-none m-0 pt-2 pb-4 border-b border-zinc-300"
         >
-          <summary class="collapse-title">
+          <summary class="py-4">
             <h3 class="text-2xl font-sans font-bold">What is AMRAP?</h3>
           </summary>
-          <div class="collapse-content">
+          <div class="pb-4">
             <p>
               <b>AMRAP</b> is an abbreviation for as many rounds(or repitions) as
               possible. The workout always have a time cap and the score is the rounds(or
@@ -253,12 +253,12 @@ import GetAppButton from "@components/GetAppButton.astro";
           </div>
         </details>
         <details
-          class="collapse collapse-plus w-full rounded-none m-0 pt-2 pb-4 border-b-[1px] border-zinc-300"
+          class="w-full rounded-none m-0 pt-2 pb-4 border-b border-zinc-300"
         >
-          <summary class="collapse-title">
+          <summary class="py-4">
             <h3 class="text-2xl font-sans font-bold">What is EMOM?</h3>
           </summary>
-          <div class="collapse-content">
+          <div class="pb-4">
             <p>
               <b>EMOM</b> stands for every minute on the minute. It means that each
               minute you must start the movement and complete the prescribed repitions.
@@ -266,12 +266,12 @@ import GetAppButton from "@components/GetAppButton.astro";
           </div>
         </details>
         <details
-          class="collapse collapse-plus w-full rounded-none m-0 pt-2 pb-4 border-b-[1px] border-zinc-300"
+          class="w-full rounded-none m-0 pt-2 pb-4 border-b border-zinc-300"
         >
-          <summary class="collapse-title">
+          <summary class="py-4">
             <h3 class="text-2xl font-sans font-bold">What is Tabata?</h3>
           </summary>
-          <div class="collapse-content">
+          <div class="pb-4">
             <p>
               <b>Tabata</b> is a style of workout where you have a fixed time for
               work and rest. Usually that is 20 seconds of work followed by 10 seconds
@@ -281,12 +281,12 @@ import GetAppButton from "@components/GetAppButton.astro";
         </details>
 
         <details
-          class="collapse collapse-plus w-full rounded-none m-0 pt-2 pb-4 border-b-[1px] border-zinc-300"
+          class="w-full rounded-none m-0 pt-2 pb-4 border-b border-zinc-300"
         >
-          <summary class="collapse-title">
+          <summary class="py-4">
             <h3 class="text-2xl font-sans font-bold">What is For Time?</h3>
           </summary>
-          <div class="collapse-content">
+          <div class="pb-4">
             <p>
               <b>For time</b> is the most basic workout format. You just have to
               complete the workout and however long it takes is the score.

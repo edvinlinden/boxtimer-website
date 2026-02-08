@@ -7,9 +7,9 @@ const { outerClass } = Astro.props;
 ---
 
 <div
-  class={`card w-full card-border bg-base-100 border-base-300 ${outerClass}`}
+  class={`w-full flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white ${outerClass}`}
 >
-  <div class="card-body justify-between text-xl">
+  <div class="flex flex-col gap-2 p-8 justify-between text-xl">
     <slot />
   </div>
 </div>

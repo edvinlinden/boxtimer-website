@@ -1,7 +1,7 @@
-<div class="text-sm breadcrumbs mb-12">
-  <ul>
+<nav class="text-sm mb-12">
+  <ol class="flex items-center gap-1">
     <li><a href="/">Home</a></li>
-    <li><a href="/support/">Support</a></li>
-    <li><slot /></li>
-  </ul>
-</div>
+    <li class="text-gray-400 before:content-['/'] before:mx-2 before:text-gray-400"><a href="/support/">Support</a></li>
+    <li class="text-gray-400 before:content-['/'] before:mx-2 before:text-gray-400"><slot /></li>
+  </ol>
+</nav>
