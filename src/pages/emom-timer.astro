@@ -1,0 +1,179 @@
+---
+import Container from "@components/Container.astro";
+import Footer from "@components/Footer.astro";
+import GetAppButton from "@components/GetAppButton.astro";
+import Page from "@layouts/Page.astro";
+---
+
+<Page
+  title="Box Timer – Free EMOM Timer App for iPhone"
+  description="Free EMOM timer app for iPhone and iPad. Set rounds and minute intervals with audio cues at every transition. Perfect for CrossFit. No ads, no subscriptions."
+  url="https://boxtimer.app/emom-timer/"
+  canonical="https://boxtimer.app/emom-timer/"
+>
+  <Container innerClass={"flex-col items-center"}>
+    <div class="w-full sm:w-9/12">
+      <h1 class="text-4xl lg:text-5xl font-sans font-bold">
+        Free EMOM Timer for iPhone
+      </h1>
+      <p class="text-xl font-light text-zinc-500 mt-4">
+        The simple, ad-free timer for Every Minute On the Minute workouts
+      </p>
+
+      <div class="flex justify-center mt-12 mb-16">
+        <GetAppButton id="get-app-button-emom-top" />
+      </div>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">What is EMOM?</h2>
+      <p class="mb-4">
+        EMOM stands for <strong>Every Minute On the Minute</strong>. You
+        perform a set number of reps at the start of each minute, then rest for
+        whatever time remains before the next minute begins. The faster you
+        finish your reps, the more rest you get — which makes pacing a built-in
+        part of the workout.
+      </p>
+      <p class="mb-4">
+        EMOM workouts are a staple of CrossFit programming and are popular for
+        strength work, skill practice, and conditioning. They typically last
+        <strong>10 to 20 minutes</strong> and can be done with barbells,
+        dumbbells, kettlebells, or bodyweight movements.
+      </p>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        Why Box Timer for EMOM?
+      </h2>
+      <ul class="list-disc list-outside ml-6 space-y-3">
+        <li>
+          <strong>Work-only intervals</strong> — Set round length with no
+          separate rest period. The timer beeps every minute (or at your chosen
+          interval) so you know when to start the next set.
+        </li>
+        <li>
+          <strong>Clear round counter</strong> — The display shows the current
+          round number so you always know where you are in the workout.
+        </li>
+        <li>
+          <strong>Loud audio cues</strong> — Beeps signal each new minute even
+          if you are not looking at the screen. Last 3 seconds of each round
+          get warning beeps.
+        </li>
+        <li>
+          <strong>Large display</strong> — Read the timer from across the gym.
+          Rotate to landscape for a full-screen view you can prop up next to
+          your barbell.
+        </li>
+        <li>
+          <strong>Workout history</strong> — Save and pin your favorite EMOM
+          setups. Reload a 10-minute EMOM or a 20-minute EMOM with one tap.
+        </li>
+        <li>
+          <strong>Free with no ads</strong> — No interruptions, no
+          subscriptions, no paywalls.
+        </li>
+      </ul>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        How to set up an EMOM timer
+      </h2>
+      <ol class="list-decimal list-outside ml-6 space-y-2">
+        <li>Open Box Timer and tap <strong>Edit Timer</strong></li>
+        <li>Select <strong>Interval</strong> as the timer type</li>
+        <li>Set <strong>Rounds</strong> to your desired number (e.g. 10 for a 10-minute EMOM)</li>
+        <li>Set <strong>Work</strong> to 1 minute and 0 seconds</li>
+        <li>Set <strong>Rest</strong> to 0 minutes and 0 seconds</li>
+        <li>Turn on <strong>Countdown</strong> if you want a 10-second lead-in</li>
+        <li>Tap <strong>Save</strong>, then <strong>Start</strong></li>
+      </ol>
+      <p class="mt-4">
+        See the full guide:
+        <a
+          class="text-blue-600 hover:text-blue-800"
+          href="/support/how-to-set-a-interval-timer-with-work-time-only/"
+          >How to set an interval timer with work time only</a
+        >
+      </p>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        Popular EMOM formats
+      </h2>
+      <div class="overflow-x-auto">
+        <table class="w-full mt-4">
+          <thead>
+            <tr>
+              <th class="text-left pb-4 pr-4 font-bold">Format</th>
+              <th class="text-left pb-4 pr-4 font-bold">Interval</th>
+              <th class="text-left pb-4 font-bold">Rounds</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="py-2 pr-4">10-minute EMOM</td>
+              <td class="py-2 pr-4">1 min</td>
+              <td class="py-2">10</td>
+            </tr>
+            <tr>
+              <td class="py-2 pr-4">15-minute EMOM</td>
+              <td class="py-2 pr-4">1 min</td>
+              <td class="py-2">15</td>
+            </tr>
+            <tr>
+              <td class="py-2 pr-4">20-minute EMOM</td>
+              <td class="py-2 pr-4">1 min</td>
+              <td class="py-2">20</td>
+            </tr>
+            <tr>
+              <td class="py-2 pr-4">E2MOM (every 2 minutes)</td>
+              <td class="py-2 pr-4">2 min</td>
+              <td class="py-2">10</td>
+            </tr>
+            <tr>
+              <td class="py-2 pr-4">E90S (every 90 seconds)</td>
+              <td class="py-2 pr-4">1 min 30s</td>
+              <td class="py-2">10</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-zinc-500">
+        All of these can be set up in Box Timer using the interval timer with
+        rest set to zero.
+      </p>
+
+      <div class="flex justify-center mt-16 mb-8">
+        <GetAppButton id="get-app-button-emom-bottom" />
+      </div>
+
+      <p class="mt-16">
+        <strong>Related:</strong>
+        <a
+          class="text-blue-600 hover:text-blue-800"
+          href="/crossfit-timer/"
+          >Free CrossFit Timer for iPhone</a
+        >
+        &nbsp;·&nbsp;
+        <a
+          class="text-blue-600 hover:text-blue-800"
+          href="/2026-best-workout-timers-iphone/"
+          >Best Workout Timer Apps for iPhone in 2026</a
+        >
+      </p>
+    </div>
+  </Container>
+  <Footer />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to set up an EMOM timer on iPhone",
+      "step": [
+        { "@type": "HowToStep", "name": "Open Box Timer and tap Edit Timer" },
+        { "@type": "HowToStep", "name": "Select Interval as the timer type" },
+        { "@type": "HowToStep", "name": "Set Rounds to your desired number" },
+        { "@type": "HowToStep", "name": "Set Work to 1 minute and 0 seconds" },
+        { "@type": "HowToStep", "name": "Set Rest to 0 minutes and 0 seconds" },
+        { "@type": "HowToStep", "name": "Turn on Countdown if you want a 10-second lead-in" },
+        { "@type": "HowToStep", "name": "Tap Save, then Start" }
+      ]
+    }
+  </script>
+</Page>

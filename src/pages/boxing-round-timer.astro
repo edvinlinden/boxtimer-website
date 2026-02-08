@@ -1,0 +1,187 @@
+---
+import Container from "@components/Container.astro";
+import Footer from "@components/Footer.astro";
+import GetAppButton from "@components/GetAppButton.astro";
+import Page from "@layouts/Page.astro";
+---
+
+<Page
+  title="Box Timer – Free Boxing Round Timer App for iPhone"
+  description="Free boxing round timer app for iPhone and iPad. Set custom round length, rest periods, and number of rounds with loud audio cues. No ads, no subscriptions."
+  url="https://boxtimer.app/boxing-round-timer/"
+  canonical="https://boxtimer.app/boxing-round-timer/"
+>
+  <Container innerClass={"flex-col items-center"}>
+    <div class="w-full sm:w-9/12">
+      <h1 class="text-4xl lg:text-5xl font-sans font-bold">
+        Free Boxing Round Timer for iPhone
+      </h1>
+      <p class="text-xl font-light text-zinc-500 mt-4">
+        The simple, ad-free timer for boxing rounds, sparring, and bag work
+      </p>
+
+      <div class="flex justify-center mt-12 mb-16">
+        <GetAppButton id="get-app-button-boxing-top" />
+      </div>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        Why you need a boxing round timer
+      </h2>
+      <p class="mb-4">
+        Boxing training is built around timed rounds. Whether you are hitting
+        the heavy bag, working the speed bag, shadow boxing, or sparring, you
+        need a timer that tells you when each round starts and ends. A standard
+        boxing round is <strong>3 minutes of work</strong> followed by
+        <strong>1 minute of rest</strong>, but this varies by skill level,
+        discipline, and training goal.
+      </p>
+      <p class="mb-4">
+        Most boxing timer apps are cluttered with ads, bell sound effects you
+        cannot turn off, or subscriptions to unlock basic features. Box Timer is
+        different — it is completely free, has no ads, and lets you configure
+        exactly the rounds you need.
+      </p>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        Why Box Timer for boxing?
+      </h2>
+      <ul class="list-disc list-outside ml-6 space-y-3">
+        <li>
+          <strong>Custom rounds</strong> — Set any round length, rest period,
+          and number of rounds. 2-minute rounds for beginners or 3-minute rounds
+          for competition prep.
+        </li>
+        <li>
+          <strong>Loud audio cues</strong> — Clear beeps at round transitions
+          and during the last 3 seconds of rest so you are ready when the next
+          round starts.
+        </li>
+        <li>
+          <strong>Works with your music</strong> — Timer beeps play alongside
+          your playlist without interrupting it. Keep your training music going.
+        </li>
+        <li>
+          <strong>Large, readable display</strong> — See your time from across
+          the gym. Rotate to landscape for a full-screen timer you can mount on
+          a shelf or prop against the wall.
+        </li>
+        <li>
+          <strong>Workout history</strong> — Every session is saved. Pin your
+          favorite round setup and reload it with one tap.
+        </li>
+        <li>
+          <strong>No ads, no cost</strong> — No banner ads between rounds, no
+          subscriptions, no in-app purchases. Just a timer.
+        </li>
+      </ul>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        How to set up a boxing round timer
+      </h2>
+      <ol class="list-decimal list-outside ml-6 space-y-2">
+        <li>Open Box Timer and tap <strong>Edit Timer</strong></li>
+        <li>Select <strong>Interval</strong> as the timer type</li>
+        <li>Set <strong>Rounds</strong> to 12 (or your desired number)</li>
+        <li>Set <strong>Work</strong> to 3 minutes and 0 seconds</li>
+        <li>Set <strong>Rest</strong> to 1 minute and 0 seconds</li>
+        <li>Turn on <strong>Countdown</strong> for a 10-second warning before the first round</li>
+        <li>Tap <strong>Save</strong>, then <strong>Start</strong></li>
+      </ol>
+      <p class="mt-4">
+        See the full guide:
+        <a
+          class="text-blue-600 hover:text-blue-800"
+          href="/support/how-to-set-an-interval-timer-with-both-work-and-rest-time/"
+          >How to set an interval timer with both work and rest time</a
+        >
+      </p>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        Common boxing round formats
+      </h2>
+      <div class="overflow-x-auto">
+        <table class="w-full mt-4">
+          <thead>
+            <tr>
+              <th class="text-left pb-4 pr-4 font-bold">Format</th>
+              <th class="text-left pb-4 pr-4 font-bold">Work</th>
+              <th class="text-left pb-4 pr-4 font-bold">Rest</th>
+              <th class="text-left pb-4 font-bold">Rounds</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="py-2 pr-4">Professional boxing</td>
+              <td class="py-2 pr-4">3 min</td>
+              <td class="py-2 pr-4">1 min</td>
+              <td class="py-2">12</td>
+            </tr>
+            <tr>
+              <td class="py-2 pr-4">Amateur boxing</td>
+              <td class="py-2 pr-4">3 min</td>
+              <td class="py-2 pr-4">1 min</td>
+              <td class="py-2">3</td>
+            </tr>
+            <tr>
+              <td class="py-2 pr-4">Muay Thai</td>
+              <td class="py-2 pr-4">3 min</td>
+              <td class="py-2 pr-4">2 min</td>
+              <td class="py-2">5</td>
+            </tr>
+            <tr>
+              <td class="py-2 pr-4">Beginner bag work</td>
+              <td class="py-2 pr-4">2 min</td>
+              <td class="py-2 pr-4">1 min</td>
+              <td class="py-2">6</td>
+            </tr>
+            <tr>
+              <td class="py-2 pr-4">Speed rounds</td>
+              <td class="py-2 pr-4">1 min</td>
+              <td class="py-2 pr-4">30s</td>
+              <td class="py-2">10</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-zinc-500">
+        All of these can be set up in Box Timer using the interval timer mode.
+      </p>
+
+      <div class="flex justify-center mt-16 mb-8">
+        <GetAppButton id="get-app-button-boxing-bottom" />
+      </div>
+
+      <p class="mt-16">
+        <strong>Related:</strong>
+        <a
+          class="text-blue-600 hover:text-blue-800"
+          href="/hiit-timer/"
+          >Free HIIT Timer for iPhone</a
+        >
+        &nbsp;·&nbsp;
+        <a
+          class="text-blue-600 hover:text-blue-800"
+          href="/2026-best-workout-timers-iphone/"
+          >Best Workout Timer Apps for iPhone in 2026</a
+        >
+      </p>
+    </div>
+  </Container>
+  <Footer />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to set up a boxing round timer on iPhone",
+      "step": [
+        { "@type": "HowToStep", "name": "Open Box Timer and tap Edit Timer" },
+        { "@type": "HowToStep", "name": "Select Interval as the timer type" },
+        { "@type": "HowToStep", "name": "Set Rounds to 12" },
+        { "@type": "HowToStep", "name": "Set Work to 3 minutes and 0 seconds" },
+        { "@type": "HowToStep", "name": "Set Rest to 1 minute and 0 seconds" },
+        { "@type": "HowToStep", "name": "Turn on Countdown for a 10-second warning before the first round" },
+        { "@type": "HowToStep", "name": "Tap Save, then Start" }
+      ]
+    }
+  </script>
+</Page>
