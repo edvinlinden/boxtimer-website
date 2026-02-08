@@ -35,7 +35,7 @@ const openGraphImage = "https://boxtimer.app/images/og.png";
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={openGraphImage} />
-    {canonical ? <link rel="canonical" href={canonical} /> : null}
+    <link rel="canonical" href={canonical || url} />
     <title>{title}</title>
   </head>
   <body>

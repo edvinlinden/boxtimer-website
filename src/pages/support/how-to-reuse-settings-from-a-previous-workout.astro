@@ -44,6 +44,19 @@ import Page from "@layouts/Page.astro";
         setting.
       </p>
     </div>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to reuse settings from a previous workout",
+        "step": [
+          { "@type": "HowToStep", "name": "Open the app" },
+          { "@type": "HowToStep", "name": "Go to the History tab" },
+          { "@type": "HowToStep", "name": "Tap on the workout you want to reuse" },
+          { "@type": "HowToStep", "name": "Confirm in the dialog to apply the settings" }
+        ]
+      }
+    </script>
   </Container>
   <Footer />
 </Page>

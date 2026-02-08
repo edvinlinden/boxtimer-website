@@ -46,6 +46,20 @@ import Page from "@layouts/Page.astro";
         rename it to an empty string.
       </p>
     </div>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to name or rename a workout",
+        "step": [
+          { "@type": "HowToStep", "name": "Open the app" },
+          { "@type": "HowToStep", "name": "Go to the History tab" },
+          { "@type": "HowToStep", "name": "Swipe right on the workout you want to name" },
+          { "@type": "HowToStep", "name": "Tap the rename action button" },
+          { "@type": "HowToStep", "name": "Enter a custom name (max 20 characters)" }
+        ]
+      }
+    </script>
   </Container>
   <Footer />
 </Page>

@@ -47,6 +47,19 @@ import Page from "@layouts/Page.astro";
         your workout history entries.
       </p>
     </div>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to enable or disable the countdown before a timer",
+        "step": [
+          { "@type": "HowToStep", "name": "Open the app" },
+          { "@type": "HowToStep", "name": "Tap Edit Timer in the toolbar at the top right of the screen" },
+          { "@type": "HowToStep", "name": "Toggle the Countdown switch at the bottom of the settings modal to turn it on or off" },
+          { "@type": "HowToStep", "name": "Tap Save to save your settings" }
+        ]
+      }
+    </script>
   </Container>
   <Footer />
 </Page>

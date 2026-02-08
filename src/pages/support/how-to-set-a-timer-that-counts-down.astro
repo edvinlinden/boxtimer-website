@@ -33,6 +33,7 @@ import Page from "@layouts/Page.astro";
             src="/images/support/count-down/count-down-step-2.webp"
             alt="The Box Timer app - How to set a timer that counts down step 2"
             class="rounded-xl mt-8 mb-16"
+            loading="lazy"
           />
         </li>
         <li>
@@ -41,6 +42,7 @@ import Page from "@layouts/Page.astro";
             src="/images/support/count-down/count-down-step-3.webp"
             alt="The Box Timer app - How to set a timer that counts down step 3"
             class="rounded-xl mt-8 mb-16"
+            loading="lazy"
           />
         </li>
         <li>
@@ -61,10 +63,27 @@ import Page from "@layouts/Page.astro";
             src="/images/support/count-down/count-down-step-7.webp"
             alt="The Box Timer app - How to set a timer that counts down step 7"
             class="rounded-xl mt-8 mb-16"
+            loading="lazy"
           />
         </li>
       </ol>
     </div>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to set a timer that counts down",
+        "step": [
+          { "@type": "HowToStep", "name": "Open the app" },
+          { "@type": "HowToStep", "name": "Tap Edit Timer in the top right of the screen" },
+          { "@type": "HowToStep", "name": "Tap Down in the segment control for Type of timer" },
+          { "@type": "HowToStep", "name": "Tap Minutes and Seconds to set the duration of the timer" },
+          { "@type": "HowToStep", "name": "Tap the Countdown toggle button to turn it on if you want a countdown before the timer starts" },
+          { "@type": "HowToStep", "name": "Tap Save to save the current timer settings" },
+          { "@type": "HowToStep", "name": "Tap Start to start the timer" }
+        ]
+      }
+    </script>
   </Container>
   <Footer />
 </Page>

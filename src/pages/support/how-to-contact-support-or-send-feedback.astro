@@ -43,6 +43,19 @@ import Page from "@layouts/Page.astro";
         <a href="mailto:help@boxtimer.app">help@boxtimer.app</a>.
       </p>
     </div>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to contact support or send feedback",
+        "step": [
+          { "@type": "HowToStep", "name": "Open the app" },
+          { "@type": "HowToStep", "name": "Go to the About tab" },
+          { "@type": "HowToStep", "name": "Tap Contact in the support section" },
+          { "@type": "HowToStep", "name": "Your email app will open with a pre-filled subject line and device information" }
+        ]
+      }
+    </script>
   </Container>
   <Footer />
 </Page>

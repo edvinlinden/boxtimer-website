@@ -47,10 +47,24 @@ import Page from "@layouts/Page.astro";
             src="/images/support/rotate/rotate-step-4.webp"
             alt="The Box Timer app - How to display the large timer step 4"
             class="rounded-xl mt-8 mb-16"
+            loading="lazy"
           />
         </li>
       </ol>
     </div>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to display the large timer",
+        "step": [
+          { "@type": "HowToStep", "name": "Open the app" },
+          { "@type": "HowToStep", "name": "Swipe down from the top-right corner of your screen to open Control Center" },
+          { "@type": "HowToStep", "name": "Tap the Portrait Orientation Lock button to make sure it is off" },
+          { "@type": "HowToStep", "name": "Turn your iPhone sideways" }
+        ]
+      }
+    </script>
   </Container>
   <Footer />
 </Page>

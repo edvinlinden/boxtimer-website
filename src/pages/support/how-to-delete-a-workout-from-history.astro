@@ -40,6 +40,19 @@ import Page from "@layouts/Page.astro";
         The workout will be permanently removed from your history.
       </p>
     </div>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to delete a workout from history",
+        "step": [
+          { "@type": "HowToStep", "name": "Open the app" },
+          { "@type": "HowToStep", "name": "Go to the History tab" },
+          { "@type": "HowToStep", "name": "Swipe left on the workout you want to delete" },
+          { "@type": "HowToStep", "name": "Tap the delete action button" }
+        ]
+      }
+    </script>
   </Container>
   <Footer />
 </Page>

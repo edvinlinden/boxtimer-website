@@ -47,6 +47,18 @@ import Page from "@layouts/Page.astro";
         from the history list.
       </p>
     </div>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to view workout history",
+        "step": [
+          { "@type": "HowToStep", "name": "Open the app" },
+          { "@type": "HowToStep", "name": "Tap the History tab (second tab in the tab bar)" },
+          { "@type": "HowToStep", "name": "Use the filter at the top to show All, Up, Down, or Intervals workouts" }
+        ]
+      }
+    </script>
   </Container>
   <Footer />
 </Page>

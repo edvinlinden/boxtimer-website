@@ -33,6 +33,7 @@ import Page from "@layouts/Page.astro";
             src="/images/support/share/share-step-2.webp"
             alt="The Box Timer app - How to share the app with a friend step 4"
             class="rounded-xl mt-8 mb-16"
+            loading="lazy"
           />
         </li>
         <li>
@@ -77,6 +78,18 @@ import Page from "@layouts/Page.astro";
         </li>
       </ol>
     </div>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to share the app with a friend",
+        "step": [
+          { "@type": "HowToStep", "name": "Open the app" },
+          { "@type": "HowToStep", "name": "Tap About in the bottom of the screen" },
+          { "@type": "HowToStep", "name": "Tap Share using QR code to share with someone nearby, or tap Share using link to share through a messaging app" }
+        ]
+      }
+    </script>
   </Container>
   <Footer />
 </Page>

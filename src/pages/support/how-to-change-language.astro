@@ -12,7 +12,9 @@ import Page from "@layouts/Page.astro";
 >
   <Container innerClass={"flex-col items-center"}>
     <div class="w-full sm:w-9/12">
-      <Breadcrumbs title="How to change language">How to change language</Breadcrumbs>
+      <Breadcrumbs title="How to change language"
+        >How to change language</Breadcrumbs
+      >
       <h1 class="w-full text-4xl lg:text-5xl font-sans font-bold mb-8">
         How to change language
       </h1>
@@ -28,25 +30,34 @@ import Page from "@layouts/Page.astro";
       <ol class="list-decimal list-outside ml-6">
         <li><h2>Open the app</h2></li>
         <li>
-          <h2>Tap the current language in the bottom of the screen</h2>
+          <h2>Go to the About tab</h2>
+        </li>
+        <li>
+          <h2>Tap the current language</h2>
           <i>By default it's set to English</i>
-          <img
-            src="/images/support/language/language-step-2.webp"
-            alt="The Box Timer app - How to change language step 2"
-            class="rounded-xl mt-8 mb-16"
-          />
         </li>
         <li>
           <h2>Tap your desired language</h2>
           <i>The app will automatically change to the language you selected</i>
-          <img
-            src="/images/support/language/language-step-3.webp"
-            alt="The Box Timer app - How to change language step 3"
-            class="rounded-xl mt-8 mb-16"
-          />
         </li>
       </ol>
     </div>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to change language",
+        "step": [
+          { "@type": "HowToStep", "name": "Open the app" },
+          { "@type": "HowToStep", "name": "Go to the About tab" },
+          {
+            "@type": "HowToStep",
+            "name": "Tap the current language"
+          },
+          { "@type": "HowToStep", "name": "Tap your desired language" }
+        ]
+      }
+    </script>
   </Container>
   <Footer />
 </Page>
