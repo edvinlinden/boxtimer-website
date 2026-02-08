@@ -1,0 +1,48 @@
+---
+import Container from "@components/Container.astro";
+import Footer from "@components/Footer.astro";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+import Page from "@layouts/Page.astro";
+---
+
+<Page
+  title="Box Timer – How to pin a workout in history"
+  description="A guide that shows you how to pin a workout in history so it always appears at the top in Box Timer - Workout Timer"
+  url="https://boxtimer.app/support/how-to-pin-a-workout-in-history/"
+>
+  <Container innerClass={"flex-col items-center"}>
+    <div class="w-full sm:w-9/12">
+      <Breadcrumbs title="How to pin a workout in history">How to pin a workout in history</Breadcrumbs>
+      <h1 class="w-full text-4xl lg:text-5xl font-sans font-bold mb-8">
+        How to pin a workout in history
+      </h1>
+      <p class="pb-8">
+        Pin frequently used workouts so they always appear at the top of your
+        history list for quick access.
+      </p>
+      <p
+        class="w-full text-2xl lg:text-2xl font-sans font-bold mb-4 text-zinc-800"
+      >
+        Steps
+      </p>
+      <ol class="list-decimal list-outside ml-6">
+        <li><h2>Open the app</h2></li>
+        <li>
+          <h2>Go to the History tab</h2>
+        </li>
+        <li>
+          <h2>Swipe right on the workout you want to pin</h2>
+        </li>
+        <li>
+          <h2>Tap the pin action button</h2>
+        </li>
+      </ol>
+      <p class="mt-8">
+        Pinned workouts show a pin icon and appear at the top of the list. To
+        unpin a workout, swipe right on it again and tap the pin button to
+        toggle it off.
+      </p>
+    </div>
+  </Container>
+  <Footer />
+</Page>

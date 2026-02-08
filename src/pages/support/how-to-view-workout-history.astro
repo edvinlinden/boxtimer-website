@@ -1,0 +1,52 @@
+---
+import Container from "@components/Container.astro";
+import Footer from "@components/Footer.astro";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+import Page from "@layouts/Page.astro";
+---
+
+<Page
+  title="Box Timer – How to view workout history"
+  description="A guide that shows you how to view your workout history in Box Timer - Workout Timer"
+  url="https://boxtimer.app/support/how-to-view-workout-history/"
+>
+  <Container innerClass={"flex-col items-center"}>
+    <div class="w-full sm:w-9/12">
+      <Breadcrumbs title="How to view workout history">How to view workout history</Breadcrumbs>
+      <h1 class="w-full text-4xl lg:text-5xl font-sans font-bold mb-8">
+        How to view workout history
+      </h1>
+      <p class="pb-8">
+        Every completed timer session is automatically saved to your workout
+        history. Each entry shows the workout name (or timer type if unnamed),
+        a timestamp, and the timer configuration details.
+      </p>
+      <p
+        class="w-full text-2xl lg:text-2xl font-sans font-bold mb-4 text-zinc-800"
+      >
+        Steps
+      </p>
+      <ol class="list-decimal list-outside ml-6">
+        <li><h2>Open the app</h2></li>
+        <li>
+          <h2>Tap the History tab (second tab in the tab bar)</h2>
+        </li>
+        <li>
+          <h2>
+            Use the filter at the top to show All, Up, Down, or Intervals
+            workouts
+          </h2>
+        </li>
+      </ol>
+      <p class="mt-8">
+        Workouts are sorted with pinned items first, then by most recent. You
+        can also <a href="/support/how-to-pin-a-workout-in-history/">pin</a>,
+        <a href="/support/how-to-name-or-rename-a-workout/">rename</a>,
+        <a href="/support/how-to-reuse-settings-from-a-previous-workout/">reuse</a>,
+        or <a href="/support/how-to-delete-a-workout-from-history/">delete</a> workouts
+        from the history list.
+      </p>
+    </div>
+  </Container>
+  <Footer />
+</Page>

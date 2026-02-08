@@ -1,0 +1,48 @@
+---
+import Container from "@components/Container.astro";
+import Footer from "@components/Footer.astro";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+import Page from "@layouts/Page.astro";
+---
+
+<Page
+  title="Box Timer – How to contact support or send feedback"
+  description="A guide that shows you how to contact support or send feedback about Box Timer - Workout Timer"
+  url="https://boxtimer.app/support/how-to-contact-support-or-send-feedback/"
+>
+  <Container innerClass={"flex-col items-center"}>
+    <div class="w-full sm:w-9/12">
+      <Breadcrumbs title="How to contact support or send feedback">How to contact support or send feedback</Breadcrumbs>
+      <h1 class="w-full text-4xl lg:text-5xl font-sans font-bold mb-8">
+        How to contact support or send feedback
+      </h1>
+      <p class="pb-8">
+        You can send feedback or ask questions via email directly from the app.
+      </p>
+      <p
+        class="w-full text-2xl lg:text-2xl font-sans font-bold mb-4 text-zinc-800"
+      >
+        Steps
+      </p>
+      <ol class="list-decimal list-outside ml-6">
+        <li><h2>Open the app</h2></li>
+        <li>
+          <h2>Go to the About tab</h2>
+        </li>
+        <li>
+          <h2>Tap Contact in the support section</h2>
+        </li>
+        <li>
+          <h2>Your email app will open with a pre-filled subject line and device information</h2>
+        </li>
+      </ol>
+      <p class="mt-8">
+        If the default Mail app is not available, the app will offer alternative
+        email clients including Gmail, Outlook, Spark, and Yahoo Mail. You can
+        also email us directly at
+        <a href="mailto:help@boxtimer.app">help@boxtimer.app</a>.
+      </p>
+    </div>
+  </Container>
+  <Footer />
+</Page>

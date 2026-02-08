@@ -1,0 +1,50 @@
+---
+import Container from "@components/Container.astro";
+import Footer from "@components/Footer.astro";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+import Page from "@layouts/Page.astro";
+---
+
+<Page
+  title="Box Timer – How to adjust sound effects and volume"
+  description="A guide that shows you how to adjust sound effects and volume in Box Timer - Workout Timer"
+  url="https://boxtimer.app/support/how-to-adjust-sound-effects-and-volume/"
+>
+  <Container innerClass={"flex-col items-center"}>
+    <div class="w-full sm:w-9/12">
+      <Breadcrumbs title="How to adjust sound effects and volume">How to adjust sound effects and volume</Breadcrumbs>
+      <h1 class="w-full text-4xl lg:text-5xl font-sans font-bold mb-8">
+        How to adjust sound effects and volume
+      </h1>
+      <p class="pb-8">
+        Box Timer has configurable sound effects with a separate volume control.
+        Sound effects include beeps during countdowns, round transitions, and
+        the last 3 seconds of rest periods. The app mixes its audio with other
+        sources, so it will not interrupt your music, podcasts, or phone calls.
+      </p>
+      <p
+        class="w-full text-2xl lg:text-2xl font-sans font-bold mb-4 text-zinc-800"
+      >
+        Steps
+      </p>
+      <ol class="list-decimal list-outside ml-6">
+        <li><h2>Open the app</h2></li>
+        <li>
+          <h2>Tap the speaker icon in the toolbar</h2>
+        </li>
+        <li>
+          <h2>
+            Toggle the sound effects switch to turn all beep sounds on or off
+          </h2>
+        </li>
+        <li>
+          <h2>
+            Use the volume slider to adjust the volume of the beep sounds from
+            0% to 100%
+          </h2>
+        </li>
+      </ol>
+    </div>
+  </Container>
+  <Footer />
+</Page>

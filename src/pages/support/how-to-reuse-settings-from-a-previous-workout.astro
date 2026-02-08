@@ -1,0 +1,49 @@
+---
+import Container from "@components/Container.astro";
+import Footer from "@components/Footer.astro";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+import Page from "@layouts/Page.astro";
+---
+
+<Page
+  title="Box Timer – How to reuse settings from a previous workout"
+  description="A guide that shows you how to quickly reuse timer settings from a previous workout in Box Timer - Workout Timer"
+  url="https://boxtimer.app/support/how-to-reuse-settings-from-a-previous-workout/"
+>
+  <Container innerClass={"flex-col items-center"}>
+    <div class="w-full sm:w-9/12">
+      <Breadcrumbs title="How to reuse settings from a previous workout">How to reuse settings from a previous workout</Breadcrumbs>
+      <h1 class="w-full text-4xl lg:text-5xl font-sans font-bold mb-8">
+        How to reuse settings from a previous workout
+      </h1>
+      <p class="pb-8">
+        Quickly apply the timer settings from any past workout to the current
+        timer. This is a fast way to repeat a workout without manually
+        reconfiguring everything.
+      </p>
+      <p
+        class="w-full text-2xl lg:text-2xl font-sans font-bold mb-4 text-zinc-800"
+      >
+        Steps
+      </p>
+      <ol class="list-decimal list-outside ml-6">
+        <li><h2>Open the app</h2></li>
+        <li>
+          <h2>Go to the History tab</h2>
+        </li>
+        <li>
+          <h2>Tap on the workout you want to reuse</h2>
+        </li>
+        <li>
+          <h2>Confirm in the dialog to apply the settings</h2>
+        </li>
+      </ol>
+      <p class="mt-8">
+        The timer tab will switch to the correct timer type with all settings
+        applied, including duration, rounds, work/rest times, and the countdown
+        setting.
+      </p>
+    </div>
+  </Container>
+  <Footer />
+</Page>

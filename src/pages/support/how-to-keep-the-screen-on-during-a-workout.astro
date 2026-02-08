@@ -1,0 +1,31 @@
+---
+import Container from "@components/Container.astro";
+import Footer from "@components/Footer.astro";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+import Page from "@layouts/Page.astro";
+---
+
+<Page
+  title="Box Timer – How to keep the screen on during a workout"
+  description="Learn how Box Timer keeps your screen on automatically while the timer is running"
+  url="https://boxtimer.app/support/how-to-keep-the-screen-on-during-a-workout/"
+>
+  <Container innerClass={"flex-col items-center"}>
+    <div class="w-full sm:w-9/12">
+      <Breadcrumbs title="How to keep the screen on during a workout">How to keep the screen on during a workout</Breadcrumbs>
+      <h1 class="w-full text-4xl lg:text-5xl font-sans font-bold mb-8">
+        How to keep the screen on during a workout
+      </h1>
+      <p class="pb-8">
+        Box Timer automatically keeps your screen on while a timer is running.
+        You don't need to change any settings — this happens by default so you
+        can always see your timer during a workout.
+      </p>
+      <p class="pb-8">
+        When the timer is stopped or reset, normal screen timeout behavior
+        resumes to save battery.
+      </p>
+    </div>
+  </Container>
+  <Footer />
+</Page>

@@ -1,0 +1,56 @@
+---
+import Container from "@components/Container.astro";
+import Footer from "@components/Footer.astro";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+import Page from "@layouts/Page.astro";
+---
+
+<Page
+  title="Box Timer – How to control the timer in landscape mode"
+  description="A guide that shows you how to start, pause, and resume the timer in landscape mode in Box Timer - Workout Timer"
+  url="https://boxtimer.app/support/how-to-control-the-timer-in-landscape-mode/"
+>
+  <Container innerClass={"flex-col items-center"}>
+    <div class="w-full sm:w-9/12">
+      <Breadcrumbs title="How to control the timer in landscape mode">How to control the timer in landscape mode</Breadcrumbs>
+      <h1 class="w-full text-4xl lg:text-5xl font-sans font-bold mb-8">
+        How to control the timer in landscape mode
+      </h1>
+      <p class="pb-8">
+        In landscape orientation, the timer shows a large full-screen display
+        that is controlled by tapping. See
+        <a href="/support/how-to-display-the-large-timer/"
+          >How to display the large timer</a
+        > for how to rotate to landscape mode.
+      </p>
+      <p
+        class="w-full text-2xl lg:text-2xl font-sans font-bold mb-4 text-zinc-800"
+      >
+        Steps
+      </p>
+      <ol class="list-decimal list-outside ml-6">
+        <li>
+          <h2>
+            Turn your device to landscape orientation to enter the large timer
+            view
+          </h2>
+        </li>
+        <li>
+          <h2>Tap anywhere on the screen to start the timer</h2>
+        </li>
+        <li>
+          <h2>Tap again to pause</h2>
+        </li>
+        <li>
+          <h2>Tap again to resume</h2>
+        </li>
+      </ol>
+      <p class="mt-8">
+        On-screen text shows the current action: "TAP TO START", "TAP TO PAUSE",
+        or "TAP TO RESUME". To access settings or other tabs, rotate back to
+        portrait orientation.
+      </p>
+    </div>
+  </Container>
+  <Footer />
+</Page>

@@ -1,0 +1,52 @@
+---
+import Container from "@components/Container.astro";
+import Footer from "@components/Footer.astro";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+import Page from "@layouts/Page.astro";
+---
+
+<Page
+  title="Box Timer – How to enable or disable the countdown before a timer"
+  description="A guide that shows you how to enable or disable the 10-second countdown before a timer in Box Timer - Workout Timer"
+  url="https://boxtimer.app/support/how-to-enable-or-disable-the-countdown/"
+>
+  <Container innerClass={"flex-col items-center"}>
+    <div class="w-full sm:w-9/12">
+      <Breadcrumbs title="How to enable or disable the countdown before a timer">How to enable or disable the countdown before a timer</Breadcrumbs>
+      <h1 class="w-full text-4xl lg:text-5xl font-sans font-bold mb-8">
+        How to enable or disable the countdown before a timer
+      </h1>
+      <p class="pb-8">
+        Box Timer has an optional 10-second countdown that plays before the main
+        timer starts. This applies to all timer types (Up, Down, and Intervals).
+        During the last 3 seconds, audio beeps will play if sound effects are
+        enabled.
+      </p>
+      <p
+        class="w-full text-2xl lg:text-2xl font-sans font-bold mb-4 text-zinc-800"
+      >
+        Steps
+      </p>
+      <ol class="list-decimal list-outside ml-6">
+        <li><h2>Open the app</h2></li>
+        <li>
+          <h2>Tap Edit Timer in the toolbar at the top right of the screen</h2>
+        </li>
+        <li>
+          <h2>
+            Toggle the Countdown switch at the bottom of the settings modal to
+            turn it on or off
+          </h2>
+        </li>
+        <li>
+          <h2>Tap Save to save your settings</h2>
+        </li>
+      </ol>
+      <p class="mt-8">
+        The countdown setting persists across app launches and is also shown in
+        your workout history entries.
+      </p>
+    </div>
+  </Container>
+  <Footer />
+</Page>

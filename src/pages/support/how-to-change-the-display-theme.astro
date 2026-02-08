@@ -1,0 +1,49 @@
+---
+import Container from "@components/Container.astro";
+import Footer from "@components/Footer.astro";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+import Page from "@layouts/Page.astro";
+---
+
+<Page
+  title="Box Timer – How to change the display theme"
+  description="A guide that shows you how to change the display theme in Box Timer - Workout Timer"
+  url="https://boxtimer.app/support/how-to-change-the-display-theme/"
+>
+  <Container innerClass={"flex-col items-center"}>
+    <div class="w-full sm:w-9/12">
+      <Breadcrumbs title="How to change the display theme">How to change the display theme</Breadcrumbs>
+      <h1 class="w-full text-4xl lg:text-5xl font-sans font-bold mb-8">
+        How to change the display theme
+      </h1>
+      <p class="pb-8">
+        Box Timer has three display themes that control how the timer numbers
+        look. <strong>Standard</strong> has green prefix, red time numbers, and a
+        glow effect. <strong>Minimal</strong> has the same colors but no glow
+        effect for a cleaner look. <strong>High Contrast</strong> uses blue
+        prefix and orange time numbers for better visibility.
+      </p>
+      <p
+        class="w-full text-2xl lg:text-2xl font-sans font-bold mb-4 text-zinc-800"
+      >
+        Steps
+      </p>
+      <ol class="list-decimal list-outside ml-6">
+        <li><h2>Open the app</h2></li>
+        <li>
+          <h2>Go to the About tab</h2>
+        </li>
+        <li>
+          <h2>Find the Display Theme picker in the Settings section</h2>
+        </li>
+        <li>
+          <h2>Select Standard, Minimal, or High Contrast</h2>
+        </li>
+      </ol>
+      <p class="mt-8">
+        The theme updates instantly and persists across app launches.
+      </p>
+    </div>
+  </Container>
+  <Footer />
+</Page>
