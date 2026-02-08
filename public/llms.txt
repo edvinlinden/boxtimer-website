@@ -1,0 +1,39 @@
+# Box Timer - Workout Timer
+
+> Box Timer is a free, ad-free workout timer app for iPhone and iPad. It features three timer modes (count up, count down, and interval timer) designed for boxing, HIIT, Tabata, CrossFit, and general fitness training. Rated 4.9 stars by 4,030+ athletes. Made in Sweden.
+
+## Key Features
+
+- **Three Timer Modes**: Count up timer, count down timer, and interval timer with configurable work/rest rounds (1-99 rounds)
+- **Zero Ads**: Completely ad-free experience with no tracking
+- **Works With Your Music**: Audio beeps mix with other audio without interrupting playback
+- **Workout History**: Every completed timer is automatically saved. Pin favorites and rename workouts for quick access
+- **Three Display Themes**: Standard (green/red with glow), Minimal (clean), and High Contrast (blue/orange for accessibility)
+- **Large Display**: Custom digital font visible from across the gym. Landscape mode for full-screen view
+- **Multi-Language**: English, German, Spanish, French, Polish, and Swedish
+- **Screen Stays Awake**: No accidental screen lock during workouts
+- **10-Second Countdown**: Optional get-ready countdown with audio beeps
+
+## Target Users
+
+- Boxers and MMA fighters (round timers with work/rest intervals)
+- CrossFit athletes (AMRAP, EMOM, and interval workouts)
+- HIIT and Tabata enthusiasts
+- Personal trainers
+- Gym-goers tracking rest periods
+- Home workout and circuit training
+- Yoga and Pilates practitioners (hold timers)
+
+## Platform
+
+- iOS (iPhone and iPad)
+- Free to download on the Apple App Store
+
+## Links
+
+- Homepage: https://boxtimer.app/
+- App Store: https://apps.apple.com/us/app/the-box-timer/id1547518531
+- Support: https://boxtimer.app/support/
+- Best Workout Timers Comparison: https://boxtimer.app/2026-best-workout-timers-iphone/
+- Box Timer vs SmartWOD: https://boxtimer.app/box-timer-vs-smartwod/
+- Privacy Policy: https://boxtimer.app/privacy/
