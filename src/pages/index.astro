@@ -175,6 +175,74 @@ import GetAppButton from "@components/GetAppButton.astro";
           class="w-full rounded-none m-0 pt-2 pb-4 border-b border-zinc-300"
         >
           <summary class="py-4">
+            <h3 class="text-2xl font-sans font-bold">Is Box Timer free?</h3>
+          </summary>
+          <div class="pb-4">
+            <p>
+              Yes, Box Timer is completely free to download and use. There are
+              no in-app purchases, no subscriptions, and no ads. All features
+              are available from the start.
+            </p>
+          </div>
+        </details>
+
+        <details
+          class="w-full rounded-none m-0 pt-2 pb-4 border-b border-zinc-300"
+        >
+          <summary class="py-4">
+            <h3 class="text-2xl font-sans font-bold">
+              Does Box Timer work with my music?
+            </h3>
+          </summary>
+          <div class="pb-4">
+            <p>
+              Yes, Box Timer's audio beeps and alerts mix with your music
+              without interrupting playback. You can listen to your workout
+              playlist while getting clear timer cues.
+            </p>
+          </div>
+        </details>
+
+        <details
+          class="w-full rounded-none m-0 pt-2 pb-4 border-b border-zinc-300"
+        >
+          <summary class="py-4">
+            <h3 class="text-2xl font-sans font-bold">
+              Can I use Box Timer for boxing rounds?
+            </h3>
+          </summary>
+          <div class="pb-4">
+            <p>
+              Yes, Box Timer is perfect for boxing. Use the interval timer to
+              set custom round lengths and rest periods (up to 99 rounds). You
+              get audio beeps during the final seconds of rest and a long beep
+              when the new round starts.
+            </p>
+          </div>
+        </details>
+
+        <details
+          class="w-full rounded-none m-0 pt-2 pb-4 border-b border-zinc-300"
+        >
+          <summary class="py-4">
+            <h3 class="text-2xl font-sans font-bold">
+              Does Box Timer have a countdown timer?
+            </h3>
+          </summary>
+          <div class="pb-4">
+            <p>
+              Yes, Box Timer includes a count down timer that you can configure
+              from seconds up to 99 minutes. It plays audio alerts when the
+              timer completes. There's also a count up timer and an interval
+              timer.
+            </p>
+          </div>
+        </details>
+
+        <details
+          class="w-full rounded-none m-0 pt-2 pb-4 border-b border-zinc-300"
+        >
+          <summary class="py-4">
             <h3 class="text-2xl font-sans font-bold">
               Where can I get the app?
             </h3>
@@ -211,7 +279,8 @@ import GetAppButton from "@components/GetAppButton.astro";
             </p>
           </div>
         </details>
-
+      </div>
+      <div class="w-full md:w-1/2 flex flex-col justify-between mb-12">
         <details
           class="w-full rounded-none m-0 pt-2 pb-4 border-b border-zinc-300"
         >
@@ -238,8 +307,6 @@ import GetAppButton from "@components/GetAppButton.astro";
             </p>
           </div>
         </details>
-      </div>
-      <div class="w-full md:w-1/2 flex flex-col justify-between mb-12">
         <details
           class="w-full rounded-none m-0 pt-2 pb-4 border-b border-zinc-300"
         >
@@ -306,5 +373,101 @@ import GetAppButton from "@components/GetAppButton.astro";
     </h2>
     <GetAppButton />
   </Container>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Box Timer free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Box Timer is completely free to download and use. There are no in-app purchases, no subscriptions, and no ads. All features are available from the start."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Box Timer work with my music?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Box Timer's audio beeps and alerts mix with your music without interrupting playback. You can listen to your workout playlist while getting clear timer cues."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use Box Timer for boxing rounds?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Box Timer is perfect for boxing. Use the interval timer to set custom round lengths and rest periods (up to 99 rounds). You get audio beeps during the final seconds of rest and a long beep when the new round starts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Box Timer have a countdown timer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Box Timer includes a count down timer that you can configure from seconds up to 99 minutes. It plays audio alerts when the timer completes. There's also a count up timer and an interval timer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I get the app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can get Box Timer free on the Apple App Store for iPhone and iPad."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I use the app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Box Timer is perfect for workouts at your home gym, garage gym, regular gym, or outdoors. The large display and loud audio beeps make it usable in any environment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is AMRAP?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AMRAP is an abbreviation for As Many Rounds (or Repetitions) As Possible. The workout has a time cap and the score is the rounds or repetitions completed during that time. Use Box Timer's count down timer for AMRAP workouts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is EMOM?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "EMOM stands for Every Minute On the Minute. Each minute you must start the movement and complete the prescribed repetitions. Box Timer's interval timer is ideal for EMOM workouts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Tabata?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tabata is a style of workout with fixed work and rest periods, usually 20 seconds of work followed by 10 seconds of rest, repeated for 4 minutes. Box Timer's interval timer supports custom Tabata configurations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a WOD?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "WOD stands for Workout of the Day, a term commonly used in CrossFit. WODs are scored by time, rounds, or repetitions, making a good timer essential."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is For Time?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For Time is a workout format where you complete the prescribed exercises as fast as possible. Your score is how long it takes. Use Box Timer's count up timer to track For Time workouts."
+          }
+        }
+      ]
+    }
+  </script>
 </Layout>
 <Footer />
