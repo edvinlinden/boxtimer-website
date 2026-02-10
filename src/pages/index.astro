@@ -1,6 +1,7 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Card from "@components/Card.astro";
+import FeatureCard from "@components/FeatureCard.astro";
 import Container from "@components/Container.astro";
 import Footer from "@components/Footer.astro";
 import ProductHuntFeaturedLink from "@components/ProductHuntFeaturedLink.astro";
@@ -14,137 +15,40 @@ import GetAppButton from "@components/GetAppButton.astro";
     outerClass="pt-0"
     innerClass="flex-col justify-between items-center"
   >
-    <h2
-      id="features"
-      class="text-4xl text-center font-sans font-bold pt-32 pb-8"
-    >
-      Features
-    </h2>
-    <div
-      class="flex flex-col md:flex-row flex-wrap justify-between gap-8 mt-16"
-    >
-      <div
-        class="flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white w-full md:w-[48%]"
-      >
-        <div class="flex flex-col gap-2 p-8">
-          <img
-            src="/images/fingerprint-solid.svg"
-            alt="Fingerprint icon"
-            class="my-4"
-            style="width: 24px; height: 24px;"
-            width="24"
-            height="24"
-          />
-          <h3 class="font-semibold text-xl">No ads, no tracking</h3>
-          <p>
-            Completely free and ad-free. No banners, no video ads, no in-app
-            purchases. Just a timer that respects your focus and your privacy.
-          </p>
-        </div>
+    <div id="features" class="flex flex-col gap-12 pt-32">
+      <div class="flex flex-col w-full items-center justify-center">
+        <h2
+          class="text-4xl lg:text-5xl !leading-tight
+      font-sans font-bold pb-16"
+        >
+          Your workout, your way
+        </h2>
       </div>
-      <div
-        class="flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white w-full md:w-[48%]"
-      >
-        <div class="flex flex-col gap-2 p-8">
-          <img
-            src="/images/stopwatch-20-solid.svg"
-            alt="Stopwatch icon"
-            class="my-4"
-            style="width: 24px; height: 24px;"
-            width="24"
-            height="24"
-          />
-          <h3 class="font-semibold text-xl">
-            Count up, count down, or intervals
-          </h3>
-          <p>
-            Three timer modes for every workout. Use the count up timer for
-            AMRAP and For Time, the countdown timer for timed exercises, or the
-            interval timer for boxing rounds, HIIT, Tabata, and EMOM.
-          </p>
-        </div>
-      </div>
-
-      <div
-        class="flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white w-full md:w-[48%]"
-      >
-        <div class="flex flex-col gap-2 p-8">
-          <img
-            src="/images/music-solid.svg"
-            alt="Music note icon"
-            class="my-4"
-            style="width: 24px; height: 24px;"
-            width="24"
-            height="24"
-          />
-          <h3 class="font-semibold text-xl">Works with your music</h3>
-          <p>
-            Timer beeps and alerts play alongside your music without
-            interrupting playback. Keep your workout playlist going while
-            getting clear audio cues every round.
-          </p>
-        </div>
-      </div>
-      <div
-        class="flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white w-full md:w-[48%]"
-      >
-        <div class="flex flex-col gap-2 p-8">
-          <img
-            src="/images/clock-rotate-left-solid.svg"
-            alt="History icon"
-            class="my-4"
-            style="width: 24px; height: 24px;"
-            width="24"
-            height="24"
-          />
-          <h3 class="font-semibold text-xl">Workout history</h3>
-          <p>
-            Every completed timer is automatically saved. Pin your favorite
-            workouts, give them custom names, and reload any previous workout
-            settings with one tap.
-          </p>
-        </div>
-      </div>
-
-      <div
-        class="flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white w-full md:w-[48%]"
-      >
-        <div class="flex flex-col gap-2 p-8">
-          <img
-            src="/images/expand-solid.svg"
-            alt="Full screen icon"
-            class="my-4"
-            style="width: 24px; height: 24px;"
-            width="24"
-            height="24"
-          />
-          <h3 class="font-semibold text-xl">Large display, any orientation</h3>
-          <p>
-            A large digital timer you can read from across the gym. Rotate to
-            landscape for a full-screen view. The screen stays awake during
-            workouts so you never miss a beat.
-          </p>
-        </div>
-      </div>
-      <div
-        class="flex flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white w-full md:w-[48%]"
-      >
-        <div class="flex flex-col gap-2 p-8">
-          <img
-            src="/images/palette-solid.svg"
-            alt="Palette icon"
-            class="my-4"
-            style="width: 24px; height: 24px;"
-            width="24"
-            height="24"
-          />
-          <h3 class="font-semibold text-xl">Three display themes</h3>
-          <p>
-            Choose between Standard with a classic glow effect, Minimal for a
-            clean look, or High Contrast with blue and orange optimized for
-            visibility and accessibility.
-          </p>
-        </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
+        <FeatureCard
+          heading="No ads, no tracking"
+          content="Completely free and ad-free. No banners, no video ads, no in-app purchases. Just a timer that respects your focus and your privacy."
+        />
+        <FeatureCard
+          heading="Count up, count down & intervals"
+          content="Three timer modes for every workout. Use the count up timer for AMRAP and For Time, the countdown timer for timed exercises, or the interval timer for boxing rounds, HIIT, Tabata, and EMOM."
+        />
+        <FeatureCard
+          heading="Works with your music"
+          content="Timer beeps and alerts play alongside your music without interrupting playback. Keep your workout playlist going while getting clear audio cues every round."
+        />
+        <FeatureCard
+          heading="Workout history"
+          content="Every completed timer is automatically saved. Pin your favorite workouts, give them custom names, and reload any previous workout settings with one tap."
+        />
+        <FeatureCard
+          heading="Large display, any orientation"
+          content="A large digital timer you can read from across the gym. Rotate to landscape for a full-screen view. The screen stays awake during workouts so you never miss a beat."
+        />
+        <FeatureCard
+          heading="Three display themes"
+          content="Choose between Standard with a classic glow effect, Minimal for a clean look, or High Contrast with blue and orange optimized for visibility and accessibility."
+        />
       </div>
     </div>
   </Container>
@@ -170,7 +74,7 @@ import GetAppButton from "@components/GetAppButton.astro";
         Stop arguing over <br />the timer on the wall
       </h2>
       <div
-        class="text-2xl font-light font-sans text-zinc-500 mt-8 max-w-[400px]"
+        class="text-2xl font-light font-sans text-zinc-600 mt-8 max-w-[400px]"
       >
         Get straight into your workout by using your phone as a timer instead.
       </div>

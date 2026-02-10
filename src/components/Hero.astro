@@ -3,10 +3,8 @@ import Container from "@components/Container.astro";
 import GetAppButton from "@components/GetAppButton.astro";
 ---
 
-<Container innerClass="px-0" outerClass="pb-0">
-  <div
-    class="w-full flex flex-col lg:flex-row justify-between items-center overflow-hidden md:overflow-visible"
-  >
+<Container innerClass="px-0" outerClass="pb-0 overflow-x-clip">
+  <div class="w-full flex flex-col lg:flex-row justify-between items-center">
     <div class="text-center lg:text-left md:mr-16">
       <h1
         class="text-4xl lg:text-5xl !leading-tight
@@ -15,12 +13,12 @@ import GetAppButton from "@components/GetAppButton.astro";
         A workout timer <br /> wherever you go!
       </h1>
       <h2
-        class="text-xl font-light font-sans mt-8 text-zinc-500 lg:animate-hero-fade-in"
+        class="text-xl font-light font-sans mt-8 text-zinc-600 lg:animate-hero-fade-in"
       >
         Don't lose track of time, turn your phone <br /> into the workout timer!
       </h2>
       <ul
-        class="hidden lg:block text-xl font-light font-sans mt-8 text-zinc-500 lg:animate-hero-fade-in"
+        class="hidden lg:block text-xl font-light font-sans mt-8 text-zinc-600 lg:animate-hero-fade-in"
       >
         <li class="flex items-center mb-2">
           <img
@@ -103,6 +101,7 @@ import GetAppButton from "@components/GetAppButton.astro";
     </div>
     <div
       class="flex relative w-[575px] h-[628px] mx-auto mt-16 lg:mt-0 ml-[-100px] sm:ml-0"
+      class="flex relative w-[575px] h-[628px] mx-auto mt-16 lg:mt-0 ml-[-100px] sm:ml-0"
     >
       <img
         src="/images/iphone-1.webp"
@@ -115,7 +114,7 @@ import GetAppButton from "@components/GetAppButton.astro";
         src="/images/iphone-2.webp"
         width="350"
         alt="iPhone with Box Timer app"
-        class="z-0 absolute top-[100px] left-[225px] lg:animate-hero-2"
+        class="z-5 absolute top-[100px] left-[225px] lg:animate-hero-2"
         id="iphone-2"
       />
     </div>

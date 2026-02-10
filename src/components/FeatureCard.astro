@@ -1,0 +1,28 @@
+---
+export interface Props {
+  heading?: string;
+  content?: string;
+}
+
+const { heading, content } = Astro.props;
+---
+
+<div class="flex items-start">
+  <div
+    class="flex justify-center items-center min-w-[16px] h-10 box-content mr-4"
+  >
+    <img
+      src="/images/check-solid.svg"
+      alt="Check mark"
+      style="width: 16px; height: 16px;"
+      width="16"
+      height="16"
+    />
+  </div>
+  <div>
+    <h3 class="font-bold text-lg h-10 leading-10">{heading}</h3>
+    <p class="text-zinc-600">
+      {content}
+    </p>
+  </div>
+</div>
