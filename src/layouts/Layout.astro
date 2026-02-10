@@ -3,6 +3,7 @@ import HeaderWithNavigation from "@components/HeaderWithNavigation.astro";
 import Hero from "@components/Hero.astro";
 import "../styles/global.css";
 import TelemetryDeck from "@components/TelemetryDeck.astro";
+import PostHog from "@components/PostHog.astro";
 export interface Props {
   title: string;
 }
@@ -77,6 +78,7 @@ const description =
       <slot />
     </div>
     <TelemetryDeck />
+    <PostHog />
     <script defer>
       const getAppButtonHero = document.getElementById("get-app-button-hero");
       const getAppButtonHeader = document.getElementById(
