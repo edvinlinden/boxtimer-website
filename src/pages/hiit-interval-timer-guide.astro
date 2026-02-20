@@ -1,0 +1,658 @@
+---
+export const lastmod = "2026-02-20";
+import Container from "@components/Container.astro";
+import Footer from "@components/Footer.astro";
+import GetAppButton from "@components/GetAppButton.astro";
+import Page from "@layouts/Page.astro";
+---
+
+<Page
+  title="HIIT & Interval Timer Guide: Tabata, Boxing Rounds & Custom Intervals (2026)"
+  description="The complete guide to HIIT interval formats and timers. Tabata, boxing rounds, EMOM, and custom intervals — with exact setup steps for iPhone and a comparison of the best free HIIT timer apps."
+  url="https://boxtimer.app/hiit-interval-timer-guide/"
+  canonical="https://boxtimer.app/hiit-interval-timer-guide/"
+>
+  <Container innerClass={"flex-col items-center"}>
+    <div class="w-full sm:w-9/12">
+      <h1 class="text-4xl lg:text-5xl font-sans font-bold">
+        The Complete HIIT & Interval Timer Guide
+      </h1>
+      <p class="text-xl font-light text-zinc-600 mt-4">
+        Tabata, boxing rounds, EMOM, and custom intervals — explained, set up, and timed
+      </p>
+      <p class="text-sm text-zinc-400 mt-2">Last updated: February 2026</p>
+
+      <div class="flex justify-center mt-12 mb-16">
+        <GetAppButton id="get-app-button-hiit-guide-top" />
+      </div>
+
+      <p class="mb-4">
+        High-Intensity Interval Training is defined by one thing: alternating
+        periods of intense work and deliberate rest. The timer is not a
+        convenience — it is the workout structure. The ratio of work to rest
+        determines the training stimulus, the recovery between intervals
+        determines how much quality output you can sustain, and the audio cues
+        determine whether you actually move on time.
+      </p>
+      <p class="mb-4">
+        This guide covers the main HIIT interval formats used in fitness
+        training — what each one is, how it works, and exactly how to set it up
+        on iPhone using Box Timer. It also covers what separates a good interval
+        timer app from a bad one, the mistakes athletes make most often with
+        interval timing, and how the most popular HIIT timer apps compare.
+      </p>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        The main HIIT interval formats
+      </h2>
+
+      <h3 class="text-xl font-sans font-bold mt-8 mb-3">1. Tabata</h3>
+      <p class="mb-4">
+        Tabata is the most precisely defined HIIT protocol: <strong
+          >20 seconds of work followed by 10 seconds of rest, repeated for 8
+          rounds</strong
+        > — exactly 4 minutes of total work. It originates from a 1996 study by
+        Dr. Izumi Tabata at the National Institute of Fitness and Sports in Japan,
+        which found that this specific 2:1 work-to-rest ratio produced greater improvements
+        in both aerobic and anaerobic capacity than an hour of moderate-intensity
+        cardio.
+      </p>
+      <p class="mb-4">
+        The 10-second rest interval is deliberately insufficient for full
+        recovery. This is intentional — the accumulated oxygen debt across all 8
+        rounds is what drives the adaptation. Common Tabata movements include
+        air squats, push-ups, burpees, thrusters, rowing, assault bike, and
+        kettlebell swings. Any movement that can be cycled continuously for 20
+        seconds works.
+      </p>
+      <p class="mb-4">
+        <strong>Scoring:</strong> In structured Tabata protocols, the score is the
+        lowest round count across all 8 rounds — penalising athletes who sprint the
+        first four rounds and fade. In general fitness training, total reps across
+        all rounds is a sufficient measure.
+      </p>
+      <div
+        class="bg-zinc-100 border border-zinc-200 rounded-lg p-5 pb-2 mt-4 mb-6"
+      >
+        <p class="font-semibold text-zinc-700 mb-3">
+          Timer setup for Tabata in Box Timer
+        </p>
+        <ol class="list-decimal list-outside ml-5 space-y-1">
+          <li>Tap <strong>Edit Timer</strong></li>
+          <li>Select <strong>Interval</strong></li>
+          <li>Set <strong>Rounds</strong> to 8</li>
+          <li>Set <strong>Work</strong> to 0:20</li>
+          <li>Set <strong>Rest</strong> to 0:10</li>
+          <li>
+            Enable <strong>Countdown</strong> for a 10-second lead-in to get in
+            position before the first round starts
+          </li>
+          <li>Tap <strong>Save</strong>, then <strong>Start</strong></li>
+        </ol>
+      </div>
+      <p class="mb-4">
+        The beep at the work/rest transition is the defining feature of a good
+        Tabata timer. At 10 seconds of rest there is no time to look at the
+        screen — the audio cue is what tells you to start again.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-8 mb-3">
+        2. Classic HIIT intervals
+      </h3>
+      <p class="mb-4">
+        "HIIT" covers a wide range of work-to-rest ratios beyond Tabata. The
+        protocol is the same — alternate work and rest, repeat for rounds — but
+        the ratio shifts the training emphasis:
+      </p>
+      <div class="overflow-x-auto">
+        <table class="w-full mt-2 mb-6">
+          <thead>
+            <tr>
+              <th class="text-left pb-4 pr-4 font-bold">Ratio</th>
+              <th class="text-left pb-4 pr-4 font-bold">Example</th>
+              <th class="text-left pb-4 font-bold">Best for</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t border-zinc-200">
+              <td class="py-3 pr-4">2:1</td>
+              <td class="py-3 pr-4">40s work / 20s rest</td>
+              <td class="py-3">General conditioning, aerobic development</td>
+            </tr>
+            <tr class="border-t border-zinc-200">
+              <td class="py-3 pr-4">1:1</td>
+              <td class="py-3 pr-4">30s work / 30s rest</td>
+              <td class="py-3">Beginners, heavier loads, technique work</td>
+            </tr>
+            <tr class="border-t border-zinc-200">
+              <td class="py-3 pr-4">3:1</td>
+              <td class="py-3 pr-4">45s work / 15s rest</td>
+              <td class="py-3">Aerobic-dominant movements, high volume</td>
+            </tr>
+            <tr class="border-t border-zinc-200">
+              <td class="py-3 pr-4">1:2</td>
+              <td class="py-3 pr-4">20s work / 40s rest</td>
+              <td class="py-3">Power movements, sprints, max-effort output</td>
+            </tr>
+            <tr class="border-t border-zinc-200">
+              <td class="py-3 pr-4">1:3</td>
+              <td class="py-3 pr-4">15s work / 45s rest</td>
+              <td class="py-3">Plyometrics, heavy barbell cycling, sprints</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mb-4">
+        Shorter rest periods (2:1 and above) tax the anaerobic glycolytic
+        system and build lactic acid tolerance. Longer rest periods (1:2 and
+        below) allow near-full recovery between efforts and are better suited to
+        maximal power output — sprints, jumps, or heavy barbell movements where
+        quality degrades quickly under fatigue.
+      </p>
+      <div
+        class="bg-zinc-100 border border-zinc-200 rounded-lg p-5 pb-2 mt-4 mb-6"
+      >
+        <p class="font-semibold text-zinc-700 mb-3">
+          Timer setup for classic HIIT intervals in Box Timer
+        </p>
+        <ol class="list-decimal list-outside ml-5 space-y-1">
+          <li>Tap <strong>Edit Timer</strong></li>
+          <li>Select <strong>Interval</strong></li>
+          <li>
+            Set <strong>Rounds</strong> to your desired number (e.g. 8 or 10)
+          </li>
+          <li>
+            Set <strong>Work</strong> to your work interval (e.g. 0:40)
+          </li>
+          <li>
+            Set <strong>Rest</strong> to your rest interval (e.g. 0:20)
+          </li>
+          <li>Tap <strong>Save</strong>, then <strong>Start</strong></li>
+        </ol>
+      </div>
+
+      <h3 class="text-xl font-sans font-bold mt-8 mb-3">3. Boxing rounds</h3>
+      <p class="mb-4">
+        The standard boxing interval is <strong
+          >3 minutes of work followed by 1 minute of rest</strong
+        >, repeated for 3 to 12 rounds. This format is used for shadow boxing,
+        heavy bag work, pad work, and skipping rope in boxing and combat sports
+        training. The 3:1 work-to-rest ratio produces a high aerobic load over
+        multiple rounds while the 1-minute rest is long enough to lower heart
+        rate meaningfully between efforts.
+      </p>
+      <p class="mb-4">
+        The boxing round format has crossed over into general fitness training
+        widely. Many HIIT classes and home workouts use 3-minute rounds of
+        mixed movements — burpees, jump rope, plyo push-ups, mountain climbers
+        — followed by 1 minute of active recovery. The format works for any
+        sustained-effort movement.
+      </p>
+      <p class="mb-4">
+        Amateur boxing typically uses 2-minute rounds. Elite amateur and
+        professional boxing uses 3-minute rounds. Kickboxing and Muay Thai
+        commonly use 3-minute rounds with 1-minute rest. All use the same timer
+        structure — only the round duration changes.
+      </p>
+      <div
+        class="bg-zinc-100 border border-zinc-200 rounded-lg p-5 pb-2 mt-4 mb-6"
+      >
+        <p class="font-semibold text-zinc-700 mb-3">
+          Timer setup for boxing rounds in Box Timer
+        </p>
+        <ol class="list-decimal list-outside ml-5 space-y-1">
+          <li>Tap <strong>Edit Timer</strong></li>
+          <li>Select <strong>Interval</strong></li>
+          <li>
+            Set <strong>Rounds</strong> to your round count (e.g. 6 or 12)
+          </li>
+          <li>Set <strong>Work</strong> to 3:00</li>
+          <li>Set <strong>Rest</strong> to 1:00</li>
+          <li>
+            Enable <strong>Countdown</strong> so you hear warning beeps before
+            each new round
+          </li>
+          <li>Tap <strong>Save</strong>, then <strong>Start</strong></li>
+        </ol>
+      </div>
+      <p class="mb-4">
+        Box Timer supports up to 99 rounds, making it suitable for long boxing
+        sessions without reconfiguring mid-workout. The warning beeps in the
+        final seconds of the rest interval replicate the corner man's cue to get
+        off the stool.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-8 mb-3">
+        4. EMOM-style HIIT
+      </h3>
+      <p class="mb-4">
+        Every Minute On the Minute intervals apply HIIT principles in a
+        self-regulating format: you work at the start of each minute and
+        whatever time remains is your rest. If you complete 15 calories on the
+        assault bike in 40 seconds, you get 20 seconds of rest. Move faster,
+        recover more.
+      </p>
+      <p class="mb-4">
+        EMOM-style HIIT scales automatically by fitness level without changing
+        the timer settings. A fitter athlete finishes faster and recovers more.
+        A newer athlete finishes slower, works harder, and has less rest — which
+        is the appropriate stimulus for their level. This makes EMOM intervals
+        well suited to group training and partner workouts.
+      </p>
+      <p class="mb-4">
+        Common EMOM HIIT setups: 12 calories on the rower every minute for 10
+        rounds, 10 kettlebell swings every minute for 12 rounds, 15 wall balls
+        every minute for 8 rounds, 5 strict pull-ups every minute for 10
+        rounds. The movement should be completable in 30–45 seconds to leave
+        meaningful rest.
+      </p>
+      <div
+        class="bg-zinc-100 border border-zinc-200 rounded-lg p-5 pb-2 mt-4 mb-6"
+      >
+        <p class="font-semibold text-zinc-700 mb-3">
+          Timer setup for EMOM in Box Timer
+        </p>
+        <ol class="list-decimal list-outside ml-5 space-y-1">
+          <li>Tap <strong>Edit Timer</strong></li>
+          <li>Select <strong>Interval</strong></li>
+          <li>
+            Set <strong>Rounds</strong> to your desired number of minutes (e.g.
+            10)
+          </li>
+          <li>Set <strong>Work</strong> to 1:00</li>
+          <li>
+            Set <strong>Rest</strong> to 0:00 — the rest is earned within each
+            minute
+          </li>
+          <li>Tap <strong>Save</strong>, then <strong>Start</strong></li>
+        </ol>
+      </div>
+
+      <h3 class="text-xl font-sans font-bold mt-8 mb-3">
+        5. Custom intervals
+      </h3>
+      <p class="mb-4">
+        Beyond the standard formats, HIIT training uses custom ratios for
+        specific goals, programming styles, or athlete populations. Some
+        examples:
+      </p>
+      <ul class="list-disc list-outside ml-6 space-y-2 mb-6">
+        <li>
+          <strong>Beginner HIIT:</strong> 20s work / 40s rest for 6–8 rounds — lower
+          total density, easier to sustain quality
+        </li>
+        <li>
+          <strong>Sprint intervals:</strong> 10s work / 50s rest for 10 rounds — short
+          maximal efforts with near-full recovery
+        </li>
+        <li>
+          <strong>Strength-endurance:</strong> 50s work / 10s rest for 5 rounds — high
+          time under tension, minimal rest
+        </li>
+        <li>
+          <strong>Pyramid HIIT:</strong> start short and increase — but this requires
+          reconfiguring between rounds, which Box Timer's saved workout history
+          can assist with
+        </li>
+      </ul>
+      <p class="mb-4">
+        Box Timer's interval mode accepts any work duration, rest duration, and
+        round count. Any custom HIIT protocol that follows a fixed work/rest
+        structure can be set up in seconds and saved for future sessions.
+      </p>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        What to look for in a HIIT timer app
+      </h2>
+      <p class="mb-4">
+        Most general timer apps — including the iPhone's built-in clock — can
+        run a countdown or a stopwatch, but they cannot handle HIIT intervals.
+        There is no interval mode, no work/rest separation, and no automatic
+        round transitions. Here is what a dedicated HIIT timer app needs to
+        deliver:
+      </p>
+      <ul class="list-disc list-outside ml-6 space-y-3 mb-6">
+        <li>
+          <strong>Loud, distinct audio cues</strong> — During max-effort burpees or
+          kettlebell swings you cannot check the screen. Warning beeps in the final
+          3 seconds of a rest interval are as important as the start-of-work beep.
+          The timer needs to be audible over music and heavy breathing.
+        </li>
+        <li>
+          <strong>Music compatibility</strong> — HIIT training without music is
+          rare. The timer app should mix its beeps over your playlist using system
+          audio — not pause or reroute it. Apps that use video-style audio channels
+          cut the music every time a beep fires.
+        </li>
+        <li>
+          <strong>Configurable work, rest, and rounds independently</strong> — A
+          fixed Tabata-only app won't work for boxing rounds or custom 40/20 intervals.
+          All three parameters need to be independently adjustable.
+        </li>
+        <li>
+          <strong>No ads during workouts</strong> — A pop-up ad between rounds is
+          not just annoying. It can add unexpected extra rest time and disrupt the
+          interval structure. A freemium app with interstitial ads is not suitable
+          for precision interval training.
+        </li>
+        <li>
+          <strong>Screen stays awake</strong> — The display should remain on for
+          the full duration of the workout. If it locks between intervals, unlocking
+          it eats into rest time.
+        </li>
+        <li>
+          <strong>Saved presets</strong> — If you run the same 30/30 circuit every
+          Tuesday, you should be able to load it in one tap. Configuring from scratch
+          before every session is wasted time and mental energy better spent warming
+          up.
+        </li>
+      </ul>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        Common interval timer mistakes
+      </h2>
+      <ul class="list-disc list-outside ml-6 space-y-3 mb-6">
+        <li>
+          <strong>Not using a countdown lead-in</strong> — Starting an interval
+          the moment you tap Start means you begin moving from a standing start.
+          A 10-second countdown gives you time to get in position, grip the handle,
+          or get your hands on the floor — which is especially important for Tabata
+          where the first interval is at full intensity.
+        </li>
+        <li>
+          <strong>Setting Tabata rest to zero</strong> — Some athletes new to Tabata
+          think the rest period is optional and run 20/0 intervals. This is not
+          Tabata — it is a sustained max-effort set that degrades into slow movement
+          by round 3. The 10 seconds of rest is structural to the protocol.
+        </li>
+        <li>
+          <strong>Using rest time for equipment transitions</strong> — In circuit
+          HIIT with equipment changes (e.g. kettlebell to rowing machine), the
+          transition can consume 10–15 seconds of programmed rest. Plan transitions
+          into the rest interval, or add 10 seconds to the rest setting to account
+          for them.
+        </li>
+        <li>
+          <strong>Choosing an app that only does Tabata</strong> — Several popular
+          timer apps are built exclusively for Tabata (20/10) or a fixed set of
+          interval presets. Athletes who train across formats — Tabata one day, boxing
+          rounds another, custom 40/20 intervals another — eventually outgrow these
+          apps. Look for an app with fully configurable work, rest, and round settings.
+        </li>
+        <li>
+          <strong>Cutting rest short "because it feels easy"</strong> — The
+          adaptation from HIIT comes from repeating high-quality work intervals,
+          not from grinding through fatigue. Shortening rest in the first half of
+          a session leads to degraded output in the second half. The rest interval
+          is part of the program.
+        </li>
+        <li>
+          <strong>Not saving workouts</strong> — If you configure the same boxing
+          round timer from scratch before every session, you are spending cognitive
+          energy that should go into the warm-up. Save and name your frequent
+          interval setups so you can reload them with one tap.
+        </li>
+      </ul>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        HIIT timer app comparison
+      </h2>
+      <p class="mb-6">
+        The most commonly used HIIT and interval timer apps for iPhone, compared
+        on the features that matter most for interval training:
+      </p>
+      <div class="overflow-x-auto">
+        <table class="w-full mt-4">
+          <thead>
+            <tr>
+              <th class="text-left pb-4 pr-4 font-bold">App</th>
+              <th class="text-left pb-4 pr-4 font-bold">Custom intervals</th>
+              <th class="text-left pb-4 pr-4 font-bold">Tabata preset</th>
+              <th class="text-left pb-4 pr-4 font-bold">Price</th>
+              <th class="text-left pb-4 font-bold">Ads</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t border-zinc-200">
+              <td class="py-3 pr-4 font-medium">Box Timer</td>
+              <td class="py-3 pr-4 text-green-700">Yes</td>
+              <td class="py-3 pr-4 text-green-700">Yes</td>
+              <td class="py-3 text-green-700">Free</td>
+              <td class="py-3 text-green-700">None</td>
+            </tr>
+            <tr class="border-t border-zinc-200">
+              <td class="py-3 pr-4 font-medium">
+                <a
+                  class="text-blue-600 hover:text-blue-800"
+                  href="/box-timer-vs-seconds-pro/">Seconds Pro</a
+                >
+              </td>
+              <td class="py-3 pr-4 text-green-700">Yes</td>
+              <td class="py-3 pr-4 text-green-700">Yes</td>
+              <td class="py-3 text-yellow-600">$7.99</td>
+              <td class="py-3 text-green-700">None</td>
+            </tr>
+            <tr class="border-t border-zinc-200">
+              <td class="py-3 pr-4 font-medium">
+                <a
+                  class="text-blue-600 hover:text-blue-800"
+                  href="/box-timer-vs-smartwod/">SmartWOD</a
+                >
+              </td>
+              <td class="py-3 pr-4 text-green-700">Yes</td>
+              <td class="py-3 pr-4 text-green-700">Yes</td>
+              <td class="py-3 text-yellow-600">Free & Paid</td>
+              <td class="py-3 text-red-700">Free tier</td>
+            </tr>
+            <tr class="border-t border-zinc-200">
+              <td class="py-3 pr-4 font-medium">
+                <a
+                  class="text-blue-600 hover:text-blue-800"
+                  href="/box-timer-vs-interval-timer/">Interval Timer (Float Tech)</a
+                >
+              </td>
+              <td class="py-3 pr-4 text-green-700">Yes</td>
+              <td class="py-3 pr-4 text-green-700">Yes</td>
+              <td class="py-3 text-yellow-600">Free & Paid</td>
+              <td class="py-3 text-green-700">None</td>
+            </tr>
+            <tr class="border-t border-zinc-200">
+              <td class="py-3 pr-4 font-medium">
+                <a
+                  class="text-blue-600 hover:text-blue-800"
+                  href="/box-timer-vs-tabata-stopwatch-pro/">Tabata Stopwatch Pro</a
+                >
+              </td>
+              <td class="py-3 pr-4 text-yellow-600">Limited</td>
+              <td class="py-3 pr-4 text-green-700">Yes</td>
+              <td class="py-3 text-yellow-600">Free & $19.99</td>
+              <td class="py-3 text-red-700">Free tier</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-zinc-600 text-sm">
+        Apps limited to Tabata presets cannot support boxing rounds, custom
+        work/rest ratios, or EMOM-style intervals without workarounds.
+      </p>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        Frequently asked questions
+      </h2>
+
+      <h3 class="text-xl font-sans font-bold mt-8 mb-3">
+        What is the best free HIIT timer app for iPhone?
+      </h3>
+      <p class="mb-4">
+        Box Timer is the best free HIIT timer app for iPhone. It is completely
+        free with no ads, no subscriptions, and no in-app purchases. It
+        supports fully configurable work time, rest time, and round count — so
+        it handles Tabata (20/10 × 8), boxing rounds (3:00/1:00), standard HIIT
+        (40/20, 30/30), and EMOM intervals without switching apps or paying to
+        unlock features. The interval timer plays loud beeps at work/rest
+        transitions and mixes them over your music without pausing playback.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-8 mb-3">
+        What is the best work-to-rest ratio for HIIT?
+      </h3>
+      <p class="mb-4">
+        There is no single best ratio — it depends on the training goal and
+        intensity of the movement. A 2:1 ratio (e.g. 40s/20s) is the most
+        common general HIIT prescription and works well for bodyweight and
+        moderate-load movements. A 1:2 ratio (e.g. 20s/40s) is better for
+        maximal-effort power work where quality degrades quickly under fatigue.
+        For beginners, a 1:1 ratio (30s/30s) provides enough recovery to
+        maintain consistent output. Tabata's 2:1 ratio (20s/10s) is
+        intentionally punishing and is most effective for athletes with a
+        moderate-to-high fitness base.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-8 mb-3">
+        Is Tabata better than regular HIIT?
+      </h3>
+      <p class="mb-4">
+        Tabata is a specific type of HIIT, not a superior alternative.
+        The original Tabata study compared a very specific protocol (8 rounds of
+        20s/10s at 170% VO₂max) to 60 minutes of steady-state cardio at 70%
+        VO₂max. The results showed Tabata improved both aerobic and anaerobic
+        capacity more. However, the study subjects were highly trained speed
+        skaters working at 170% of their maximum oxygen uptake — a level of
+        intensity most recreational athletes do not reach. General HIIT with
+        longer intervals and more rest can be equally effective and more
+        sustainable for most people.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-8 mb-3">
+        How long should a HIIT workout be?
+      </h3>
+      <p class="mb-4">
+        Effective HIIT sessions typically run 15–30 minutes of total work time,
+        not counting warm-up and cool-down. A classic Tabata session is 4
+        minutes of work (8 rounds), though most athletes stack 3–5 Tabata rounds
+        across different exercises for a 12–20 minute session. A boxing workout
+        with 6 three-minute rounds and 1-minute rest is 24 minutes total (18
+        minutes of work). HIIT sessions longer than 30 minutes of active work
+        typically indicate that the intensity is too low to qualify as true
+        high-intensity training.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-8 mb-3">
+        Can I use my iPhone as a HIIT interval timer?
+      </h3>
+      <p class="mb-4">
+        Yes — with the right app. The iPhone's built-in Clock app has a
+        countdown timer and a stopwatch but no interval mode. It cannot
+        automatically alternate between work and rest, does not play
+        round-transition beeps, and requires manual restarting after each
+        interval. A dedicated interval timer app like Box Timer handles all of
+        this automatically: set your work time, rest time, and rounds once, and
+        the app runs the entire session with audio cues at every transition.
+      </p>
+
+      <div class="flex justify-center mt-16 mb-8">
+        <GetAppButton id="get-app-button-hiit-guide-bottom" />
+      </div>
+
+      <p class="mt-16">
+        <strong>Related:</strong>
+        <a class="text-blue-600 hover:text-blue-800" href="/hiit-timer/"
+          >Free HIIT Timer for iPhone</a
+        >
+        &nbsp;·&nbsp;
+        <a class="text-blue-600 hover:text-blue-800" href="/tabata-timer/"
+          >Free Tabata Timer for iPhone</a
+        >
+        &nbsp;·&nbsp;
+        <a class="text-blue-600 hover:text-blue-800" href="/interval-timer/"
+          >Free Interval Timer for iPhone</a
+        >
+        &nbsp;·&nbsp;
+        <a class="text-blue-600 hover:text-blue-800" href="/boxing-round-timer/"
+          >Free Boxing Round Timer for iPhone</a
+        >
+        &nbsp;·&nbsp;
+        <a
+          class="text-blue-600 hover:text-blue-800"
+          href="/crossfit-workout-timer-guide/"
+          >CrossFit Workout Timer Guide</a
+        >
+        &nbsp;·&nbsp;
+        <a
+          class="text-blue-600 hover:text-blue-800"
+          href="/2026-best-workout-timers-iphone/"
+          >Best Workout Timer Apps for iPhone in 2026</a
+        >
+      </p>
+    </div>
+  </Container>
+  <Footer />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "The Complete HIIT & Interval Timer Guide: Tabata, Boxing Rounds & Custom Intervals",
+      "description": "The complete guide to HIIT interval formats and timers. Tabata, boxing rounds, EMOM, and custom intervals — with exact setup steps for iPhone and a comparison of the best free HIIT timer apps.",
+      "datePublished": "2026-02-20",
+      "dateModified": "2026-02-20",
+      "author": {
+        "@type": "Person",
+        "name": "Edvin Lindén",
+        "url": "https://edvinlinden.se"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Box Timer",
+        "url": "https://boxtimer.app"
+      }
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the best free HIIT timer app for iPhone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Box Timer is the best free HIIT timer app for iPhone. It is completely free with no ads, no subscriptions, and no in-app purchases. It supports fully configurable work time, rest time, and round count — handling Tabata, boxing rounds, standard HIIT, and EMOM intervals without switching apps or paying to unlock features."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best work-to-rest ratio for HIIT?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no single best ratio — it depends on the goal and movement intensity. A 2:1 ratio (e.g. 40s/20s) is the most common general HIIT prescription. A 1:2 ratio (20s/40s) is better for maximal-effort power work. For beginners, a 1:1 ratio (30s/30s) provides enough recovery to maintain consistent output. Tabata's 2:1 ratio (20s/10s) is intentionally punishing and works best for athletes with a moderate-to-high fitness base."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Tabata better than regular HIIT?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tabata is a specific type of HIIT, not a superior alternative. The original Tabata study compared a very specific protocol at 170% VO₂max to 60 minutes of steady-state cardio. The results showed Tabata improved both aerobic and anaerobic capacity more — but the subjects were elite speed skaters at maximal intensity. General HIIT with longer intervals and more rest can be equally effective and more sustainable for most people."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long should a HIIT workout be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Effective HIIT sessions typically run 15–30 minutes of total work time, not counting warm-up and cool-down. A classic Tabata session is 4 minutes of work (8 rounds), though most athletes stack 3–5 Tabata rounds across different exercises for a 12–20 minute session. Sessions longer than 30 minutes of active work typically indicate that the intensity is too low to qualify as true high-intensity training."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use my iPhone as a HIIT interval timer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — with the right app. The iPhone's built-in Clock app has a countdown timer and a stopwatch but no interval mode. It cannot automatically alternate between work and rest, does not play round-transition beeps, and requires manual restarting after each interval. A dedicated interval timer app like Box Timer handles all of this automatically with audio cues at every transition."
+          }
+        }
+      ]
+    }
+  </script>
+</Page>
