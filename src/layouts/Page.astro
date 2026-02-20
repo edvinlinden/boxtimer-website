@@ -37,6 +37,36 @@ const openGraphImage = "https://boxtimer.app/images/og.png";
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={openGraphImage} />
     <link rel="canonical" href={canonical || url} />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "Box Timer - Workout Timer",
+        "description": "Free workout timer app for iPhone and iPad. Features count up, count down, and interval timers for boxing, HIIT, Tabata, and CrossFit training. No ads.",
+        "operatingSystem": "iOS",
+        "applicationCategory": "HealthApplication",
+        "featureList": "Count up timer, Count down timer, Interval timer with work/rest rounds, No ads, Workout history, Three display themes, Works with music, Landscape mode, 6 languages",
+        "screenshot": "https://boxtimer.app/images/box-timer-screenshot.png",
+        "downloadUrl": "https://apps.apple.com/us/app/the-box-timer/id1547518531",
+        "isAccessibleForFree": true,
+        "inLanguage": ["en", "de", "es", "fr", "pl", "sv"],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "ratingCount": "4030"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Edvin Lindén",
+          "url": "https://edvinlinden.se"
+        }
+      }
+    </script>
     <title>{title}</title>
   </head>
   <body>
