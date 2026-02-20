@@ -1,0 +1,609 @@
+---
+export const lastmod = "2026-02-20";
+import Container from "@components/Container.astro";
+import Footer from "@components/Footer.astro";
+import GetAppButton from "@components/GetAppButton.astro";
+import Page from "@layouts/Page.astro";
+---
+
+<Page
+  title="CrossFit Workout Timer Guide: AMRAP, EMOM, For Time & Tabata (2026)"
+  description="The complete guide to CrossFit WOD formats and timers. Learn how AMRAP, EMOM, For Time, Tabata, and RFT work — with exact timer setup steps for each format on iPhone."
+  url="https://boxtimer.app/crossfit-workout-timer-guide/"
+  canonical="https://boxtimer.app/crossfit-workout-timer-guide/"
+>
+  <Container innerClass={"flex-col items-center"}>
+    <div class="w-full sm:w-9/12">
+      <h1 class="text-4xl lg:text-5xl font-sans font-bold">
+        The Complete CrossFit Workout Timer Guide
+      </h1>
+      <p class="text-xl font-light text-zinc-600 mt-4">
+        AMRAP, EMOM, For Time, Tabata, and RFT — explained, scored, and timed
+      </p>
+      <p class="text-sm text-zinc-400 mt-2">Last updated: February 2026</p>
+
+      <div class="flex justify-center mt-12 mb-16">
+        <GetAppButton id="get-app-button-guide-top" />
+      </div>
+
+      <p class="mb-4">
+        A CrossFit workout lives and dies by its timer. The clock determines
+        when work starts, when rest ends, how many rounds you complete, and
+        whether your score is valid. Understanding the five major WOD formats —
+        and knowing how to set up the right timer for each — is foundational to
+        CrossFit training, whether you are an athlete or a coach.
+      </p>
+      <p class="mb-4">
+        This guide covers every main CrossFit WOD format: what it means, how
+        scoring works, common variations, and step-by-step timer setup for each
+        format using Box Timer on iPhone. It also covers how to choose the right
+        CrossFit timer app and the mistakes athletes make most often with their
+        clocks.
+      </p>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        The five main CrossFit WOD formats
+      </h2>
+
+      <h3 class="text-xl font-sans font-bold mt-15 mb-3">
+        1. AMRAP — As Many Rounds As Possible
+      </h3>
+      <p class="mb-4">
+        AMRAP is the most common format in CrossFit programming.
+        <strong>As Many Rounds As Possible</strong> means you set a time cap — typically
+        10, 15, or 20 minutes — and perform a fixed movement sequence (e.g., 5 pull-ups,
+        10 push-ups, 15 air squats) as many times as you can before the clock runs
+        out. Your score is the total number of complete rounds, plus any additional
+        reps completed in a partial round.
+      </p>
+      <p class="mb-4">
+        AMRAP is deliberately open-ended. There is no "finish line" — the goal
+        is to manage pacing so you are still moving at full intensity when the
+        final second ticks. A common programming choice is to run two athletes
+        through the same AMRAP and compare scores.
+      </p>
+      <p class="mb-2"><strong>Scoring example:</strong></p>
+      <p class="mb-4">
+        If the AMRAP is 3 pull-ups + 6 push-ups + 9 squats and you complete 6
+        full rounds plus 3 pull-ups and 4 push-ups, your score is "6 + 7" (6
+        complete rounds, 7 additional reps).
+      </p>
+      <div
+        class="bg-zinc-100 border border-zinc-200 rounded-lg p-5 pb-2 mt-4 mb-6"
+      >
+        <p class="font-semibold text-zinc-700 mb-3">
+          Timer setup for AMRAP in Box Timer
+        </p>
+        <ol class="list-decimal list-outside ml-5 space-y-1">
+          <li>Tap <strong>Edit Timer</strong></li>
+          <li>Select <strong>Down</strong> (count down from your time cap)</li>
+          <li>Set the duration — e.g., 20:00 for a 20-minute AMRAP</li>
+          <li>
+            Optionally enable <strong>Countdown</strong> for a 10-second lead-in
+          </li>
+          <li>Tap <strong>Save</strong>, then <strong>Start</strong></li>
+        </ol>
+      </div>
+      <p class="mb-4">
+        The descending clock creates urgency. Watching time disappear — rather
+        than accumulating — pushes most athletes to keep moving.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-15 mb-3">
+        2. EMOM — Every Minute On the Minute
+      </h3>
+      <p class="mb-4">
+        <strong>Every Minute On the Minute</strong> workouts require you to begin
+        a set of reps at the start of each minute. Whatever time remains after you
+        finish is your rest. The faster you move, the more recovery you earn — which
+        makes pacing and efficiency a central skill.
+      </p>
+      <p class="mb-4">
+        EMOM workouts are popular for strength-skill development (e.g., 3 power
+        cleans every minute for 10 minutes), conditioning (e.g., 10 calories on
+        the rower every minute for 12 minutes), and gymnastics practice (e.g., 5
+        strict pull-ups every minute for 15 minutes). The total duration is
+        usually the number of rounds in minutes — a 10-round EMOM with 1-minute
+        intervals lasts exactly 10 minutes.
+      </p>
+      <p class="mb-4">
+        <strong>Variants:</strong> E2MOM (every 2 minutes) and E90S (every 90 seconds)
+        follow the same structure with longer intervals, giving athletes more recovery
+        time for heavier or more complex movements.
+      </p>
+      <div class="bg-zinc-100 border border-zinc-200 rounded-lg p-5 mt-4 mb-6">
+        <p class="font-semibold text-zinc-700 mb-3">
+          Timer setup for EMOM in Box Timer
+        </p>
+        <ol class="list-decimal list-outside ml-5 space-y-1">
+          <li>Tap <strong>Edit Timer</strong></li>
+          <li>Select <strong>Interval</strong></li>
+          <li>
+            Set <strong>Rounds</strong> to match your desired number of minutes (e.g.,
+            10)
+          </li>
+          <li>
+            Set <strong>Work</strong> to 1:00 (or 2:00 for E2MOM, 1:30 for E90S)
+          </li>
+          <li>Set <strong>Rest</strong> to 0:00</li>
+          <li>Tap <strong>Save</strong>, then <strong>Start</strong></li>
+        </ol>
+      </div>
+      <p class="mb-4">
+        The beep at the start of each round is the signal to begin. Box Timer's
+        loud audio cues are audible even under a barbell, so you do not need to
+        watch the screen during your set.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-15 mb-3">3. For Time</h3>
+      <p class="mb-4">
+        <strong>For Time</strong> is the simplest CrossFit format: complete a prescribed
+        set of work as fast as possible. The clock counts up from zero, and you stop
+        it when you finish. Your score is your finishing time. This creates a direct
+        sprint incentive — unlike AMRAP, where the endpoint is the clock, For Time
+        workouts let athletes push toward a finish line.
+      </p>
+      <p class="mb-4">
+        Famous benchmark workouts like Fran (21-15-9 thrusters and pull-ups) and
+        Helen (3 rounds of 400m run, 21 kettlebell swings, 12 pull-ups) are For
+        Time workouts. Most have an implicit or explicit time cap — athletes who
+        cannot finish within the cap record their time cap plus reps completed.
+      </p>
+      <p class="mb-4">
+        <strong>Rounds For Time (RFT)</strong> is a variant where a fixed number
+        of rounds is prescribed rather than allowing unlimited rounds. "5 Rounds
+        For Time" of a given sequence uses the same timer — count up and stop when
+        all rounds are done.
+      </p>
+      <div class="bg-zinc-100 border border-zinc-200 rounded-lg p-5 mt-4 mb-6">
+        <p class="font-semibold text-zinc-700 mb-3">
+          Timer setup for For Time in Box Timer
+        </p>
+        <ol class="list-decimal list-outside ml-5 space-y-1">
+          <li>Tap <strong>Edit Timer</strong></li>
+          <li>Select <strong>Up</strong> (count up from zero)</li>
+          <li>Tap <strong>Save</strong>, then <strong>Start</strong></li>
+          <li>Tap the display to pause and record your time when you finish</li>
+        </ol>
+      </div>
+      <p class="mb-4">
+        If there is a time cap, run the timer as a countdown instead (select
+        <strong>Down</strong> and set the cap). Athletes who finish early simply
+        stop the timer; athletes who hit the cap note their reps completed.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-15 mb-3">4. Tabata</h3>
+      <p class="mb-4">
+        Tabata is a specific high-intensity interval protocol: <strong
+          >8 rounds of 20 seconds work followed by 10 seconds rest</strong
+        >, for a total of 4 minutes. It originates from a 1996 study by Dr.
+        Izumi Tabata, which found that this protocol produced greater
+        improvements in both aerobic and anaerobic capacity than traditional
+        steady-state cardio in a fraction of the time.
+      </p>
+      <p class="mb-4">
+        In CrossFit, Tabata is commonly applied to barbell cycling (thrusters,
+        ground-to-overhead), rowing and bike ergometers, and bodyweight
+        movements (air squats, push-ups, sit-ups). The 10-second rest interval
+        is deliberately insufficient for full recovery, which drives the
+        metabolic intensity.
+      </p>
+      <p class="mb-4">
+        <strong>Scoring:</strong> In competition, Tabata scores are recorded as the
+        <em>lowest round count</em> across all 8 rounds ("Tabata score"), which penalizes
+        athletes who sprint the first rounds and fade. In training, athletes often
+        simply count total reps.
+      </p>
+      <div class="bg-zinc-100 border border-zinc-200 rounded-lg p-5 mt-4 mb-6">
+        <p class="font-semibold text-zinc-700 mb-3">
+          Timer setup for Tabata in Box Timer
+        </p>
+        <ol class="list-decimal list-outside ml-5 space-y-1">
+          <li>Tap <strong>Edit Timer</strong></li>
+          <li>Select <strong>Interval</strong></li>
+          <li>Set <strong>Rounds</strong> to 8</li>
+          <li>Set <strong>Work</strong> to 0:20</li>
+          <li>Set <strong>Rest</strong> to 0:10</li>
+          <li>Tap <strong>Save</strong>, then <strong>Start</strong></li>
+        </ol>
+      </div>
+      <p class="mb-4">
+        The beeps at the work/rest transitions are the defining feature of a
+        good Tabata timer. At 10 seconds of rest, there is no time to look at
+        the screen — the audio cue is what tells you to start again.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-15 mb-3">
+        5. Rounds For Time (RFT) and chippers
+      </h3>
+      <p class="mb-4">
+        <strong>Rounds For Time</strong> prescribes a fixed number of rounds completed
+        as fast as possible. Unlike AMRAP (unlimited rounds, fixed time), RFT has
+        a fixed workload and variable time. "3 Rounds For Time" of 400m run, 21 kettlebell
+        swings, 12 pull-ups is a classic example.
+      </p>
+      <p class="mb-4">
+        A <strong>chipper</strong> is a long, multi-movement workout done once through
+        rather than for rounds — e.g., 50 wall balls, 40 box jumps, 30 pull-ups,
+        20 toes-to-bar, 10 clean-and-jerks, For Time. Both use a count-up timer stopped
+        when the athlete finishes.
+      </p>
+      <div class="bg-zinc-100 border border-zinc-200 rounded-lg p-5 mt-4 mb-6">
+        <p class="font-semibold text-zinc-700 mb-3">
+          Timer setup for RFT and chippers in Box Timer
+        </p>
+        <ol class="list-decimal list-outside ml-5 space-y-1">
+          <li>
+            Tap <strong>Edit Timer</strong> and select <strong>Up</strong>
+          </li>
+          <li>Tap <strong>Save</strong>, then <strong>Start</strong></li>
+          <li>Stop the timer the moment you finish your final rep</li>
+        </ol>
+      </div>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        WOD format quick reference
+      </h2>
+      <div class="overflow-x-auto">
+        <table class="w-full mt-4">
+          <thead>
+            <tr>
+              <th class="text-left pb-4 pr-4 font-bold">Format</th>
+              <th class="text-left pb-4 pr-4 font-bold">Fixed element</th>
+              <th class="text-left pb-4 pr-4 font-bold">Variable element</th>
+              <th class="text-left pb-4 font-bold">Timer type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t border-zinc-200">
+              <td class="py-3 pr-4 font-medium">AMRAP</td>
+              <td class="py-3 pr-4">Time cap</td>
+              <td class="py-3 pr-4">Rounds completed</td>
+              <td class="py-3">Count down</td>
+            </tr>
+            <tr class="border-t border-zinc-200">
+              <td class="py-3 pr-4 font-medium">EMOM</td>
+              <td class="py-3 pr-4">Rounds + interval</td>
+              <td class="py-3 pr-4">Rest within each minute</td>
+              <td class="py-3">Interval (no rest)</td>
+            </tr>
+            <tr class="border-t border-zinc-200">
+              <td class="py-3 pr-4 font-medium">For Time</td>
+              <td class="py-3 pr-4">Workload</td>
+              <td class="py-3 pr-4">Completion time</td>
+              <td class="py-3">Count up</td>
+            </tr>
+            <tr class="border-t border-zinc-200">
+              <td class="py-3 pr-4 font-medium">Tabata</td>
+              <td class="py-3 pr-4">8 × 20s/10s</td>
+              <td class="py-3 pr-4">Reps per round</td>
+              <td class="py-3">Interval (8×20/10)</td>
+            </tr>
+            <tr class="border-t border-zinc-200">
+              <td class="py-3 pr-4 font-medium">RFT</td>
+              <td class="py-3 pr-4">Round count</td>
+              <td class="py-3 pr-4">Completion time</td>
+              <td class="py-3">Count up</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        How to choose a CrossFit timer app
+      </h2>
+      <p class="mb-4">
+        Most general-purpose timer apps — including the iPhone's built-in clock
+        — cannot handle CrossFit workouts. A countdown timer works for AMRAP but
+        not EMOM. A stopwatch works for For Time but not Tabata. A dedicated
+        CrossFit timer app needs to support all four formats natively.
+      </p>
+      <p class="mb-4">Here is what to look for:</p>
+      <ul class="list-disc list-outside ml-6 space-y-3 mb-6">
+        <li>
+          <strong>All four WOD formats supported</strong> — AMRAP (countdown), For
+          Time (count up), EMOM (interval with no rest), and Tabata (interval with
+          work/rest). Apps that only support intervals will not handle AMRAP or For
+          Time.
+        </li>
+        <li>
+          <strong>Loud, distinct audio cues</strong> — You should be able to hear
+          the timer from across a gym, over music, and under a loaded barbell. Warning
+          beeps in the last few seconds of an interval add significant value during
+          Tabata and EMOM work.
+        </li>
+        <li>
+          <strong>Compatibility with music playback</strong> — Beeps should play
+          over your music without pausing or interrupting it. Apps that use video-style
+          audio routing kill your playlist at every transition.
+        </li>
+        <li>
+          <strong>Large, readable display</strong> — A landscape full-screen mode
+          is essential for garage gym athletes who prop their phone up and need to
+          read the timer from five meters away.
+        </li>
+        <li>
+          <strong>Workout history and saved presets</strong> — Reconfiguring a timer
+          from scratch before every workout wastes time and mental energy. The ability
+          to save and reload your common WODs is a practical necessity.
+        </li>
+        <li>
+          <strong>No ads</strong> — A pop-up ad mid-Tabata is not just annoying.
+          It breaks the audio cues and ruins the workout. Paid apps or genuinely
+          free apps (no ad-supported tier) are both fine; freemium apps with ads
+          in the free tier are not.
+        </li>
+      </ul>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        Common timer mistakes CrossFit athletes make
+      </h2>
+      <ul class="list-disc list-outside ml-6 space-y-3 mb-6">
+        <li>
+          <strong>Running AMRAP as a count-up</strong> — A count-up timer during
+          an AMRAP tells you how long you have been working but not how much time
+          is left. A countdown from your time cap creates urgency and lets you pace
+          rationally. Always use a countdown for AMRAP.
+        </li>
+        <li>
+          <strong>Setting rest to nonzero for EMOM</strong> — An EMOM has no explicit
+          rest period. The rest is the time between finishing your reps and the next
+          minute starting. If you add a separate rest interval in your timer, the
+          structure breaks — you will get a rest beep mid-minute rather than beeps
+          only at the minute mark.
+        </li>
+        <li>
+          <strong>Skipping the countdown lead-in</strong> — Starting a Tabata the
+          instant you tap Start means you begin moving before you are positioned.
+          A 10-second countdown before the timer starts gives you time to get under
+          the bar, grip the handle, or get your hands on the floor.
+        </li>
+        <li>
+          <strong>Not saving workouts</strong> — If you run the same Friday EMOM
+          every week and configure it from scratch each time, you are spending cognitive
+          energy that should go into warming up. Save and pin your frequent workouts
+          so you can reload them in one tap.
+        </li>
+        <li>
+          <strong>Using a timer that stops music</strong> — Some apps route audio
+          through video channels, which pauses any music playing when a beep fires.
+          If your CrossFit music cuts out every 20 seconds during Tabata, switch
+          to an app that uses system audio mixing to play beeps over the top of music.
+        </li>
+        <li>
+          <strong>Trying to use a Tabata-only app for CrossFit</strong> — Several
+          popular timer apps support only Tabata and custom intervals. They do not
+          support AMRAP (countdown) or For Time (count up). Athletes who invest in
+          learning one of these apps often discover the limitation only when they
+          try to run a WOD that uses a different format.
+        </li>
+      </ul>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        CrossFit timer app comparison
+      </h2>
+      <p class="mb-6">
+        The most commonly used CrossFit timer apps for iPhone, compared on the
+        features that matter most for WOD training:
+      </p>
+      <div class="overflow-x-auto">
+        <table class="w-full mt-4">
+          <thead>
+            <tr>
+              <th class="text-left pb-4 pr-4 font-bold">App</th>
+              <th class="text-left pb-4 pr-4 font-bold">AMRAP / For Time</th>
+              <th class="text-left pb-4 pr-4 font-bold">EMOM / Tabata</th>
+              <th class="text-left pb-4 pr-4 font-bold">Price</th>
+              <th class="text-left pb-4 font-bold">Ads</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t border-zinc-200">
+              <td class="py-3 pr-4 font-medium">Box Timer</td>
+              <td class="py-3 pr-4 text-green-700">Yes</td>
+              <td class="py-3 pr-4 text-green-700">Yes</td>
+              <td class="py-3 text-green-700">Free</td>
+              <td class="py-3 text-green-700">None</td>
+            </tr>
+            <tr class="border-t border-zinc-200">
+              <td class="py-3 pr-4 font-medium">SmartWOD</td>
+              <td class="py-3 pr-4 text-green-700">Yes</td>
+              <td class="py-3 pr-4 text-green-700">Yes</td>
+              <td class="py-3 text-yellow-600">Free & Paid</td>
+              <td class="py-3 text-red-700">Free tier</td>
+            </tr>
+            <tr class="border-t border-zinc-200">
+              <td class="py-3 pr-4 font-medium">Seconds Pro</td>
+              <td class="py-3 pr-4 text-green-700">Yes</td>
+              <td class="py-3 pr-4 text-green-700">Yes</td>
+              <td class="py-3 text-yellow-600">$7.99</td>
+              <td class="py-3 text-green-700">None</td>
+            </tr>
+            <tr class="border-t border-zinc-200">
+              <td class="py-3 pr-4 font-medium">Interval Timer (Float Tech)</td>
+              <td class="py-3 pr-4 text-red-700">No</td>
+              <td class="py-3 pr-4 text-yellow-600">Tabata only</td>
+              <td class="py-3 text-yellow-600">Free & Paid</td>
+              <td class="py-3 text-green-700">None</td>
+            </tr>
+            <tr class="border-t border-zinc-200">
+              <td class="py-3 pr-4 font-medium">Tabata Stopwatch Pro</td>
+              <td class="py-3 pr-4 text-red-700">No</td>
+              <td class="py-3 pr-4 text-yellow-600">Tabata only</td>
+              <td class="py-3 text-yellow-600">Free &amp; $19.99</td>
+              <td class="py-3 text-red-700">Free tier</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-zinc-600 text-sm">
+        Apps supporting only Tabata and custom intervals cannot run AMRAP or For
+        Time workouts natively — a significant limitation for CrossFit athletes
+        who program across all formats.
+      </p>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        Frequently asked questions
+      </h2>
+
+      <h3 class="text-xl font-sans font-bold mt-15 mb-3">
+        What timer is used in CrossFit competitions?
+      </h3>
+      <p class="mb-4">
+        CrossFit Games and sanctioned competitions use large wall-mounted
+        commercial timers (typically Fringe Sport or similar gym clocks) that
+        display time in large LED digits visible from the spectator stands. In
+        affiliate box settings, most coaches use a dedicated iPad or TV app, or
+        a phone timer propped up near the whiteboard. A smartphone CrossFit
+        timer app that replicates the large-digit display and loud beeps is the
+        standard for individual athletes training without a dedicated gym clock.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-15 mb-3">
+        How long is a typical CrossFit WOD?
+      </h3>
+      <p class="mb-4">
+        Most CrossFit workouts fall between 8 and 25 minutes of active work,
+        excluding warm-up and cool-down. AMRAPs are typically 10–20 minutes.
+        EMOMs are usually 10–20 minutes. For Time workouts vary significantly —
+        Fran (21-15-9 thrusters and pull-ups) takes elite athletes under 2
+        minutes; longer chippers can run 25–35 minutes. Tabata is always exactly
+        4 minutes. Total class time at a CrossFit affiliate is usually 60
+        minutes, of which the WOD itself represents 10–25 minutes.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-15 mb-3">
+        Can I use my iPhone as a CrossFit timer?
+      </h3>
+      <p class="mb-4">
+        Yes — with the right app. The iPhone's built-in Clock app can run a
+        countdown or stopwatch, but it does not support intervals, does not have
+        loud round-transition beeps, and does not replicate the EMOM or Tabata
+        format without manual restarting. A dedicated CrossFit timer app like
+        Box Timer gives you all four WOD formats, automatic transitions, audio
+        cues, and a large landscape display — everything the built-in clock
+        lacks.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-15 mb-3">
+        What is the difference between AMRAP and RFT?
+      </h3>
+      <p class="mb-4">
+        AMRAP fixes the time and maximizes rounds: the clock determines when you
+        stop, and your score is how much work you completed. RFT (Rounds For
+        Time) fixes the rounds and minimizes time: the workload is
+        predetermined, and your score is how long it took you. AMRAP typically
+        uses a countdown timer; RFT uses a count-up timer stopped at completion.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-15 mb-3">
+        Is Box Timer free for CrossFit workouts?
+      </h3>
+      <p class="mb-4">
+        Yes. Box Timer is completely free — no ads, no subscription, no premium
+        tier, and no in-app purchases. All WOD formats (AMRAP, EMOM, For Time,
+        Tabata, custom intervals), the full workout history, pinned presets, the
+        landscape display, and all audio features are available without paying
+        anything.
+      </p>
+
+      <div class="flex justify-center mt-16 mb-8">
+        <GetAppButton id="get-app-button-guide-bottom" />
+      </div>
+
+      <p class="mt-16">
+        <strong>Related:</strong>
+        <a class="text-blue-600 hover:text-blue-800" href="/crossfit-timer/"
+          >Free CrossFit Timer for iPhone</a
+        >
+        &nbsp;·&nbsp;
+        <a class="text-blue-600 hover:text-blue-800" href="/emom-timer/"
+          >Free EMOM Timer for iPhone</a
+        >
+        &nbsp;·&nbsp;
+        <a class="text-blue-600 hover:text-blue-800" href="/tabata-timer/"
+          >Free Tabata Timer for iPhone</a
+        >
+        &nbsp;·&nbsp;
+        <a class="text-blue-600 hover:text-blue-800" href="/wod-timer/"
+          >Free WOD Timer for iPhone</a
+        >
+        &nbsp;·&nbsp;
+        <a
+          class="text-blue-600 hover:text-blue-800"
+          href="/2026-best-workout-timers-iphone/"
+          >Best Workout Timer Apps for iPhone in 2026</a
+        >
+      </p>
+    </div>
+  </Container>
+  <Footer />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "The Complete CrossFit Workout Timer Guide: AMRAP, EMOM, For Time & Tabata",
+      "description": "The complete guide to CrossFit WOD formats and timers. Learn how AMRAP, EMOM, For Time, Tabata, and RFT work — with exact timer setup steps for each format.",
+      "datePublished": "2026-02-20",
+      "dateModified": "2026-02-20",
+      "author": {
+        "@type": "Person",
+        "name": "Edvin Lindén",
+        "url": "https://edvinlinden.se"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Box Timer",
+        "url": "https://boxtimer.app"
+      }
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What timer is used in CrossFit competitions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "CrossFit Games and sanctioned competitions use large wall-mounted commercial timers with LED digits visible from the spectator stands. Individual athletes training without a dedicated gym clock use a smartphone CrossFit timer app that replicates the large-digit display and loud beeps."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long is a typical CrossFit WOD?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most CrossFit workouts fall between 8 and 25 minutes of active work. AMRAPs are typically 10–20 minutes. EMOMs are usually 10–20 minutes. Tabata is always exactly 4 minutes. For Time workouts vary widely. Total class time at a CrossFit affiliate is usually 60 minutes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use my iPhone as a CrossFit timer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — with the right app. The iPhone's built-in Clock app cannot support EMOM or Tabata formats without manual restarting. A dedicated CrossFit timer app like Box Timer gives you all four WOD formats, automatic transitions, audio cues, and a large landscape display."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between AMRAP and RFT?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AMRAP fixes the time and maximizes rounds — the clock determines when you stop, and your score is how much work you completed. RFT (Rounds For Time) fixes the rounds and minimizes time — the workload is predetermined, and your score is how long it took you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Box Timer free for CrossFit workouts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Box Timer is completely free — no ads, no subscription, no premium tier, and no in-app purchases. All WOD formats (AMRAP, EMOM, For Time, Tabata, custom intervals), workout history, pinned presets, the landscape display, and all audio features are available without paying anything."
+          }
+        }
+      ]
+    }
+  </script>
+</Page>
