@@ -1,0 +1,193 @@
+---
+import Container from "@components/Container.astro";
+import Footer from "@components/Footer.astro";
+import GetAppButton from "@components/GetAppButton.astro";
+import Page from "@layouts/Page.astro";
+---
+
+<Page
+  title="Box Timer – Free WOD Timer App for iPhone"
+  description="Free WOD timer app for iPhone. AMRAP, EMOM, For Time, and Tabata timers built for CrossFit WODs. No ads, no subscriptions. 4.9 stars."
+  url="https://boxtimer.app/wod-timer/"
+  canonical="https://boxtimer.app/wod-timer/"
+>
+  <Container innerClass={"flex-col items-center"}>
+    <div class="w-full sm:w-9/12">
+      <h1 class="text-4xl lg:text-5xl font-sans font-bold">
+        Free WOD Timer for iPhone
+      </h1>
+      <p class="text-xl font-light text-zinc-600 mt-4">
+        The ad-free CrossFit timer for every WOD format — AMRAP, EMOM, For Time and Tabata
+      </p>
+
+      <div class="flex justify-center mt-12 mb-16">
+        <GetAppButton id="get-app-button-wod-top" />
+      </div>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">What is a WOD?</h2>
+      <p class="mb-4">
+        WOD stands for <strong>Workout of the Day</strong> — a term used in CrossFit to describe the daily
+        programmed workout. Every WOD has a defined format that determines how it is scored, whether
+        by time, rounds, or repetitions.
+      </p>
+      <p class="mb-4">
+        There are four main WOD formats, each requiring a different timer mode:
+      </p>
+      <ul class="list-disc list-outside ml-6 space-y-2 mb-4">
+        <li><strong>AMRAP</strong> — As Many Rounds As Possible within a set time cap. Scored by rounds completed.</li>
+        <li><strong>For Time</strong> — Complete the prescribed work as fast as possible. Scored by elapsed time.</li>
+        <li><strong>EMOM</strong> — Every Minute On the Minute. Perform reps at the start of each minute and rest for whatever time remains.</li>
+        <li><strong>Tabata</strong> — 8 rounds of 20 seconds of work followed by 10 seconds of rest.</li>
+      </ul>
+      <p class="mb-4">
+        A good WOD timer handles all of these formats without switching apps. Box Timer covers every
+        format with its three built-in timer modes: count down, count up, and interval.
+      </p>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        Why Box Timer for WODs?
+      </h2>
+      <ul class="list-disc list-outside ml-6 space-y-3">
+        <li>
+          <strong>All WOD formats in one app</strong> — AMRAP uses the countdown timer, For Time uses
+          the count-up timer, and EMOM or Tabata use the interval timer. No separate apps needed.
+        </li>
+        <li>
+          <strong>Gym-style display</strong> — Large digital numbers with a glow effect, just like
+          the clock on the wall at your box. Rotate to landscape for a full-screen view.
+        </li>
+        <li>
+          <strong>Loud audio cues</strong> — A long beep signals the start of each new round.
+          Three short warning beeps fire during the final seconds of rest so you are ready to move.
+        </li>
+        <li>
+          <strong>Works with your music</strong> — Timer beeps mix with your workout playlist without
+          pausing playback.
+        </li>
+        <li>
+          <strong>WOD history</strong> — Every completed WOD is saved automatically. Pin your
+          most-used setups and reload them with one tap before your next session.
+        </li>
+        <li>
+          <strong>Free, no ads</strong> — No subscriptions, no premium tier, no pop-ups between rounds.
+          Built by a CrossFitter, for CrossFitters.
+        </li>
+      </ul>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        How to set up Box Timer for any WOD
+      </h2>
+      <ol class="list-decimal list-outside ml-6 space-y-2">
+        <li>Open Box Timer and tap <strong>Edit Timer</strong></li>
+        <li>
+          Choose the timer mode that matches your WOD format:
+          <ul class="list-disc list-outside ml-6 mt-2 space-y-1">
+            <li><strong>Down</strong> for AMRAP — set your time cap</li>
+            <li><strong>Up</strong> for For Time — start the clock and stop when done</li>
+            <li><strong>Interval</strong> for EMOM — set Work to 1:00, Rest to 0:00</li>
+            <li><strong>Interval</strong> for Tabata — set Rounds to 8, Work to 0:20, Rest to 0:10</li>
+          </ul>
+        </li>
+        <li>Turn on <strong>Countdown</strong> for a 10-second lead-in before the WOD starts</li>
+        <li>Tap <strong>Save</strong>, then <strong>Start</strong></li>
+      </ol>
+      <p class="mt-4">
+        See the full guides:
+        <a
+          class="text-blue-600 hover:text-blue-800"
+          href="/support/how-to-set-a-timer-that-counts-down/"
+          >How to set a countdown timer</a
+        >
+        &nbsp;·&nbsp;
+        <a
+          class="text-blue-600 hover:text-blue-800"
+          href="/support/how-to-set-an-interval-timer-with-both-work-and-rest-time/"
+          >How to set an interval timer</a
+        >
+      </p>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        Common WOD formats and how to time them
+      </h2>
+      <div class="overflow-x-auto">
+        <table class="w-full mt-4">
+          <thead>
+            <tr>
+              <th class="text-left pb-4 pr-4 font-bold">WOD Format</th>
+              <th class="text-left pb-4 pr-4 font-bold">Timer Mode</th>
+              <th class="text-left pb-4 font-bold">Example Setup</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="py-2 pr-4">AMRAP</td>
+              <td class="py-2 pr-4">Count Down</td>
+              <td class="py-2">20 minutes</td>
+            </tr>
+            <tr>
+              <td class="py-2 pr-4">For Time</td>
+              <td class="py-2 pr-4">Count Up</td>
+              <td class="py-2">Start and stop when done</td>
+            </tr>
+            <tr>
+              <td class="py-2 pr-4">EMOM</td>
+              <td class="py-2 pr-4">Interval</td>
+              <td class="py-2">10 rounds × 1:00 / 0:00</td>
+            </tr>
+            <tr>
+              <td class="py-2 pr-4">Tabata</td>
+              <td class="py-2 pr-4">Interval</td>
+              <td class="py-2">8 rounds × 0:20 / 0:10</td>
+            </tr>
+            <tr>
+              <td class="py-2 pr-4">RFT (Rounds For Time)</td>
+              <td class="py-2 pr-4">Count Up</td>
+              <td class="py-2">Start and stop after set rounds</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-zinc-600">
+        All of these can be set up in Box Timer without leaving the app or switching modes between WODs.
+      </p>
+
+      <div class="flex justify-center mt-16 mb-8">
+        <GetAppButton id="get-app-button-wod-bottom" />
+      </div>
+
+      <p class="mt-16">
+        <strong>Related:</strong>
+        <a class="text-blue-600 hover:text-blue-800" href="/crossfit-timer/"
+          >Free CrossFit Timer for iPhone</a
+        >
+        &nbsp;·&nbsp;
+        <a class="text-blue-600 hover:text-blue-800" href="/emom-timer/"
+          >Free EMOM Timer for iPhone</a
+        >
+        &nbsp;·&nbsp;
+        <a
+          class="text-blue-600 hover:text-blue-800"
+          href="/2026-best-workout-timers-iphone/"
+          >Best Workout Timer Apps for iPhone in 2026</a
+        >
+      </p>
+    </div>
+  </Container>
+  <Footer />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to set up a WOD timer on iPhone",
+      "step": [
+        { "@type": "HowToStep", "name": "Open Box Timer and tap Edit Timer" },
+        { "@type": "HowToStep", "name": "Select Down for AMRAP, Up for For Time, or Interval for EMOM and Tabata" },
+        { "@type": "HowToStep", "name": "For AMRAP: set your time cap (e.g. 20 minutes)" },
+        { "@type": "HowToStep", "name": "For EMOM: set Rounds to match minutes, Work to 1:00, Rest to 0:00" },
+        { "@type": "HowToStep", "name": "For Tabata: set Rounds to 8, Work to 0:20, Rest to 0:10" },
+        { "@type": "HowToStep", "name": "Turn on Countdown for a 10-second lead-in" },
+        { "@type": "HowToStep", "name": "Tap Save, then Start" }
+      ]
+    }
+  </script>
+</Page>

@@ -1,0 +1,194 @@
+---
+import Container from "@components/Container.astro";
+import Footer from "@components/Footer.astro";
+import GetAppButton from "@components/GetAppButton.astro";
+import Page from "@layouts/Page.astro";
+---
+
+<Page
+  title="Box Timer – Free Workout Timer App for iPhone"
+  description="Free workout timer app for iPhone. Count up, count down, and interval timers for CrossFit, HIIT, Tabata, boxing, and more. No ads, no subscriptions. 4.9 stars."
+  url="https://boxtimer.app/workout-timer/"
+  canonical="https://boxtimer.app/workout-timer/"
+>
+  <Container innerClass={"flex-col items-center"}>
+    <div class="w-full sm:w-9/12">
+      <h1 class="text-4xl lg:text-5xl font-sans font-bold">
+        Free Workout Timer for iPhone
+      </h1>
+      <p class="text-xl font-light text-zinc-600 mt-4">
+        Three timer modes for every workout — count up, count down, and intervals. No ads, ever.
+      </p>
+
+      <div class="flex justify-center mt-12 mb-16">
+        <GetAppButton id="get-app-button-workout-top" />
+      </div>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        One app for every workout
+      </h2>
+      <p class="mb-4">
+        Most workouts need one of three things from a timer: a clock that counts up, a clock that
+        counts down, or a clock that alternates between work and rest. Box Timer does all three —
+        in a single free app with no ads, no subscriptions, and no features you will never use.
+      </p>
+      <p class="mb-4">
+        Whether you train CrossFit, HIIT, Tabata, boxing, or just need a reliable timer at the gym,
+        Box Timer handles it with a large, readable display that works in any lighting and audio
+        cues loud enough to hear over any gym floor.
+      </p>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        Three timer modes explained
+      </h2>
+
+      <h3 class="text-xl font-sans font-bold mt-8 mb-3">Count Up Timer</h3>
+      <p class="mb-4">
+        Starts from zero and counts upward. Use it for <strong>For Time</strong> CrossFit workouts,
+        open-ended conditioning, or any workout where you want to know how long you took. Set an
+        optional time cap and the timer will alert you when it is reached.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-8 mb-3">Count Down Timer</h3>
+      <p class="mb-4">
+        Set a target duration and watch it count down to zero. Ideal for <strong>AMRAP</strong> workouts,
+        timed exercises like planks or holds, or tracking rest between sets. Configurable from a few
+        seconds up to 99 minutes, with an audio alert at completion.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-8 mb-3">Interval Timer</h3>
+      <p class="mb-4">
+        Alternates between a work period and a rest period for a set number of rounds. The foundation
+        of <strong>HIIT</strong>, <strong>Tabata</strong>, <strong>EMOM</strong>, and
+        <strong>boxing round timers</strong>. Supports up to 99 rounds with any combination of work
+        and rest durations.
+      </p>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        Why Box Timer?
+      </h2>
+      <ul class="list-disc list-outside ml-6 space-y-3">
+        <li>
+          <strong>Completely free</strong> — No in-app purchases, no subscription, no premium tier.
+          Every feature is available from the first launch.
+        </li>
+        <li>
+          <strong>No ads</strong> — No banners, no video ads, no interruptions mid-workout.
+        </li>
+        <li>
+          <strong>Large display</strong> — Big digital numbers readable from across the gym.
+          Full-screen landscape mode available.
+        </li>
+        <li>
+          <strong>Loud audio cues</strong> — Clear beeps at every transition, even over loud music
+          or gym noise. Works with your music without pausing playback.
+        </li>
+        <li>
+          <strong>Workout history</strong> — Every session is saved automatically. Name, pin, and
+          reload your favourite setups with one tap.
+        </li>
+        <li>
+          <strong>Screen stays on</strong> — The display stays awake during your workout so you
+          never miss a beat.
+        </li>
+      </ul>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        How to set up a workout timer
+      </h2>
+      <ol class="list-decimal list-outside ml-6 space-y-2">
+        <li>Open Box Timer and tap <strong>Edit Timer</strong></li>
+        <li>Select the timer mode: <strong>Up</strong>, <strong>Down</strong>, or <strong>Interval</strong></li>
+        <li>Configure your duration, rounds, or work/rest times</li>
+        <li>Turn on <strong>Countdown</strong> for a 10-second lead-in if needed</li>
+        <li>Tap <strong>Save</strong>, then <strong>Start</strong></li>
+      </ol>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        Common workout timer setups
+      </h2>
+      <div class="overflow-x-auto">
+        <table class="w-full mt-4">
+          <thead>
+            <tr>
+              <th class="text-left pb-4 pr-4 font-bold">Workout</th>
+              <th class="text-left pb-4 pr-4 font-bold">Timer Mode</th>
+              <th class="text-left pb-4 font-bold">Example Setup</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="py-2 pr-4">AMRAP</td>
+              <td class="py-2 pr-4">Count Down</td>
+              <td class="py-2">20 minutes</td>
+            </tr>
+            <tr>
+              <td class="py-2 pr-4">For Time / RFT</td>
+              <td class="py-2 pr-4">Count Up</td>
+              <td class="py-2">Start and stop when done</td>
+            </tr>
+            <tr>
+              <td class="py-2 pr-4">HIIT</td>
+              <td class="py-2 pr-4">Interval</td>
+              <td class="py-2">30s work / 30s rest / 10 rounds</td>
+            </tr>
+            <tr>
+              <td class="py-2 pr-4">Tabata</td>
+              <td class="py-2 pr-4">Interval</td>
+              <td class="py-2">20s work / 10s rest / 8 rounds</td>
+            </tr>
+            <tr>
+              <td class="py-2 pr-4">Rest between sets</td>
+              <td class="py-2 pr-4">Count Down</td>
+              <td class="py-2">90 seconds</td>
+            </tr>
+            <tr>
+              <td class="py-2 pr-4">Boxing rounds</td>
+              <td class="py-2 pr-4">Interval</td>
+              <td class="py-2">3 min work / 1 min rest / 12 rounds</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-zinc-600">
+        All three timer modes are available in Box Timer at no cost, with no ads between workouts.
+      </p>
+
+      <div class="flex justify-center mt-16 mb-8">
+        <GetAppButton id="get-app-button-workout-bottom" />
+      </div>
+
+      <p class="mt-16">
+        <strong>Related:</strong>
+        <a class="text-blue-600 hover:text-blue-800" href="/interval-timer/"
+          >Free Interval Timer for iPhone</a
+        >
+        &nbsp;·&nbsp;
+        <a class="text-blue-600 hover:text-blue-800" href="/crossfit-timer/"
+          >Free CrossFit Timer for iPhone</a
+        >
+        &nbsp;·&nbsp;
+        <a
+          class="text-blue-600 hover:text-blue-800"
+          href="/2026-best-workout-timers-iphone/"
+          >Best Workout Timer Apps for iPhone in 2026</a
+        >
+      </p>
+    </div>
+  </Container>
+  <Footer />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to set up a workout timer on iPhone",
+      "step": [
+        { "@type": "HowToStep", "name": "Open Box Timer and tap Edit Timer" },
+        { "@type": "HowToStep", "name": "Select the timer mode: Up, Down, or Interval" },
+        { "@type": "HowToStep", "name": "Configure your duration, rounds, or work and rest times" },
+        { "@type": "HowToStep", "name": "Turn on Countdown for a 10-second lead-in if needed" },
+        { "@type": "HowToStep", "name": "Tap Save, then Start" }
+      ]
+    }
+  </script>
+</Page>
