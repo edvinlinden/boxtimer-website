@@ -4,30 +4,6 @@ export interface Props {
 }
 
 const { title } = Astro.props;
-const currentPath = Astro.url.pathname;
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://boxtimer.app/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Support",
-      "item": "https://boxtimer.app/support/"
-    },
-    ...(title ? [{
-      "@type": "ListItem",
-      "position": 3,
-      "name": title
-    }] : [])
-  ]
-};
 ---
 
 <nav class="text-sm mb-12">
@@ -37,4 +13,3 @@ const breadcrumbSchema = {
     <li class="text-gray-400 before:content-['/'] before:mx-2 before:text-gray-400"><slot /></li>
   </ol>
 </nav>
-<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
