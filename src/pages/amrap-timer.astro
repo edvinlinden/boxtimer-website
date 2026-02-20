@@ -1,0 +1,191 @@
+---
+export const lastmod = "2026-02-20";
+import Container from "@components/Container.astro";
+import Footer from "@components/Footer.astro";
+import GetAppButton from "@components/GetAppButton.astro";
+import Page from "@layouts/Page.astro";
+---
+
+<Page
+  title="Box Timer – Free AMRAP Timer App for iPhone | CrossFit"
+  description="Free AMRAP timer app for iPhone. Set a time cap and count down for As Many Rounds As Possible workouts. Loud beeps, gym-style display, no ads, no subscriptions."
+  url="https://boxtimer.app/amrap-timer/"
+  canonical="https://boxtimer.app/amrap-timer/"
+>
+  <Container innerClass={"flex-col items-center"}>
+    <div class="w-full sm:w-9/12">
+      <h1 class="text-4xl lg:text-5xl font-sans font-bold">
+        Free AMRAP Timer for iPhone
+      </h1>
+      <p class="text-xl font-light text-zinc-600 mt-4">
+        The countdown timer built for As Many Rounds As Possible workouts
+      </p>
+
+      <div class="flex justify-center mt-12 mb-16">
+        <GetAppButton id="get-app-button-amrap-top" />
+      </div>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">What is AMRAP?</h2>
+      <p class="mb-4">
+        AMRAP stands for <strong>As Many Rounds As Possible</strong> (sometimes
+        As Many Reps As Possible). You set a time cap — typically 10, 15, or 20
+        minutes — and perform a fixed sequence of movements as many times as you
+        can before the clock runs out. Your score is the total number of complete
+        rounds, plus any additional reps completed in a partial round.
+      </p>
+      <p class="mb-4">
+        AMRAP is one of the most common formats in CrossFit programming because
+        it rewards both speed and pacing. There is no finish line — the goal is
+        to keep moving at maximum sustainable effort for the entire time cap. A
+        descending clock creates urgency: watching time disappear drives athletes
+        harder than a count-up timer does.
+      </p>
+      <p class="mb-4">
+        Common AMRAP movements include pull-ups, push-ups, air squats, burpees,
+        kettlebell swings, and box jumps — any movement that can be cycled
+        repeatedly for the duration of the time cap.
+      </p>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        Why Box Timer for AMRAP?
+      </h2>
+      <ul class="list-disc list-outside ml-6 space-y-3">
+        <li>
+          <strong>Countdown timer</strong> — AMRAP needs a clock counting down
+          from your time cap, not up from zero. Box Timer's count down mode is
+          purpose-built for this.
+        </li>
+        <li>
+          <strong>Loud finish beep</strong> — A long beep sounds when the time
+          cap hits zero so you hear it even mid-rep. No need to watch the screen
+          while you are moving.
+        </li>
+        <li>
+          <strong>Warning beeps</strong> — Audio cues in the final seconds give
+          you time to finish a rep before the clock runs out.
+        </li>
+        <li>
+          <strong>Large display</strong> — Digital numbers you can read from
+          across the gym. Rotate to landscape for a full-screen view to prop up
+          next to your barbell or pull-up rig.
+        </li>
+        <li>
+          <strong>Saved workouts</strong> — Pin your 20-minute Friday AMRAP or
+          your 10-minute benchmark and reload it with one tap.
+        </li>
+        <li>
+          <strong>Works with your music</strong> — Timer beeps play over your
+          playlist without pausing playback.
+        </li>
+        <li>
+          <strong>Free, no ads</strong> — No subscriptions, no premium tier, no
+          ads mid-workout. Built for athletes.
+        </li>
+      </ul>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        How to set up an AMRAP timer
+      </h2>
+      <ol class="list-decimal list-outside ml-6 space-y-2">
+        <li>Open Box Timer and tap <strong>Edit Timer</strong></li>
+        <li>Select <strong>Down</strong> as the timer type</li>
+        <li>Set the duration to your time cap (e.g. 20:00)</li>
+        <li>
+          Optionally turn on <strong>Countdown</strong> for a 10-second lead-in
+          before the clock starts
+        </li>
+        <li>Tap <strong>Save</strong>, then <strong>Start</strong></li>
+      </ol>
+      <p class="mt-4">
+        The timer counts down to zero and plays a long beep when the time cap
+        is reached. Record your rounds and reps completed for your score.
+      </p>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        Popular AMRAP formats
+      </h2>
+      <div class="overflow-x-auto">
+        <table class="w-full mt-4">
+          <thead>
+            <tr>
+              <th class="text-left pb-4 pr-4 font-bold">Format</th>
+              <th class="text-left pb-4 pr-4 font-bold">Time cap</th>
+              <th class="text-left pb-4 font-bold">Typical use</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t border-zinc-200">
+              <td class="py-3 pr-4">Short AMRAP</td>
+              <td class="py-3 pr-4">7–10 min</td>
+              <td class="py-3">Conditioning finisher</td>
+            </tr>
+            <tr class="border-t border-zinc-200">
+              <td class="py-3 pr-4">Standard AMRAP</td>
+              <td class="py-3 pr-4">15–20 min</td>
+              <td class="py-3">Main WOD</td>
+            </tr>
+            <tr class="border-t border-zinc-200">
+              <td class="py-3 pr-4">Long AMRAP</td>
+              <td class="py-3 pr-4">25–30 min</td>
+              <td class="py-3">Endurance WOD</td>
+            </tr>
+            <tr class="border-t border-zinc-200">
+              <td class="py-3 pr-4">Cindy (benchmark)</td>
+              <td class="py-3 pr-4">20 min</td>
+              <td class="py-3">5 pull-ups, 10 push-ups, 15 squats</td>
+            </tr>
+            <tr class="border-t border-zinc-200">
+              <td class="py-3 pr-4">Mary (benchmark)</td>
+              <td class="py-3 pr-4">20 min</td>
+              <td class="py-3">5 HSPU, 10 pistols, 15 pull-ups</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-zinc-600">
+        All AMRAP formats use the same timer setup in Box Timer: select Down and
+        set your time cap.
+      </p>
+
+      <div class="flex justify-center mt-16 mb-8">
+        <GetAppButton id="get-app-button-amrap-bottom" />
+      </div>
+
+      <p class="mt-16">
+        <strong>Related:</strong>
+        <a class="text-blue-600 hover:text-blue-800" href="/crossfit-timer/"
+          >Free CrossFit Timer for iPhone</a
+        >
+        &nbsp;·&nbsp;
+        <a class="text-blue-600 hover:text-blue-800" href="/emom-timer/"
+          >Free EMOM Timer for iPhone</a
+        >
+        &nbsp;·&nbsp;
+        <a class="text-blue-600 hover:text-blue-800" href="/wod-timer/"
+          >Free WOD Timer for iPhone</a
+        >
+        &nbsp;·&nbsp;
+        <a
+          class="text-blue-600 hover:text-blue-800"
+          href="/crossfit-workout-timer-guide/"
+          >CrossFit Workout Timer Guide</a
+        >
+      </p>
+    </div>
+  </Container>
+  <Footer />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to set up an AMRAP timer on iPhone",
+      "step": [
+        { "@type": "HowToStep", "name": "Open Box Timer and tap Edit Timer" },
+        { "@type": "HowToStep", "name": "Select Down as the timer type" },
+        { "@type": "HowToStep", "name": "Set the duration to your time cap (e.g. 20:00)" },
+        { "@type": "HowToStep", "name": "Optionally turn on Countdown for a 10-second lead-in" },
+        { "@type": "HowToStep", "name": "Tap Save, then Start" }
+      ]
+    }
+  </script>
+</Page>
