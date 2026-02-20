@@ -1,4 +1,5 @@
 ---
+export const lastmod = "2026-02-20";
 import Container from "@components/Container.astro";
 import Footer from "@components/Footer.astro";
 import Breadcrumbs from "@components/Breadcrumbs.astro";
@@ -12,14 +13,16 @@ import Page from "@layouts/Page.astro";
 >
   <Container innerClass={"flex-col items-center"}>
     <div class="w-full sm:w-9/12">
-      <Breadcrumbs title="How to view workout history">How to view workout history</Breadcrumbs>
+      <Breadcrumbs title="How to view workout history"
+        >How to view workout history</Breadcrumbs
+      >
       <h1 class="w-full text-4xl lg:text-5xl font-sans font-bold mb-8">
         How to view workout history
       </h1>
       <p class="pb-8">
         Every completed timer session is automatically saved to your workout
-        history. Each entry shows the workout name (or timer type if unnamed),
-        a timestamp, and the timer configuration details.
+        history. Each entry shows the workout name (or timer type if unnamed), a
+        timestamp, and the timer configuration details.
       </p>
       <p
         class="w-full text-2xl lg:text-2xl font-sans font-bold mb-4 text-zinc-800"
@@ -42,9 +45,10 @@ import Page from "@layouts/Page.astro";
         Workouts are sorted with pinned items first, then by most recent. You
         can also <a href="/support/how-to-pin-a-workout-in-history/">pin</a>,
         <a href="/support/how-to-name-or-rename-a-workout/">rename</a>,
-        <a href="/support/how-to-reuse-settings-from-a-previous-workout/">reuse</a>,
-        or <a href="/support/how-to-delete-a-workout-from-history/">delete</a> workouts
-        from the history list.
+        <a href="/support/how-to-reuse-settings-from-a-previous-workout/"
+          >reuse</a
+        >, or <a href="/support/how-to-delete-a-workout-from-history/">delete</a
+        > workouts from the history list.
       </p>
     </div>
     <script type="application/ld+json">
@@ -54,8 +58,14 @@ import Page from "@layouts/Page.astro";
         "name": "How to view workout history",
         "step": [
           { "@type": "HowToStep", "name": "Open the app" },
-          { "@type": "HowToStep", "name": "Tap the History tab (second tab in the tab bar)" },
-          { "@type": "HowToStep", "name": "Use the filter at the top to show All, Up, Down, or Intervals workouts" }
+          {
+            "@type": "HowToStep",
+            "name": "Tap the History tab (second tab in the tab bar)"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Use the filter at the top to show All, Up, Down, or Intervals workouts"
+          }
         ]
       }
     </script>

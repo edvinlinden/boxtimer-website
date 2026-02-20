@@ -1,4 +1,5 @@
 ---
+export const lastmod = "2026-02-20";
 import Container from "@components/Container.astro";
 import Footer from "@components/Footer.astro";
 import GetAppButton from "@components/GetAppButton.astro";
@@ -69,7 +70,11 @@ import Page from "@layouts/Page.astro";
             <b class="font-bold">Price</b>
           </td>
           <td class="text-center py-6 text-green-700">Free</td>
-          <td class="text-center py-6 text-yellow-600">Free &amp; Paid<br /><span class="text-sm text-zinc-400">$19.99 for pro</span></td>
+          <td class="text-center py-6 text-yellow-600"
+            >Free &amp; Paid<br /><span class="text-sm text-zinc-400"
+              >$19.99 for pro</span
+            ></td
+          >
         </tr>
         <tr>
           <td class="py-6">
@@ -156,6 +161,108 @@ import Page from "@layouts/Page.astro";
           <td class="text-center py-6">4.8 stars</td>
         </tr>
       </table>
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        Who should choose Box Timer?
+      </h2>
+      <p class="mb-4">
+        Box Timer is the better choice for almost any athlete who trains
+        regularly. The most obvious reason: Tabata Stopwatch Pro's free tier
+        allows only one workout every seven days. That is not a countdown timer
+        for most people — it is a demo. If you train four or five times a week
+        and do not want to pay $19.99 for the pro unlock, Box Timer is the
+        practical choice.
+      </p>
+      <p class="mb-4">
+        Box Timer also supports the full range of CrossFit WOD formats. Tabata
+        Stopwatch Pro focuses on Tabata and custom intervals — AMRAP, EMOM, and
+        For Time are not available. Athletes who program a mix of WOD types will
+        need Box Timer or a different app to fill those gaps.
+      </p>
+      <p class="mb-4">
+        The gym-style digital display and loud round-transition beeps make Box
+        Timer a natural fit for garage gym athletes who need a clock they can
+        read from a distance while moving a barbell.
+      </p>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        Who should choose Tabata Stopwatch Pro?
+      </h2>
+      <p class="mb-4">
+        Tabata Stopwatch Pro has a distinctive visual approach: the display uses
+        color to represent energy levels during intervals, shifting from green
+        to red as each work period progresses. Combined with voice
+        announcements, it creates a sensory experience designed to keep athletes
+        at maximum effort during high-intensity Tabata work.
+      </p>
+      <p class="mb-4">
+        Apple Health integration is a genuine advantage if you track your
+        workouts in the Health app alongside other fitness data. For athletes
+        building a long-term training log across different apps, having interval
+        sessions automatically logged in Health adds value.
+      </p>
+      <p class="mb-4">
+        At $19.99 for the pro version, Tabata Stopwatch Pro is a meaningful
+        investment compared to Box Timer's free pricing. It makes sense for a
+        dedicated Tabata practitioner who values the voice guidance and energy
+        visualization and trains specifically within that protocol.
+      </p>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        Setup comparison: Tabata
+      </h2>
+      <p class="mb-2">
+        For a standard Tabata (8 rounds of 20 seconds work, 10 seconds rest):
+      </p>
+      <p class="mb-2"><strong>Box Timer</strong></p>
+      <ol class="list-decimal list-outside ml-6 space-y-1 mb-6">
+        <li>
+          Tap <strong>Edit Timer</strong> and select <strong>Interval</strong>
+        </li>
+        <li>
+          Set <strong>Rounds</strong> to 8, <strong>Work</strong> to 0:20, <strong
+            >Rest</strong
+          > to 0:10
+        </li>
+        <li>Tap <strong>Save</strong>, then <strong>Start</strong></li>
+      </ol>
+      <p class="mb-2"><strong>Tabata Stopwatch Pro</strong></p>
+      <ol class="list-decimal list-outside ml-6 space-y-1 mb-6">
+        <li>Select a Tabata preset</li>
+        <li>Configure rounds and interval durations if adjusting defaults</li>
+        <li>Tap <strong>Start</strong></li>
+      </ol>
+      <p class="mb-4">
+        Both apps get you into a Tabata quickly. Tabata Stopwatch Pro's
+        color-shifting display and voice announcements provide a richer
+        in-workout experience once running. Box Timer's setup is straightforward
+        and the beeps are sufficient for most athletes without the visual color
+        feedback.
+      </p>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">Pricing</h2>
+      <p class="mb-4">
+        Box Timer is free — no ads, no usage limits, no in-app purchases.
+      </p>
+      <p class="mb-4">
+        Tabata Stopwatch Pro offers a free tier that is severely restricted: one
+        workout every seven days with ads. The pro unlock is a one-time purchase
+        of $19.99 that removes limits and adds voice announcements and
+        additional features. Verify current pricing in the App Store.
+      </p>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">Verdict</h2>
+      <p class="mb-4">
+        For most athletes, the choice is straightforward: Box Timer is free,
+        unlimited, and covers more WOD formats. Tabata Stopwatch Pro's free tier
+        is too restricted to be useful for regular training without upgrading.
+      </p>
+      <p class="mb-4">
+        If you are a serious Tabata practitioner who trains with that specific
+        protocol regularly and wants voice coaching with Apple Health logging,
+        Tabata Stopwatch Pro's $19.99 pro unlock is worth evaluating. For
+        everyone else, Box Timer is the practical, cost-free choice.
+      </p>
+
       <p class="mt-16">
         <b>Related:</b>
         <a
@@ -166,26 +273,22 @@ import Page from "@layouts/Page.astro";
         &nbsp;·&nbsp;
         <a
           class="text-blue-600 hover:text-blue-800"
-          href="/box-timer-vs-smartwod/"
-          >Box Timer vs SmartWOD</a
+          href="/box-timer-vs-smartwod/">Box Timer vs SmartWOD</a
         >
         &nbsp;·&nbsp;
         <a
           class="text-blue-600 hover:text-blue-800"
-          href="/box-timer-vs-interval-timer/"
-          >Box Timer vs Interval Timer</a
+          href="/box-timer-vs-interval-timer/">Box Timer vs Interval Timer</a
         >
         &nbsp;·&nbsp;
         <a
           class="text-blue-600 hover:text-blue-800"
-          href="/box-timer-vs-seconds-pro/"
-          >Box Timer vs Seconds Pro</a
+          href="/box-timer-vs-seconds-pro/">Box Timer vs Seconds Pro</a
         >
         &nbsp;·&nbsp;
         <a
           class="text-blue-600 hover:text-blue-800"
-          href="/box-timer-vs-tabata-timer/"
-          >Box Timer vs Tabata Timer</a
+          href="/box-timer-vs-tabata-timer/">Box Timer vs Tabata Timer</a
         >
       </p>
     </div>

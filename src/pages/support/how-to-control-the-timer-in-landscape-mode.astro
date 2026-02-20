@@ -1,4 +1,5 @@
 ---
+export const lastmod = "2026-02-20";
 import Container from "@components/Container.astro";
 import Footer from "@components/Footer.astro";
 import Breadcrumbs from "@components/Breadcrumbs.astro";
@@ -12,7 +13,9 @@ import Page from "@layouts/Page.astro";
 >
   <Container innerClass={"flex-col items-center"}>
     <div class="w-full sm:w-9/12">
-      <Breadcrumbs title="How to control the timer in landscape mode">How to control the timer in landscape mode</Breadcrumbs>
+      <Breadcrumbs title="How to control the timer in landscape mode"
+        >How to control the timer in landscape mode</Breadcrumbs
+      >
       <h1 class="w-full text-4xl lg:text-5xl font-sans font-bold mb-8">
         How to control the timer in landscape mode
       </h1>
@@ -57,8 +60,14 @@ import Page from "@layouts/Page.astro";
         "@type": "HowTo",
         "name": "How to control the timer in landscape mode",
         "step": [
-          { "@type": "HowToStep", "name": "Turn your device to landscape orientation to enter the large timer view" },
-          { "@type": "HowToStep", "name": "Tap anywhere on the screen to start the timer" },
+          {
+            "@type": "HowToStep",
+            "name": "Turn your device to landscape orientation to enter the large timer view"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Tap anywhere on the screen to start the timer"
+          },
           { "@type": "HowToStep", "name": "Tap again to pause" },
           { "@type": "HowToStep", "name": "Tap again to resume" }
         ]

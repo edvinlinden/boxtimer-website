@@ -1,4 +1,5 @@
 ---
+export const lastmod = "2026-02-08";
 import Container from "@components/Container.astro";
 import Footer from "@components/Footer.astro";
 import GetAppButton from "@components/GetAppButton.astro";
@@ -152,4 +153,20 @@ import Page from "@layouts/Page.astro";
     </div>
   </Container>
   <Footer />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to set up a CrossFit timer on iPhone",
+      "step": [
+        { "@type": "HowToStep", "name": "Open Box Timer and tap Edit Timer" },
+        { "@type": "HowToStep", "name": "Select Down for AMRAP, Up for For Time, or Interval for EMOM and Tabata" },
+        { "@type": "HowToStep", "name": "For AMRAP: set your time cap (e.g. 20 minutes)" },
+        { "@type": "HowToStep", "name": "For EMOM: set Rounds to match minutes, Work to 1:00, Rest to 0:00" },
+        { "@type": "HowToStep", "name": "For Tabata: set Rounds to 8, Work to 0:20, Rest to 0:10" },
+        { "@type": "HowToStep", "name": "Turn on Countdown for a 10-second lead-in" },
+        { "@type": "HowToStep", "name": "Tap Save, then Start" }
+      ]
+    }
+  </script>
 </Page>

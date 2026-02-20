@@ -1,4 +1,5 @@
 ---
+export const lastmod = "2026-02-20";
 import Container from "@components/Container.astro";
 import Footer from "@components/Footer.astro";
 import Breadcrumbs from "@components/Breadcrumbs.astro";
@@ -12,7 +13,9 @@ import Page from "@layouts/Page.astro";
 >
   <Container innerClass={"flex-col items-center"}>
     <div class="w-full sm:w-9/12">
-      <Breadcrumbs title="How to set an interval timer with work time only">How to set a interval timer with work time only</Breadcrumbs>
+      <Breadcrumbs title="How to set an interval timer with work time only"
+        >How to set a interval timer with work time only</Breadcrumbs
+      >
       <h1 class="w-full text-4xl lg:text-5xl font-sans font-bold mb-8">
         How to set a interval timer with work time only
       </h1>
@@ -84,13 +87,34 @@ import Page from "@layouts/Page.astro";
         "name": "How to set an interval timer with work time only",
         "step": [
           { "@type": "HowToStep", "name": "Open the app" },
-          { "@type": "HowToStep", "name": "Tap Edit Timer in the top right of the screen" },
-          { "@type": "HowToStep", "name": "Tap Interval in the segment control for Type of timer" },
-          { "@type": "HowToStep", "name": "Tap Rounds to set the amount of rounds" },
-          { "@type": "HowToStep", "name": "Tap Minutes and Seconds to set the work duration" },
-          { "@type": "HowToStep", "name": "Set the rest duration to 0 minutes and 0 seconds" },
-          { "@type": "HowToStep", "name": "Tap the Countdown toggle button to turn it on if you want a countdown before the timer starts" },
-          { "@type": "HowToStep", "name": "Tap Save to save the current timer settings" },
+          {
+            "@type": "HowToStep",
+            "name": "Tap Edit Timer in the top right of the screen"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Tap Interval in the segment control for Type of timer"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Tap Rounds to set the amount of rounds"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Tap Minutes and Seconds to set the work duration"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Set the rest duration to 0 minutes and 0 seconds"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Tap the Countdown toggle button to turn it on if you want a countdown before the timer starts"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Tap Save to save the current timer settings"
+          },
           { "@type": "HowToStep", "name": "Tap Start to start the timer" }
         ]
       }

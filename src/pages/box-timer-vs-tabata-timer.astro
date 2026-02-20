@@ -1,4 +1,5 @@
 ---
+export const lastmod = "2026-02-20";
 import Container from "@components/Container.astro";
 import Footer from "@components/Footer.astro";
 import GetAppButton from "@components/GetAppButton.astro";
@@ -18,9 +19,8 @@ import Page from "@layouts/Page.astro";
       </h1>
       <p class="text-sm text-zinc-400 mt-4">Last updated: February 2026</p>
       <p class="py-8">
-        Both Box Timer and Tabata Timer are popular interval timer apps. Here
-        is an honest comparison to help you choose the right one for your
-        training.
+        Both Box Timer and Tabata Timer are popular interval timer apps. Here is
+        an honest comparison to help you choose the right one for your training.
       </p>
       <p class="mb-8">
         Box Timer is a free, ad-free timer with a gym-style digital display. It
@@ -70,7 +70,11 @@ import Page from "@layouts/Page.astro";
             <b class="font-bold">Price</b>
           </td>
           <td class="text-center py-6 text-green-700">Free</td>
-          <td class="text-center py-6 text-yellow-600">Free &amp; Paid<br /><span class="text-sm text-zinc-400">$0.99–$7.99</span></td>
+          <td class="text-center py-6 text-yellow-600"
+            >Free &amp; Paid<br /><span class="text-sm text-zinc-400"
+              >$0.99–$7.99</span
+            ></td
+          >
         </tr>
         <tr>
           <td class="py-6">
@@ -150,6 +154,98 @@ import Page from "@layouts/Page.astro";
           <td class="text-center py-6">4.9 stars</td>
         </tr>
       </table>
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        Who should choose Box Timer?
+      </h2>
+      <p class="mb-4">
+        Box Timer is the stronger choice for athletes whose training is not
+        limited to Tabata. Tabata Timer: Interval Timer supports Tabata and
+        custom intervals but does not include AMRAP, EMOM, or For Time — the
+        three other core CrossFit WOD formats. If you do any variety of CrossFit
+        or functional fitness programming, Box Timer handles the full range
+        without requiring you to switch apps.
+      </p>
+      <p class="mb-4">
+        Box Timer is also completely free with no ads and unlimited saved
+        workouts. Tabata Timer's free version limits saved workouts to two and
+        shows ads. For athletes who pin and name their frequent WODs — a Tuesday
+        AMRAP, a Thursday EMOM — hitting a two-workout save limit quickly
+        becomes a friction point.
+      </p>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        Who should choose Tabata Timer?
+      </h2>
+      <p class="mb-4">
+        Tabata Timer: Interval Timer has a feature that Box Timer does not:
+        per-exercise visual cues. You can attach images or GIFs to each
+        interval, so the app shows you what movement to do while the timer runs.
+        For athletes learning new movements or coaching small groups who need
+        on-screen demonstration, this is a meaningful differentiator.
+      </p>
+      <p class="mb-4">
+        Apple Watch support is also worth noting for athletes who want wrist
+        control during a workout. If you regularly train with your phone out of
+        reach and rely on your Watch to monitor intervals, Tabata Timer's Watch
+        app fills a gap that Box Timer does not currently cover.
+      </p>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">
+        Setup comparison: Tabata
+      </h2>
+      <p class="mb-2">
+        Both apps are built for Tabata (8 rounds of 20 seconds work, 10 seconds
+        rest). Here is how to set it up on each:
+      </p>
+      <p class="mb-2"><strong>Box Timer</strong></p>
+      <ol class="list-decimal list-outside ml-6 space-y-1 mb-6">
+        <li>
+          Tap <strong>Edit Timer</strong> and select <strong>Interval</strong>
+        </li>
+        <li>
+          Set <strong>Rounds</strong> to 8, <strong>Work</strong> to 0:20, <strong
+            >Rest</strong
+          > to 0:10
+        </li>
+        <li>Tap <strong>Save</strong>, then <strong>Start</strong></li>
+      </ol>
+      <p class="mb-2"><strong>Tabata Timer</strong></p>
+      <ol class="list-decimal list-outside ml-6 space-y-1 mb-6">
+        <li>Select the Tabata preset or create a new interval sequence</li>
+        <li>Optionally add an exercise image or GIF for each interval</li>
+        <li>Tap <strong>Start</strong></li>
+      </ol>
+      <p class="mb-4">
+        Tabata Timer's interval setup offers more visual richness. Box Timer is
+        faster to configure when you do not need exercise visuals and just want
+        the clock running.
+      </p>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">Pricing</h2>
+      <p class="mb-4">
+        Box Timer is fully free — no ads, no in-app purchases, and unlimited
+        saved workouts from day one.
+      </p>
+      <p class="mb-4">
+        Tabata Timer's free version includes ads and limits saved workouts to
+        two. In-app purchases remove ads and unlock additional features, with
+        pricing ranging from $0.99 to $7.99. Check the App Store for current
+        pricing, as these may change.
+      </p>
+
+      <h2 class="text-2xl font-sans font-bold mt-16 mb-4">Verdict</h2>
+      <p class="mb-4">
+        For CrossFit athletes and those who do any mix of WOD formats, Box Timer
+        is the better all-round option. It supports more timer types, has no
+        ads, and saves unlimited workouts at no cost.
+      </p>
+      <p class="mb-4">
+        Choose Tabata Timer if visual exercise cues are central to how you train
+        or coach. The ability to attach a GIF to each interval — showing the
+        movement while the clock runs — is a feature Box Timer does not have,
+        and it adds real value for certain training contexts.
+      </p>
+
       <p class="mt-16">
         <b>Related:</b>
         <a
@@ -160,20 +256,17 @@ import Page from "@layouts/Page.astro";
         &nbsp;·&nbsp;
         <a
           class="text-blue-600 hover:text-blue-800"
-          href="/box-timer-vs-smartwod/"
-          >Box Timer vs SmartWOD</a
+          href="/box-timer-vs-smartwod/">Box Timer vs SmartWOD</a
         >
         &nbsp;·&nbsp;
         <a
           class="text-blue-600 hover:text-blue-800"
-          href="/box-timer-vs-interval-timer/"
-          >Box Timer vs Interval Timer</a
+          href="/box-timer-vs-interval-timer/">Box Timer vs Interval Timer</a
         >
         &nbsp;·&nbsp;
         <a
           class="text-blue-600 hover:text-blue-800"
-          href="/box-timer-vs-seconds-pro/"
-          >Box Timer vs Seconds Pro</a
+          href="/box-timer-vs-seconds-pro/">Box Timer vs Seconds Pro</a
         >
         &nbsp;·&nbsp;
         <a

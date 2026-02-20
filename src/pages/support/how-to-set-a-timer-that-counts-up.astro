@@ -1,4 +1,5 @@
 ---
+export const lastmod = "2026-02-20";
 import Container from "@components/Container.astro";
 import Footer from "@components/Footer.astro";
 import Breadcrumbs from "@components/Breadcrumbs.astro";
@@ -12,13 +13,15 @@ import Page from "@layouts/Page.astro";
 >
   <Container innerClass={"flex-col items-center"}>
     <div class="w-full sm:w-9/12">
-      <Breadcrumbs title="How to set a timer that counts up">How to set a timer that counts up</Breadcrumbs>
+      <Breadcrumbs title="How to set a timer that counts up"
+        >How to set a timer that counts up</Breadcrumbs
+      >
       <h1 class="w-full text-4xl lg:text-5xl font-sans font-bold mb-8">
         How to set a timer that counts up
       </h1>
       <p class="pb-8">
-        Set a count-up timer for For Time workouts or any workout where you
-        want the timer to run until you are done.
+        Set a count-up timer for For Time workouts or any workout where you want
+        the timer to run until you are done.
       </p>
       <p
         class="w-full text-2xl lg:text-2xl font-sans font-bold mb-4 text-zinc-800"
@@ -75,11 +78,26 @@ import Page from "@layouts/Page.astro";
         "name": "How to set a timer that counts up",
         "step": [
           { "@type": "HowToStep", "name": "Open the app" },
-          { "@type": "HowToStep", "name": "Tap Edit Timer in the top right of the screen" },
-          { "@type": "HowToStep", "name": "Tap Up in the segment control for Type of timer" },
-          { "@type": "HowToStep", "name": "Tap Minutes and Seconds to set the duration of the timer" },
-          { "@type": "HowToStep", "name": "Tap the Countdown toggle button to turn it on if you want a countdown before the timer starts" },
-          { "@type": "HowToStep", "name": "Tap Save to save the current timer settings" },
+          {
+            "@type": "HowToStep",
+            "name": "Tap Edit Timer in the top right of the screen"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Tap Up in the segment control for Type of timer"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Tap Minutes and Seconds to set the duration of the timer"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Tap the Countdown toggle button to turn it on if you want a countdown before the timer starts"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Tap Save to save the current timer settings"
+          },
           { "@type": "HowToStep", "name": "Tap Start to start the timer" }
         ]
       }

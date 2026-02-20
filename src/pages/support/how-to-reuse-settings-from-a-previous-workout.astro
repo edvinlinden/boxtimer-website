@@ -1,4 +1,5 @@
 ---
+export const lastmod = "2026-02-20";
 import Container from "@components/Container.astro";
 import Footer from "@components/Footer.astro";
 import Breadcrumbs from "@components/Breadcrumbs.astro";
@@ -12,7 +13,9 @@ import Page from "@layouts/Page.astro";
 >
   <Container innerClass={"flex-col items-center"}>
     <div class="w-full sm:w-9/12">
-      <Breadcrumbs title="How to reuse settings from a previous workout">How to reuse settings from a previous workout</Breadcrumbs>
+      <Breadcrumbs title="How to reuse settings from a previous workout"
+        >How to reuse settings from a previous workout</Breadcrumbs
+      >
       <h1 class="w-full text-4xl lg:text-5xl font-sans font-bold mb-8">
         How to reuse settings from a previous workout
       </h1>
@@ -52,8 +55,14 @@ import Page from "@layouts/Page.astro";
         "step": [
           { "@type": "HowToStep", "name": "Open the app" },
           { "@type": "HowToStep", "name": "Go to the History tab" },
-          { "@type": "HowToStep", "name": "Tap on the workout you want to reuse" },
-          { "@type": "HowToStep", "name": "Confirm in the dialog to apply the settings" }
+          {
+            "@type": "HowToStep",
+            "name": "Tap on the workout you want to reuse"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Confirm in the dialog to apply the settings"
+          }
         ]
       }
     </script>

@@ -1,4 +1,5 @@
 ---
+export const lastmod = "2026-02-20";
 import Container from "@components/Container.astro";
 import Footer from "@components/Footer.astro";
 import Breadcrumbs from "@components/Breadcrumbs.astro";
@@ -12,7 +13,9 @@ import Page from "@layouts/Page.astro";
 >
   <Container innerClass={"flex-col items-center"}>
     <div class="w-full sm:w-9/12">
-      <Breadcrumbs title="How to enable or disable the countdown before a timer">How to enable or disable the countdown before a timer</Breadcrumbs>
+      <Breadcrumbs title="How to enable or disable the countdown before a timer"
+        >How to enable or disable the countdown before a timer</Breadcrumbs
+      >
       <h1 class="w-full text-4xl lg:text-5xl font-sans font-bold mb-8">
         How to enable or disable the countdown before a timer
       </h1>
@@ -54,8 +57,14 @@ import Page from "@layouts/Page.astro";
         "name": "How to enable or disable the countdown before a timer",
         "step": [
           { "@type": "HowToStep", "name": "Open the app" },
-          { "@type": "HowToStep", "name": "Tap Edit Timer in the toolbar at the top right of the screen" },
-          { "@type": "HowToStep", "name": "Toggle the Countdown switch at the bottom of the settings modal to turn it on or off" },
+          {
+            "@type": "HowToStep",
+            "name": "Tap Edit Timer in the toolbar at the top right of the screen"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Toggle the Countdown switch at the bottom of the settings modal to turn it on or off"
+          },
           { "@type": "HowToStep", "name": "Tap Save to save your settings" }
         ]
       }

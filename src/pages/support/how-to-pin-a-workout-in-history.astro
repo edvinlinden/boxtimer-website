@@ -1,4 +1,5 @@
 ---
+export const lastmod = "2026-02-20";
 import Container from "@components/Container.astro";
 import Footer from "@components/Footer.astro";
 import Breadcrumbs from "@components/Breadcrumbs.astro";
@@ -12,7 +13,9 @@ import Page from "@layouts/Page.astro";
 >
   <Container innerClass={"flex-col items-center"}>
     <div class="w-full sm:w-9/12">
-      <Breadcrumbs title="How to pin a workout in history">How to pin a workout in history</Breadcrumbs>
+      <Breadcrumbs title="How to pin a workout in history"
+        >How to pin a workout in history</Breadcrumbs
+      >
       <h1 class="w-full text-4xl lg:text-5xl font-sans font-bold mb-8">
         How to pin a workout in history
       </h1>
@@ -51,7 +54,10 @@ import Page from "@layouts/Page.astro";
         "step": [
           { "@type": "HowToStep", "name": "Open the app" },
           { "@type": "HowToStep", "name": "Go to the History tab" },
-          { "@type": "HowToStep", "name": "Swipe right on the workout you want to pin" },
+          {
+            "@type": "HowToStep",
+            "name": "Swipe right on the workout you want to pin"
+          },
           { "@type": "HowToStep", "name": "Tap the pin action button" }
         ]
       }
