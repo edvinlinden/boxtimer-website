@@ -1,0 +1,29 @@
+---
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Redirecting to App Store – Box Timer</title>
+    <meta
+      http-equiv="refresh"
+      content="1;url=https://apps.apple.com/us/app/the-box-timer/id1547518531"
+    />
+    <script
+      src="/telemetrydeck.custom.js"
+      data-app-id="5A643F49-9C59-4169-A26B-5E32F92AC576"></script>
+  </head>
+  <body>
+    <script>
+      const ct = new URLSearchParams(window.location.search).get("ct") || "unknown";
+      const appStoreUrl = `https://apps.apple.com/us/app/the-box-timer/id1547518531?ct=${encodeURIComponent(ct)}`;
+
+      window.TelemetryDeck?.sendSignal({ type: "ClickGetApp", appSource: ct });
+
+      setTimeout(() => window.location.replace(appStoreUrl), 150);
+    </script>
+  </body>
+</html>

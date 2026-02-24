@@ -2,14 +2,15 @@
 export interface Props {
   outerClass?: string;
   id?: string;
+  ct?: string;
 }
 
-const { outerClass, id } = Astro.props;
+const { outerClass, id, ct } = Astro.props;
+const href = `/get/?ct=${ct ?? "unknown"}`;
 ---
 
 <a
-  href="https://apps.apple.com/us/app/the-box-timer/id1547518531"
-  onclick="window.TelemetryDeck.sendSignal({type:'ClickGetAppButton'});"
+  href={href}
   target="_blank"
   rel="noopener noreferrer"
   title="The Box Timer on the App Store"

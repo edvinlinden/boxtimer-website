@@ -134,6 +134,9 @@ import GetAppButton from "@components/GetAppButton.astro";
       >
         Get straight into your workout by using your phone as a timer instead.
       </div>
+      <div class="pt-12">
+        <GetAppButton ct="home-stop-arguing-payoff" />
+      </div>
     </div>
   </Container>
 
@@ -256,8 +259,7 @@ import GetAppButton from "@components/GetAppButton.astro";
           <div class="pb-4 mb-4">
             <p class="mb-2">
               You can <a
-                href="https://apps.apple.com/us/app/the-box-timer/id1547518531"
-                onclick="window.TelemetryDeck.sendSignal({type:'ClickGetAppButton'});"
+                href="/get/?ct=faq"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="The Box Timer on the App Store"
@@ -377,7 +379,7 @@ import GetAppButton from "@components/GetAppButton.astro";
     >
       The workout start in 3... 2... 1...
     </h2>
-    <GetAppButton />
+    <GetAppButton ct="home-bottom" />
   </Container>
   <script type="application/ld+json">
     {
