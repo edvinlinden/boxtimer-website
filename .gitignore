@@ -21,3 +21,6 @@ pnpm-debug.log*
 
 # editor files
 .vscode/
+
+# astro files
+.astro/
