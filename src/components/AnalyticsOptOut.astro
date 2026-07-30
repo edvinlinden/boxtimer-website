@@ -1,0 +1,74 @@
+---
+// The opt-out control for website analytics. The key it writes is the one
+// public/telemetrydeck.custom.js reads before it sends anything.
+---
+
+<div
+  id="analytics-opt-out"
+  class="mb-8 p-6 border border-zinc-300 rounded-lg bg-white"
+>
+  <!-- Filled in by the script below. Empty until then, because the honest
+       answer depends on the browser and the wrong one must never flash up. -->
+  <p id="analytics-opt-out-status" class="text-lg mb-4" aria-live="polite"></p>
+  <noscript>
+    <p class="text-lg mb-4">
+      Your browser has JavaScript turned off, so the analytics script never
+      runs and nothing is collected from you here.
+    </p>
+  </noscript>
+  <button
+    type="button"
+    id="analytics-opt-out-button"
+    hidden
+    class="inline-flex items-center justify-center px-4 py-3 bg-blue-600 text-white font-semibold text-sm font-sans cursor-pointer rounded-full transition-colors hover:bg-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"
+  >
+  </button>
+</div>
+
+<script is:inline>
+  (function () {
+    const KEY = "boxtimer-analytics-opt-out";
+    const status = document.getElementById("analytics-opt-out-status");
+    const button = document.getElementById("analytics-opt-out-button");
+
+    const readFlag = () => localStorage.getItem(KEY) === "1";
+
+    const render = (optedOut) => {
+      status.textContent = optedOut
+        ? "Analytics is off in this browser."
+        : "Analytics is on in this browser.";
+      button.textContent = optedOut ? "Turn analytics on" : "Turn analytics off";
+      button.hidden = false;
+    };
+
+    if (navigator.globalPrivacyControl === true) {
+      status.textContent =
+        "Your browser sends a Global Privacy Control signal, so analytics is off in this browser. Nothing here can switch it back on.";
+      return;
+    }
+
+    try {
+      render(readFlag());
+    } catch {
+      status.textContent =
+        "Your browser blocks websites from storing settings, so analytics is off in this browser.";
+      return;
+    }
+
+    button.addEventListener("click", function () {
+      try {
+        if (readFlag()) {
+          localStorage.removeItem(KEY);
+          render(false);
+        } else {
+          localStorage.setItem(KEY, "1");
+          render(true);
+        }
+      } catch {
+        status.textContent =
+          "Your browser blocks websites from storing settings, so analytics is off in this browser.";
+        button.hidden = true;
+      }
+    });
+  })();
+</script>

@@ -9,17 +9,40 @@ const assert = (value, message) => {
 
 assert(appId, '"data-app-id" missing');
 
+// Opt-out. The key is read by the control on /privacy/, which is the only place
+// it is written. Storage throws when the browser blocks it (Safari with cookies
+// disabled), and an unreadable flag must not be treated as consent to collect.
+const OPT_OUT_KEY = "boxtimer-analytics-opt-out";
+
+const isOptedOut = () => {
+  if (navigator.globalPrivacyControl === true) {
+    return true;
+  }
+
+  try {
+    return localStorage.getItem(OPT_OUT_KEY) === "1";
+  } catch {
+    return true;
+  }
+};
+
 class TelemetryDeck {
   constructor(appId) {
     this.appId = appId;
     this.version = "1.1.0-custom";
-    this.locale = navigator.language.locale;
+    this.locale = navigator.language;
     this.api = "https://nom.telemetrydeck.com/v2/w/";
 
     this.sendSignal();
   }
 
   sendSignal(params) {
+    // Checked per signal rather than once at startup, so that turning the
+    // switch off on /privacy/ stops collection on that same page view.
+    if (isOptedOut()) {
+      return;
+    }
+
     const isTestMode =
       /^localhost$|^127(\.\d+){0,2}\.\d+$|^\[::1?]$/.test(location.hostname) ||
       "file:" === location.protocol;

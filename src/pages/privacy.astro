@@ -1,85 +1,385 @@
 ---
+export const lastmod = "2026-07-29";
+import AnalyticsOptOut from "@components/AnalyticsOptOut.astro";
 import Container from "@components/Container.astro";
 import Footer from "@components/Footer.astro";
-import GetAppButton from "@components/GetAppButton.astro";
 import Page from "@layouts/Page.astro";
+
+// The app section below is a verbatim copy of box-timer-privacy-policy.md in
+// the workout-timer repo. Edit it there first, then bring the change here.
+//
+// The version is the app's `privacyPolicyVersion`
+// (workout-clock/Features/Privacy/BoxTimerAnalytics.swift). Every in-app
+// consent record claims the user agreed to a policy carrying it, so the two
+// must match: bump this only when the app ships a matching version, never for
+// a change to the website section alone.
+const effectiveDate = new Date("2026-07-29");
+const effectiveDateISO = effectiveDate.toISOString().slice(0, 10);
+const effectiveDateLabel = effectiveDate.toLocaleDateString("en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+  timeZone: "UTC",
+});
 ---
 
 <Page
   title="Box Timer – Privacy Policy"
-  description="The privacy policy of the Box Timer app and website."
-  url="https://boxtimer.app/box-timer-vs-smartwod/"
+  description="The privacy policy for the Box Timer app and for boxtimer.app: what each collects, why, on what legal basis, and how to turn analytics off."
+  url="https://boxtimer.app/privacy/"
 >
   <Container innerClass={"flex-col items-center"}>
     <div class="w-full sm:w-9/12">
-      <h1 class="w-full text-4xl lg:text-5xl font-sans font-bold mb-24">
+      <h1 class="w-full text-4xl lg:text-5xl font-sans font-bold mb-8">
         Privacy Policy
       </h1>
-      <p class="pb-8">Updated February 10, 2026</p>
-      <h2 class="w-full text-3xl lg:text-3xl font-sans font-bold mb-8 mt-8">
+      <p class="pb-8 text-sm text-zinc-600">
+        Version <time datetime={effectiveDateISO}>{effectiveDateISO}</time>.
+        Effective {effectiveDateLabel}.
+      </p>
+
+      <p class="pb-8">
+        Box Timer is a workout timer app, and this is its website. This page is
+        the privacy policy for both: <a href="#app">the app</a> first, then
+        <a href="#website">this website</a>. They collect different things, so
+        each is described on its own.
+      </p>
+
+      <h2
+        id="app"
+        class="w-full text-3xl font-sans font-bold mb-8 mt-16 scroll-mt-28"
+      >
         The app
       </h2>
+
+      <h3 class="text-xl font-sans font-bold mt-8 mb-3">Who is responsible</h3>
       <p class="pb-8">
-        The privacy policy of Box Timer - Workout Timer is very simple – I do
-        not collect any personal information about you!
+        I run Box Timer personally, not as a company, so the person responsible
+        for everything here is me, Edvin Lindén. Write to
+        <a href="mailto:help@boxtimer.app">help@boxtimer.app</a>.
       </p>
       <p class="pb-8">
-        I believe that privacy should be protected. The best way to protect it
-        is to share as little as possible. In order for me to operate the app
-        and for you to use it there's no need to share any personal information.
-        It's <i>just</i> a timer after all.
+        If you email me, your message and address stay in my email archive.
+        Nothing goes on a mailing list, nothing is shared, and I'll delete a
+        message on request.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-8 mb-3">
+        What Box Timer collects
+      </h3>
+      <p class="pb-8">
+        Box Timer collects usage analytics. With analytics switched on, this is
+        what is collected:
       </p>
       <p class="pb-8">
-        To identify and fix any issues with the app I use TelemetryDeck to
-        collect anonymized usage data. TelemetryDeck <mark
-          >does not collect any personally identifiable information</mark
-        > and <mark>does not use cookies</mark>. You can read more about
-        TelemetryDeck’s privacy policy at
+        <strong>An identifier for your installation of Box Timer.</strong> It cannot
+        be traced back to you, and it cannot be matched against any other app, including
+        my own.
+      </p>
+      <p class="pb-8">
+        <strong>When it happened.</strong> An identifier for the current session,
+        and the date and time.
+      </p>
+      <p class="pb-4">
+        <strong>What happened.</strong> Every event Box Timer sends:
+      </p>
+      <ul class="list-disc list-outside ml-6 space-y-2 mb-8">
+        <li>your first session after installing the app</li>
+        <li>a session starting</li>
+        <li>changing the display theme, with the theme picked</li>
+        <li>answering the offer to reuse settings from a past workout, yes or no</li>
+        <li>
+          deleting a history entry, renaming one, and pinning or unpinning one
+        </li>
+      </ul>
+      <p class="pb-8">
+        <strong>What the app is running on.</strong> The device model, operating
+        system, screen size, language, region and time zone, whether the app is in
+        light or dark mode, its version, and whether it came from the App Store or
+        from a test build.
+      </p>
+      <p class="pb-8">
+        <strong>How much you use the app.</strong> How many sessions you have had,
+        how long they last, and how many days you have opened it.
+      </p>
+      <p class="pb-8">
+        <strong>Technical details of the analytics software</strong>, such as its
+        version.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-8 mb-3">
+        What Box Timer keeps on your device
+      </h3>
+      <p class="pb-8">
+        Analytics keeps a small record of when you have opened the app, which is
+        what the usage counts above are worked out from. Events waiting to be
+        sent are held on the device too, until they're delivered. Turning
+        analytics off deletes both. If you never turn analytics on, it is never
+        written.
+      </p>
+      <p class="pb-8">
+        Box Timer also stores your analytics decision: whether it is on or off,
+        when and how you decided, the version of this policy in force at the
+        time, and the country of your App Store account. The country decides
+        whether you have to be asked for consent, and is never sent anywhere.
+      </p>
+      <p class="pb-8">
+        Your workout history, timer presets and settings are stored on your
+        device too. They stay there and are never sent.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-8 mb-3">
+        What Box Timer doesn't collect
+      </h3>
+      <p class="pb-8">
+        No name, email or account, because Box Timer has no accounts. No
+        advertising identifier, no ad networks. No tracking across other
+        companies' apps or websites. No GPS or location services data. Nothing
+        about your accessibility settings. Nothing about your workouts: not how
+        many, not how long, not how often. That data never leaves your device,
+        so I have no way to see it. I do not sell data or share it with
+        advertisers or brokers.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-8 mb-3">
+        Why Box Timer collects this data
+      </h3>
+      <p class="pb-4">Three reasons, and no others:</p>
+      <ol class="list-decimal list-outside ml-6 mb-8">
+        <li>
+          Checking a release works, by seeing whether the app is still used
+          normally afterwards.
+        </li>
+        <li>
+          Seeing which features people find and use, so I know what to improve.
+        </li>
+        <li>
+          Counting users by country, to decide which languages to translate
+          into.
+        </li>
+      </ol>
+      <p class="pb-8">
+        In the European Economic Area the legal basis is your consent, Article
+        6(1)(a) GDPR. Box Timer asks first, sends nothing until you say yes, and
+        you can withdraw any time. Everywhere else it is my legitimate
+        interests, Article 6(1)(f), those interests being the three purposes
+        above, and analytics is on by default with a switch to turn it off.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-8 mb-3">Opting out</h3>
+      <p class="pb-8">
+        The switch is under About and then Privacy, in the same place whether
+        you were asked for consent or not. Turning it off ends collection
+        immediately, deletes anything that had not yet been sent, and deletes
+        what analytics had stored on your device. Box Timer works the same with
+        analytics off.
+      </p>
+      <p class="pb-8">
+        Turning it back on records a fresh decision against the current policy
+        version.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-8 mb-3">
+        Where the data goes and how long it stays
+      </h3>
+      <p class="pb-8">
+        Data goes to TelemetryDeck GmbH in Augsburg, Germany, which provides the
+        analytics service. Their privacy policy is at
         <a
           href="https://telemetrydeck.com/privacy"
           title="TelemetryDeck - Privacy Policy"
           target="_blank"
-          class="text-blue-600 hover:text-blue-800"
-          >https://telemetrydeck.com/privacy</a
-        >
+          rel="noopener noreferrer">https://telemetrydeck.com/privacy</a
+        >.
       </p>
       <p class="pb-8">
-        I may update the Privacy Policy, you are advised to review this page
-        periodically for any changes. I will notify you of any changes by
-        posting the new Privacy Policy on this page.
+        TelemetryDeck stores it in the EU and does not transfer it outside the
+        EU or the EEA. TelemetryDeck keeps it available for 24 months, and after
+        that moves it to cold storage rather than deleting it.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-8 mb-3">Your rights</h3>
+      <p class="pb-8">
+        You have the right to access your data, correct it, delete it, restrict
+        its use, object to its use, receive a copy, and withdraw your consent.
+        Email me.
       </p>
       <p class="pb-8">
-        If you have any questions about the Privacy Policy, do not hesitate to
-        contact me at help@boxtimer.app
+        The analytics data holds nothing that identifies you, so I can't find
+        your records in it. Article 11 GDPR doesn't require me to start
+        collecting more about you to make that possible, and I won't. What I can
+        do is stop collecting from you, which is what the switch above does.
       </p>
-      <h2 class="w-full text-3xl lg:text-3xl font-sans font-bold mb-8 mt-16">
+      <p class="pb-8">
+        You have the right to lodge a complaint with the Swedish data protection
+        authority, Integritetsskyddsmyndigheten (IMY), or with the supervisory
+        authority where you live.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-8 mb-3">Changes</h3>
+      <p class="pb-8">
+        This policy may be updated. Changes are published on this page with a
+        new effective date.
+      </p>
+
+      <h2
+        id="website"
+        class="w-full text-3xl font-sans font-bold mb-8 mt-16 scroll-mt-28"
+      >
         This website
       </h2>
       <p class="pb-8">
-        I want to process as little personal information as possible when you
-        use my website. That's why I've chosen TelemetryDeck for my website
-        analytics.
+        The person responsible is the same: me, Edvin Lindén, at
+        <a href="mailto:help@boxtimer.app">help@boxtimer.app</a>. The website
+        collects less than the app, and asks for nothing.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-8 mb-3">
+        What this website collects
+      </h3>
+      <p class="pb-8">
+        boxtimer.app uses the same analytics service as the app. When you load a
+        page, this is sent:
       </p>
       <p class="pb-8">
-        The purpose of me using this software is to understand my website
-        traffic in the most privacy-friendly way possible so that I can
-        continually improve my website. The lawful basis as per the GDPR is "f);
-        where our legitimate interests are to improve our website and business
-        continually." As per the explanation, no personal data is stored over
-        time.
+        <strong>Which visit it was.</strong> An identifier worked out from your IP
+        address, an identifier for this site, what your browser says about itself,
+        and a code that changes every day. It cannot be traced back to you, it cannot
+        follow you to another website, and it stops matching you when the day ends.
       </p>
       <p class="pb-8">
-        TelemetryDeck <mark
-          >does not collect any personally identifiable information</mark
-        > and <mark>does not use cookies</mark>. You can read more about
-        TelemetryDeck’s privacy policy at
+        <strong>When it happened.</strong> The date and time of the request.
+      </p>
+      <p class="pb-4">
+        <strong>What happened.</strong> Every event this site sends:
+      </p>
+      <ul class="list-disc list-outside ml-6 space-y-2 mb-8">
+        <li>loading a page</li>
+        <li>clicking a button that goes to the App Store</li>
+        <li>
+          clicking something that turns out not to do anything, and clicking the
+          same spot several times in quick succession — for both, a description
+          of what you clicked, which is its kind and the first 40 characters of
+          its text, and which page you were on
+        </li>
+      </ul>
+      <p class="pb-8">
+        <strong>Which page.</strong> The address of the page you loaded, including
+        anything after the question mark in it, and the address of the page you came
+        from if you followed a link.
+      </p>
+      <p class="pb-8">
+        <strong>What you're browsing on.</strong> Your browser and its version, your
+        operating system and its version, whether you are on a phone, a tablet or a
+        desktop, whether the screen responds to touch, your language, and an approximate
+        country and continent. All of it comes either from what your browser tells
+        every website it visits, or from your IP address.
+      </p>
+      <p class="pb-8">
+        <strong>Technical details of the analytics software</strong>, such as its
+        version.
+      </p>
+      <p class="pb-8">
+        No cookies. Nothing is stored on your device unless you opt out below,
+        and that opt-out setting is the only thing this site ever looks for
+        there.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-8 mb-3">
+        What this website doesn't collect
+      </h3>
+      <p class="pb-8">
+        No name, email or account, because the site has no accounts. No
+        advertising identifier, no ad networks. No tracking across other
+        companies' apps or websites. No location beyond the approximate country
+        above. Your IP address is never stored by the analytics service: it is
+        used to work out that country and the daily identifier, and then it is
+        gone. Nothing you type anywhere is collected, and nothing on this site
+        connects your visit here to your use of the app. I do not sell data or
+        share it with advertisers or brokers.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-8 mb-3">
+        Why this website collects this data
+      </h3>
+      <p class="pb-4">Three reasons, and no others:</p>
+      <ol class="list-decimal list-outside ml-6 mb-8">
+        <li>
+          Seeing which pages people find and read, so I know which ones are
+          worth keeping and improving.
+        </li>
+        <li>
+          Finding the parts of a page that are broken or confusing, which is
+          what the clicks that lead nowhere are for.
+        </li>
+        <li>Seeing how many people go on to the App Store from here.</li>
+      </ol>
+      <p class="pb-8">
+        Legal basis: Article 6(1)(f) GDPR, legitimate interests in understanding
+        website traffic well enough to improve the site. The data is minimal, no
+        identifier outlasts the day, nothing is stored on your device unless you
+        opt out, and none of it is used to profile you or shared with anyone.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-8 mb-3">Opting out</h3>
+      <p class="pb-8">
+        Use the switch below and analytics stops for you on this site,
+        immediately and on this page. It saves one opt-out setting in your
+        browser, so it covers this browser on this device. If your browser sends
+        a Global Privacy Control signal, analytics is skipped automatically and
+        there is nothing for the switch to do. Everything on the site works the
+        same either way.
+      </p>
+      <AnalyticsOptOut />
+
+      <h3 class="text-xl font-sans font-bold mt-8 mb-3">
+        Where the data goes and how long it stays
+      </h3>
+      <p class="pb-8">
+        Data goes to TelemetryDeck GmbH in Augsburg, Germany, the same service
+        the app uses, on the same terms: stored in the EU, never transferred
+        outside the EU or the EEA, kept available for 24 months and then moved
+        to cold storage rather than deleted.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-8 mb-3">Hosting</h3>
+      <p class="pb-8">
+        The site is served by GitHub Pages, operated by GitHub, Inc. (United
+        States). GitHub receives your IP address to deliver the page and records
+        it in its own logs for security and abuse prevention. I have no access
+        to those logs and no control over how long GitHub keeps them.
+      </p>
+      <p class="pb-8">
+        Legal basis: Article 6(1)(f) GDPR, legitimate interests in running the
+        site securely.
+      </p>
+      <p class="pb-8">
+        GitHub adheres to the EU-U.S. Data Privacy Framework and also relies on
+        the European Commission's Standard Contractual Clauses. Details:
         <a
-          href="https://telemetrydeck.com/privacy"
-          title="TelemetryDeck - Privacy Policy"
+          href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+          title="GitHub General Privacy Statement"
           target="_blank"
-          class="text-blue-600 hover:text-blue-800"
-          >https://telemetrydeck.com/privacy</a
-        >
+          rel="noopener noreferrer">GitHub General Privacy Statement</a
+        >.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-8 mb-3">Your rights</h3>
+      <p class="pb-8">
+        The rights listed above apply to what this website collects too, and so
+        does the limit on them: the analytics data holds nothing that identifies
+        you and no identifier that outlasts the day, so I can't find your
+        records in it. What I can do is stop collecting from you, which is what
+        the switch above does. The complaint route is the same, to
+        Integritetsskyddsmyndigheten (IMY) or to the supervisory authority where
+        you live.
+      </p>
+
+      <h3 class="text-xl font-sans font-bold mt-8 mb-3">Changes</h3>
+      <p class="pb-8">
+        This policy may be updated. Changes are published on this page with a
+        new effective date. Questions about any of it go to
+        <a href="mailto:help@boxtimer.app">help@boxtimer.app</a>.
       </p>
     </div>
   </Container>
