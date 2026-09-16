@@ -13,7 +13,7 @@ import Page from "@layouts/Page.astro";
 // consent record claims the user agreed to a policy carrying it, so the two
 // must match: bump this only when the app ships a matching version, never for
 // a change to the website section alone.
-const effectiveDate = new Date("2026-07-29");
+const effectiveDate = new Date("2026-09-16");
 const effectiveDateISO = effectiveDate.toISOString().slice(0, 10);
 const effectiveDateLabel = effectiveDate.toLocaleDateString("en-US", {
   year: "numeric",
@@ -86,11 +86,8 @@ const effectiveDateLabel = effectiveDate.toLocaleDateString("en-US", {
       <ul class="list-disc list-outside ml-6 space-y-2 mb-8">
         <li>your first session after installing the app</li>
         <li>a session starting</li>
-        <li>changing the display theme, with the theme picked</li>
-        <li>answering the offer to reuse settings from a past workout, yes or no</li>
-        <li>
-          deleting a history entry, renaming one, and pinning or unpinning one
-        </li>
+        <li>once per session, which display theme the app is set to</li>
+        <li>saving, loading and deleting a preset</li>
       </ul>
       <p class="pb-8">
         <strong>What the app is running on.</strong> The device model, operating
@@ -124,8 +121,7 @@ const effectiveDateLabel = effectiveDate.toLocaleDateString("en-US", {
         whether you have to be asked for consent, and is never sent anywhere.
       </p>
       <p class="pb-8">
-        Your workout history, timer presets and settings are stored on your
-        device too. They stay there and are never sent.
+        Your timer presets and settings are stored on your device too. They stay there and are never sent.
       </p>
 
       <h3 class="text-xl font-sans font-bold mt-8 mb-3">
