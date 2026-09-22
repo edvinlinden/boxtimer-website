@@ -1,0 +1,70 @@
+---
+export const lastmod = "2026-09-21";
+import Container from "@components/Container.astro";
+import Footer from "@components/Footer.astro";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+import Page from "@layouts/Page.astro";
+---
+
+<Page
+  title="Box Timer – How to apply a preset"
+  description="A guide that shows you how to load a saved preset in Box Timer - Workout Timer"
+  url="https://boxtimer.app/support/how-to-apply-a-preset/"
+>
+  <Container innerClass={"flex-col items-center"}>
+    <div class="w-full sm:w-9/12">
+      <Breadcrumbs title="How to apply a preset"
+        >How to apply a preset</Breadcrumbs
+      >
+      <h1 class="w-full text-4xl lg:text-5xl font-sans font-bold mb-8">
+        How to apply a preset
+      </h1>
+      <p class="pb-8">
+        Load a saved preset to set the timer type and all its settings
+        instantly, without re-entering any numbers.
+      </p>
+      <p
+        class="w-full text-2xl lg:text-2xl font-sans font-bold mb-4 text-zinc-800"
+      >
+        Steps
+      </p>
+      <ol class="list-decimal list-outside ml-6">
+        <li><h2>Open the app</h2></li>
+        <li>
+          <h2>
+            Find the row of preset chips below the Start button on the main
+            timer screen
+          </h2>
+        </li>
+        <li>
+          <h2>Tap the chip for the preset you want</h2>
+        </li>
+      </ol>
+      <p class="mt-8">
+        The timer switches to that preset's type and settings right away. If
+        you have no saved presets, the row doesn't show. See <a
+          href="/support/how-to-save-a-preset/">how to save a preset</a
+        >.
+      </p>
+    </div>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to apply a preset",
+        "step": [
+          { "@type": "HowToStep", "name": "Open the app" },
+          {
+            "@type": "HowToStep",
+            "name": "Find the row of preset chips below the Start button on the main timer screen"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Tap the chip for the preset you want"
+          }
+        ]
+      }
+    </script>
+  </Container>
+  <Footer />
+</Page>

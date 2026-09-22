@@ -1,0 +1,82 @@
+---
+export const lastmod = "2026-09-21";
+import Container from "@components/Container.astro";
+import Footer from "@components/Footer.astro";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+import Page from "@layouts/Page.astro";
+---
+
+<Page
+  title="Box Timer – How to save a preset"
+  description="A guide that shows you how to save your current timer setup as a preset in Box Timer - Workout Timer"
+  url="https://boxtimer.app/support/how-to-save-a-preset/"
+>
+  <Container innerClass={"flex-col items-center"}>
+    <div class="w-full sm:w-9/12">
+      <Breadcrumbs title="How to save a preset">How to save a preset</Breadcrumbs>
+      <h1 class="w-full text-4xl lg:text-5xl font-sans font-bold mb-8">
+        How to save a preset
+      </h1>
+      <p class="pb-8">
+        Save your current timer type and all its settings as a named preset,
+        so you can load the same setup again with one tap. You can save up to
+        10 presets.
+      </p>
+      <p
+        class="w-full text-2xl lg:text-2xl font-sans font-bold mb-4 text-zinc-800"
+      >
+        Steps
+      </p>
+      <ol class="list-decimal list-outside ml-6">
+        <li><h2>Open the app</h2></li>
+        <li>
+          <h2>Tap Edit Timer in the toolbar at the top right of the screen</h2>
+        </li>
+        <li>
+          <h2>Configure the timer type and settings you want to save</h2>
+        </li>
+        <li>
+          <h2>Tap "Save as preset"</h2>
+        </li>
+        <li>
+          <h2>
+            Accept the suggested name or type your own (up to 20 characters)
+          </h2>
+        </li>
+      </ol>
+      <p class="mt-8">
+        The preset appears as a chip below the Start button on the main timer
+        screen. A preset can't be renamed after saving — delete it and save a
+        new one instead. See <a href="/support/how-to-apply-a-preset/"
+          >how to apply a preset</a
+        > and <a href="/support/how-to-delete-a-preset/"
+          >how to delete a preset</a
+        >.
+      </p>
+    </div>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to save a preset",
+        "step": [
+          { "@type": "HowToStep", "name": "Open the app" },
+          {
+            "@type": "HowToStep",
+            "name": "Tap Edit Timer in the toolbar at the top right of the screen"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Configure the timer type and settings you want to save"
+          },
+          { "@type": "HowToStep", "name": "Tap \"Save as preset\"" },
+          {
+            "@type": "HowToStep",
+            "name": "Accept the suggested name or type your own (up to 20 characters)"
+          }
+        ]
+      }
+    </script>
+  </Container>
+  <Footer />
+</Page>

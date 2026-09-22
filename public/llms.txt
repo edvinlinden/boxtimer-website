@@ -7,7 +7,7 @@
 - **Three Timer Modes**: Count up timer, count down timer, and interval timer with configurable work/rest rounds (1-99 rounds)
 - **Zero Ads**: Completely ad-free experience with no tracking
 - **Works With Your Music**: Audio beeps mix with other audio without interrupting playback
-- **Workout History**: Every completed timer is automatically saved. Pin favorites and rename workouts for quick access
+- **Presets**: Save any timer setup as a named preset and load it again with one tap
 - **Three Display Themes**: Standard (green/red with glow), Minimal (clean), and High Contrast (blue/orange for accessibility)
 - **Large Display**: Custom digital font visible from across the gym. Landscape mode for full-screen view
 - **Multi-Language**: English, German, Spanish, French, Polish, and Swedish

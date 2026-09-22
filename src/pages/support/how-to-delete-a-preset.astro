@@ -1,0 +1,70 @@
+---
+export const lastmod = "2026-09-21";
+import Container from "@components/Container.astro";
+import Footer from "@components/Footer.astro";
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+import Page from "@layouts/Page.astro";
+---
+
+<Page
+  title="Box Timer – How to delete a preset"
+  description="A guide that shows you how to delete a saved preset in Box Timer - Workout Timer"
+  url="https://boxtimer.app/support/how-to-delete-a-preset/"
+>
+  <Container innerClass={"flex-col items-center"}>
+    <div class="w-full sm:w-9/12">
+      <Breadcrumbs title="How to delete a preset"
+        >How to delete a preset</Breadcrumbs
+      >
+      <h1 class="w-full text-4xl lg:text-5xl font-sans font-bold mb-8">
+        How to delete a preset
+      </h1>
+      <p class="pb-8">Remove a preset you no longer need.</p>
+      <p
+        class="w-full text-2xl lg:text-2xl font-sans font-bold mb-4 text-zinc-800"
+      >
+        Steps
+      </p>
+      <ol class="list-decimal list-outside ml-6">
+        <li><h2>Open the app</h2></li>
+        <li>
+          <h2>
+            Tap the trash icon next to the preset chips to enter edit mode
+          </h2>
+        </li>
+        <li>
+          <h2>Tap the delete icon on the preset you want to remove</h2>
+        </li>
+        <li>
+          <h2>Confirm the deletion</h2>
+        </li>
+      </ol>
+      <p class="mt-8">
+        The preset is removed for good. Presets can't be renamed — to change
+        one, delete it and <a href="/support/how-to-save-a-preset/"
+          >save a new preset</a
+        > instead.
+      </p>
+    </div>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to delete a preset",
+        "step": [
+          { "@type": "HowToStep", "name": "Open the app" },
+          {
+            "@type": "HowToStep",
+            "name": "Tap the trash icon next to the preset chips to enter edit mode"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Tap the delete icon on the preset you want to remove"
+          },
+          { "@type": "HowToStep", "name": "Confirm the deletion" }
+        ]
+      }
+    </script>
+  </Container>
+  <Footer />
+</Page>
